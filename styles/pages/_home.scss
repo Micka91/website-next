@@ -1,0 +1,25 @@
+.home {
+  &__hero {
+    position: relative;
+  }
+  &__image {
+    position: absolute;
+    top: 6rem;
+    right: -9.2rem;
+    object-fit: contain;
+    max-height: 64rem;
+  }
+  &__container {
+    width: 500px;
+  }
+  &__title {
+  }
+  &__paragraph {
+    margin: 1.5rem 0;
+    font-size: $typo-n;
+    color: $grey-dark-85;
+  }
+  &__buttons {
+    display: flex;
+  }
+}

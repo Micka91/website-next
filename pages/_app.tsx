@@ -1,8 +1,16 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/main.scss";
+import type { AppProps } from "next/app";
+import Layout from "./../components/Layout/Layout";
+import LanguageProvider from "../context/LanguageContext/LanguageContext";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <LanguageProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </LanguageProvider>
+  );
 }
 
-export default MyApp
+export default MyApp;

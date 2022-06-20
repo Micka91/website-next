@@ -1,0 +1,22 @@
+// ABSTRATCS
+@import "./abstratcs/variables";
+// BASE
+@import "./base/reset";
+@import "./base/typography";
+// COMPONENTS
+@import "./components/container";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/navigation";
+// PAGES
+@import "./pages/home";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

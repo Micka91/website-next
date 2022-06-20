@@ -1,0 +1,57 @@
+// TYPOGRAPHY
+$typo-xs: 1rem;
+$typo-s: 1.2rem;
+$typo-n: 1.5rem;
+$typo-m: 1.8rem;
+$typo-l: 2rem;
+$typo-xl: 2.5rem;
+
+// COLORS
+$cool-blue-30: hsla(199, 55%, 51%, 0.3);
+$windows-blue-30: hsla(199, 55%, 51%, 0.3);
+$bg-white-std: hsla(0, 0%, 100%, 0.75);
+$white-55: hsla(0, 0%, 100%, 0.55);
+$white-std: hsl(0, 0%, 100%);
+$grey-dark-55: hsla(200, 19%, 18%, 0.55);
+$grey-dark-85: hsla(200, 19%, 18%, 0.85);
+$grey-dark-40: hsla(200, 19%, 18%, 0.4);
+$grey-light-55: hsla(0, 0%, 96%, 0.55);
+$white-40: hsla(0, 0%, 100%, 0.4);
+$grey-light-std: hsl(0, 0%, 96%);
+$white-20: hsla(0, 0%, 100%, 0.2);
+$grey-medium-std: hsl(252, 5%, 79%);
+$grey-dark-std: hsl(200, 19%, 18%);
+$grey-medium-55: hsla(252, 5%, 79%, 0.55);
+$grey-medium-20: hsla(252, 5%, 79%, 0.2);
+$grey-medium-70: hsla(252, 5%, 79%, 0.7);
+$primary-55: hsla(174, 63%, 40%, 0.55);
+$primary-std: hsl(174, 63%, 40%);
+$primary-85: hsla(174, 63%, 40%, 0.85);
+$primary-40: hsla(174, 63%, 40%, 0.4);
+$alert-dark: hsl(33, 100%, 49%);
+$alert-std: hsl(42, 100%, 50%);
+$alert-light: hsl(45, 100%, 54%);
+$alert-lighten: hsl(54, 100%, 67%);
+$secondary-85: hsla(199, 92%, 56%, 0.85);
+$secondary-dark: hsl(201, 98%, 41%);
+$secondary-55: hsla(199, 92%, 56%, 0.55);
+$valid-dark: hsl(122, 52%, 32%);
+$valid-std: hsl(122, 39%, 49%);
+$valid-light: hsl(88, 50%, 60%);
+$error-dark: hsl(353, 73%, 42%);
+$error-light: hsl(4, 100%, 63%);
+$error-std: hsl(1, 77%, 55%);
+$pink-red: hsl(340, 82%, 52%);
+$pale-turquoise: hsl(174, 38%, 80%);
+$azure: hsl(199, 92%, 56%);
+$bg-azure: hsla(199, 92%, 56%, 0.1);
+$grey-dark-85: hsla(200, 19%, 18%, 0.85);
+$cool-blue-30: hsla(199, 55%, 51%, 0.3);
+$gradient: linear-gradient(236deg, $azure, $primary-std);
+
+// BREAKPOINTS
+$mobile: 50rem;
+$tablette: 70rem;
+$desktop-n: 120rem;
+$desktop-l: 160rem;
+$full: 100%;

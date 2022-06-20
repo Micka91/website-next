@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Exo+2:200,300,400,500,600,700,800,900&display=swap");
+
+html {
+  font-size: 62.5%; // 0.1rem = 1px => 1.5rem = 15px
+}
+
+html,
+body {
+  font-family: "Exo 2", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+  font-stretch: normal;
+  letter-spacing: normal;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
