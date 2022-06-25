@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import type { NextPage } from "next";
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import Background from "./../components/Background/Background";
 import homeBackground from "../public/images/headers/header-home.png";
@@ -8,11 +9,17 @@ import Hero from "./../components/Hero/Hero";
 import Container from "../components/Container/Container";
 import { useContext } from "react";
 import { LanguagesContext } from "../context/LanguageContext/LanguageContext";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
-const Home: NextPage = () => {
-  const lang = useContext(LanguagesContext);
+interface IProps {
+  locale: string;
+}
 
-  console.log(lang);
+const Home = ({ locale }: IProps) => {
+  // const lang = useContext(LanguagesContext);
+  const { t } = useTranslation();
+  console.log(locale);
   return (
     <>
       <Head>
@@ -21,6 +28,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="home__hero">
+        <p>{t("home:welcome")}</p>
         <Background
           src="/images/headers/header-home.png"
           alt="Image de fond accueil de teamdoc"
@@ -55,6 +63,14 @@ const Home: NextPage = () => {
       <div style={{ width: "100%", height: 5000 }}></div>
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale!, ["home"])),
+    },
+  };
 };
 
 export default Home;
