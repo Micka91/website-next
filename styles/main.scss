@@ -1,22 +1,19 @@
 // ABSTRATCS
+@import "./abstratcs/mixins";
 @import "./abstratcs/variables";
 // BASE
 @import "./base/reset";
 @import "./base/typography";
 // COMPONENTS
+@import "./components/button";
 @import "./components/container";
 @import "./components/header";
 @import "./components/hero";
-@import "./components/navigation";
+@import "./components/partners";
+@import "./components/socialMedia";
+// LAYOUT
+@import "./layout/footer";
+@import "./layout/layout";
+@import "./layout/navigation";
 // PAGES
 @import "./pages/home";
-
-html,
-body {
-  padding: 0;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}

@@ -1,25 +1,72 @@
 .home {
   &__hero {
     position: relative;
+    height: 100vh;
   }
   &__image {
     position: absolute;
-    top: 6rem;
+    top: 50%;
+    transform: translate(0, -50%);
     right: -9.2rem;
     object-fit: contain;
-    max-height: 64rem;
+    max-height: 80rem;
+
+    // MEDIA QUERY
+    @include media(tablet) {
+      top: 7rem;
+      right: -2.5rem;
+      max-height: 45rem;
+      transform: translate(0, 0);
+    }
+
+    @include media(phone) {
+      right: -1.5rem;
+      max-height: 30rem;
+    }
   }
   &__container {
-    width: 500px;
+    width: 80rem;
+
+    // MEDIA QUERY
+    @include media(tablet) {
+      width: $full;
+    }
   }
   &__title {
+    font-size: $typo-hero;
+
+    // MEDIA QUERY
+    @include media(tablet) {
+      width: 70%;
+      font-size: $typo-hero-tablet;
+    }
+
+    @include media(phone) {
+      width: $full;
+      font-size: $typo-xl;
+    }
   }
   &__paragraph {
     margin: 1.5rem 0;
-    font-size: $typo-n;
+    font-size: $typo-m;
     color: $grey-dark-85;
+
+    @include media(tablet) {
+      width: 55%;
+      font-size: $typo-n;
+    }
+
+    @include media(phone) {
+      width: $full;
+    }
   }
   &__buttons {
     display: flex;
+    gap: 1.5rem;
+
+    @include media(phone) {
+      flex-direction: column;
+      padding: 0 5rem;
+    }
   }
 }

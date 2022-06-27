@@ -1,12 +1,23 @@
 .hero {
-  padding-top: 7.2rem;
   position: absolute;
-  top: 0;
+  top: 50%;
+  transform: translate(0, -50%);
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  // MEDIA QUERY
+  @include media(tablet) {
+    padding: 1.5rem 0;
+    top: 12rem;
+    transform: translate(0, 0);
+  }
+
+  @include media(phone) {
+    top: 35rem;
+  }
 
   &__home {
     &--image {

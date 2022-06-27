@@ -7,5 +7,12 @@
     position: absolute;
     top: 0;
     left: 0;
+    max-height: $full;
+    height: auto;
+
+    // MEDIA QUERY
+    @include media(phone) {
+      max-width: 65rem;
+    }
   }
 }

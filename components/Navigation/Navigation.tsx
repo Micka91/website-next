@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/images/logo/teamdoc.png";
 import { PATHS } from "../../enums/paths";
+import Button from "./../Button/Button";
 
 const ROUTES = [
   { path: "Solution", key: PATHS.SOLUTION },
@@ -45,7 +46,7 @@ const Navigation = () => {
   return (
     <header className={navstyle}>
       <Link href={PATHS.INDEX}>
-        <a>
+        <a className="navigation__link">
           <img
             src="/images/logo/teamdoc.png"
             alt="Logo de teamdoc"
@@ -76,8 +77,8 @@ const Navigation = () => {
       </nav>
       {/* Buttons */}
       <div className="navigation__buttons">
-        <button>RESERVER UNE DEMO</button>
-        <button>TEAMDOC_WEB</button>
+        <Button className="button__demo">RESERVER UNE DEMO</Button>
+        <Button className="button__gradient">{`TEAM'DOC WEB`}</Button>
       </div>
     </header>
   );

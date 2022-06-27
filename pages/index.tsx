@@ -4,22 +4,19 @@ import type { NextPage } from "next";
 import { GetStaticProps } from "next";
 import Head from "next/head";
 import Background from "./../components/Background/Background";
-import homeBackground from "../public/images/headers/header-home.png";
 import Hero from "./../components/Hero/Hero";
 import Container from "../components/Container/Container";
-import { useContext } from "react";
-import { LanguagesContext } from "../context/LanguageContext/LanguageContext";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import Partners from "../components/Partners/Partners";
+import Button from "./../components/Button/Button";
 
 interface IProps {
   locale: string;
 }
 
 const Home = ({ locale }: IProps) => {
-  // const lang = useContext(LanguagesContext);
   const { t } = useTranslation();
-  console.log(locale);
   return (
     <>
       <Head>
@@ -28,7 +25,6 @@ const Home = ({ locale }: IProps) => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className="home__hero">
-        <p>{t("home:welcome")}</p>
         <Background
           src="/images/headers/header-home.png"
           alt="Image de fond accueil de teamdoc"
@@ -39,7 +35,7 @@ const Home = ({ locale }: IProps) => {
             alt="Deux téléphone, décrivant l'application teamdoc"
             className="home__image"
           />
-          <Hero style={{ height: 500 }}>
+          <Hero>
             <Container>
               <div className="home__container">
                 <h1 className="home__title">
@@ -52,15 +48,18 @@ const Home = ({ locale }: IProps) => {
                 ou en cabinet.`}
                 </p>
                 <div className="home__buttons">
-                  <button>Telecharger {"=>"}</button>
-                  <button>En savoir plus</button>
+                  <Button className="button__gradient">
+                    Telecharger {"=>"}
+                  </Button>
+                  <Button className="button__more">En savoir plus</Button>
                 </div>
               </div>
             </Container>
           </Hero>
         </Background>
       </section>
-      <div style={{ width: "100%", height: 5000 }}></div>
+      <div style={{ width: "100%", height: 800 }}></div>
+      <Partners />
     </>
   );
 };

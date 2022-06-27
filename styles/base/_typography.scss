@@ -12,14 +12,14 @@ body {
 }
 
 h1 {
-  font-size: 3.8rem;
-  font-weight: 500;
+  font-size: $typo-xxl;
+  font-weight: $f5;
   font-stretch: normal;
   letter-spacing: normal;
 }
 
 p {
-  font-weight: 300;
+  font-weight: $f3;
 }
 
 a {
