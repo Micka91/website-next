@@ -1,0 +1,99 @@
+.footer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 4rem;
+
+  &__container {
+    width: 25%;
+
+    // MEDIA QUERY
+    @include media(phone) {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__title {
+    font-size: $typo-l;
+    font-weight: $f4;
+    line-height: 2.4rem;
+    letter-spacing: normal;
+    color: $primary-std;
+    padding-bottom: 1.2rem;
+  }
+
+  &__links {
+    list-style: none;
+  }
+
+  &__link {
+    font-size: 1.4rem;
+    font-weight: $f5;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.8rem;
+    letter-spacing: normal;
+    padding-bottom: 1.2rem;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary-std;
+    }
+  }
+
+  &__logo {
+    height: 3rem;
+  }
+
+  &__image {
+    height: 1.8rem;
+  }
+
+  &__adressContainer,
+  &__mailContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__adress,
+  &__mail {
+    font-size: 1.4rem;
+    font-style: normal;
+    line-height: 2.4rem;
+    font-weight: $f3;
+    letter-spacing: normal;
+    color: $grey-dark-85;
+  }
+
+  &__paragraph {
+    font-size: 1.4rem;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.2rem;
+    background-color: $grey-light-55;
+    margin-top: 2rem;
+  }
+
+  // MEDIA QUERY
+  @include media(tablet) {
+    padding: 0 $pad-tab;
+  }
+  @include media(phone) {
+    display: block;
+    padding: 0 $pad-phone;
+  }
+}

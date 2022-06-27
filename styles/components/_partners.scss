@@ -1,0 +1,56 @@
+.partners {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+
+  .partner {
+    min-width: 15rem;
+    max-width: 33.33333333%;
+
+    &__title {
+      font-size: $typo-n;
+      font-weight: $f5;
+      margin-bottom: 1.5rem;
+    }
+
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      // MEDIA QUERY
+      @include media(tablet) {
+        gap: 0.5rem;
+      }
+
+      img {
+        // width: 100px;
+        aspect-ratio: 16/ 9;
+        height: 7rem;
+        object-fit: contain;
+
+        // MEDIA QUERY
+        @include media(tablet) {
+          height: 6rem;
+        }
+      }
+    }
+
+    // MEDIA QUERY
+    @include media(phone) {
+      width: $full;
+      max-width: $full;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  // MEDIA QUERY
+  @include media(tablet) {
+    gap: 2rem;
+  }
+
+  // MEDIA QUERY
+  @include media(phone) {
+    display: block;
+  }
+}

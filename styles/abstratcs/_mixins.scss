@@ -1,0 +1,23 @@
+@mixin media($size) {
+  @if $size == phone {
+    @media #{$responsiveMobile} {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media #{$responsiveTablet} {
+      @content;
+    }
+  } @else if $size == desktop-n {
+    @media #{$responsiveDesktopNormal} {
+      @content;
+    }
+  } @else if $size == desktop-l {
+    @media #{$responsiveDesktopLarge} {
+      @content;
+    }
+  } @else if $size == full {
+    @media #{$responsiveDesktopFull} {
+      @content;
+    }
+  }
+}

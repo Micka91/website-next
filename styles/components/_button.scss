@@ -1,0 +1,50 @@
+.button {
+  padding: 1rem 2rem;
+  outline: none;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: $f5;
+  letter-spacing: 0.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: $typo-s;
+  border-radius: 0.4rem;
+  transition: transform 0.3s ease-in 0s;
+
+  &__gradient {
+    background-image: $gradient;
+    color: $white-std;
+    padding: 1.2rem 2rem;
+
+    &:hover {
+      box-shadow: 0 0.5rem 1.2rem 0 $cool-blue-30;
+      transform: translateY(-0.2rem);
+    }
+  }
+
+  &__more {
+    background-color: transparent;
+    border: 0.1rem solid $grey-medium-std;
+    color: $grey-medium-std;
+
+    &:hover {
+      color: $secondary-std;
+      border: 0.1rem solid $secondary-std;
+      transform: translateY(-0.2rem);
+    }
+  }
+
+  &__demo {
+    background-color: transparent;
+    border: 0.2rem solid $secondary-std;
+    color: $secondary-std;
+
+    &:hover {
+      box-shadow: 0 0.8rem 1.2rem 0 $cool-blue-30;
+      transform: translateY(-2px);
+    }
+  }
+}
