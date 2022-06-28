@@ -10,6 +10,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Partners from "../components/Partners/Partners";
 import Button from "./../components/Button/Button";
+import Simplification from "../components/Simplification/Simplification";
 
 interface IProps {
   locale: string;
@@ -17,6 +18,7 @@ interface IProps {
 
 const Home = ({ locale }: IProps) => {
   const { t } = useTranslation();
+
   return (
     <>
       <Head>
@@ -58,6 +60,7 @@ const Home = ({ locale }: IProps) => {
           </Hero>
         </Background>
       </section>
+      <Simplification />
       <div style={{ width: "100%", height: 800 }}></div>
       <Partners />
     </>
