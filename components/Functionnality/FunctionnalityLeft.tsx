@@ -1,9 +1,34 @@
 import React from "react";
+import { IAnimation } from "./Functionnality";
 
-const FunctionnalityLeft = () => {
+interface IProps {
+  animationLeft: IAnimation;
+}
+
+const FunctionnalityLeft = ({ animationLeft }: IProps) => {
+  // Animation du Component BenefitsLeft:
+  const firstAnimLeft = {
+    transition: animationLeft.transition,
+    opacity: animationLeft.opacity,
+    transform: animationLeft.transform,
+  };
+
+  const secondAnimLeft = {
+    transition: animationLeft.transition,
+    opacity: animationLeft.opacity,
+    transform: animationLeft.transform,
+    transitionDelay: "0.5s",
+  };
+  const thirdAnimLeft = {
+    transition: animationLeft.transition,
+    opacity: animationLeft.opacity,
+    transform: animationLeft.transform,
+    transitionDelay: "1s",
+  };
+
   return (
     <div className="functionnalityLeft">
-      <div className="functionnalityLeft__container">
+      <div style={firstAnimLeft} className="functionnalityLeft__container">
         <img
           className="functionnalityLeft__icones"
           src="/images/icones/team.svg"
@@ -20,7 +45,7 @@ const FunctionnalityLeft = () => {
         </div>
       </div>
 
-      <div className="functionnalityLeft__container">
+      <div style={secondAnimLeft} className="functionnalityLeft__container">
         <img
           className="functionnalityLeft__icones"
           src="/images/icones/cloud.svg"
@@ -35,7 +60,7 @@ const FunctionnalityLeft = () => {
         </div>
       </div>
 
-      <div className="functionnalityLeft__container">
+      <div style={thirdAnimLeft} className="functionnalityLeft__container">
         <img
           className="functionnalityLeft__icones"
           src="/images/icones/form.png"

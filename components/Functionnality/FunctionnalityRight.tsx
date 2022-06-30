@@ -1,9 +1,38 @@
-import React from "react";
+import React, { RefObject } from "react";
+import { IAnimation } from "./Functionnality";
 
-const FunctionnalityRight = () => {
+interface IProps {
+  animationRight: IAnimation;
+  innerWidth: number;
+  // innerWidth: RefObject<number>;
+}
+
+const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
+  // Animation du Component BenefitsRight:
+  const firstAnim = {
+    transition: animationRight.transition,
+    opacity: animationRight.opacity,
+    transform: animationRight.transform,
+    transitionDelay: innerWidth > 576 ? "0s" : "1.5s",
+  };
+
+  const secondAnim = {
+    transition: animationRight.transition,
+    opacity: animationRight.opacity,
+    transform: animationRight.transform,
+    transitionDelay: innerWidth > 576 ? "0.5s" : "2s",
+  };
+
+  const thirdAnim = {
+    transition: animationRight.transition,
+    opacity: animationRight.opacity,
+    transform: animationRight.transform,
+    transitionDelay: innerWidth > 576 ? "1s" : "2.5s",
+  };
+
   return (
     <div className="functionnalityRight">
-      <div className="functionnalityRight__container">
+      <div style={firstAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
           <h3 className="functionnalityRight__title">
             Réseau de professionnels
@@ -20,7 +49,7 @@ const FunctionnalityRight = () => {
         />
       </div>
 
-      <div className="functionnalityRight__container">
+      <div style={secondAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
           <h3 className="functionnalityRight__title">Droit à la déconnexion</h3>
           <p className="functionnalityRight__paragraph">
@@ -36,7 +65,7 @@ const FunctionnalityRight = () => {
         />
       </div>
 
-      <div className="functionnalityRight__container">
+      <div style={thirdAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
           <h3 className="functionnalityRight__title">Tâches planifiées</h3>
           <p className="functionnalityRight__paragraph">
