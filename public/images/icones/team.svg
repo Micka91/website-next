@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 58 (101010) - https://sketch.com -->
+    <title>47F0E9A5-7A6A-428C-96BF-611C87DF6344</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <linearGradient x1="136.527861%" y1="8.43425606%" x2="0%" y2="128.909312%" id="linearGradient-1">
+            <stop stop-color="#29B6F6" offset="0%"></stop>
+            <stop stop-color="#26A69A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="136.527861%" y1="6.8877551%" x2="0%" y2="131.845223%" id="linearGradient-2">
+            <stop stop-color="#29B6F6" offset="0%"></stop>
+            <stop stop-color="#26A69A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="HOME-PAGE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linejoin="round">
+        <g id="1-HomePage-1220" transform="translate(-161.000000, -1390.000000)" stroke-width="1.32">
+            <g id="BLOCK-3" transform="translate(0.000000, 1184.000000)">
+                <g id="Group-Copy-3" transform="translate(161.000000, 206.000000)">
+                    <g id="_UI-/1.-Atomes-/-Icons-/44x44/TeamWork">
+                        <g id="Stroke-1010-+-Stroke-1011" transform="translate(4.400000, 5.500000)">
+                            <path d="M11.027456,20.4738021 C10.3027065,20.3759832 9.58684968,20.2218442 8.89322442,20.0084211 L1.48269811,22.9726316 L4.44690863,17.7852632 C2.11407495,15.9192926 0.741645474,13.1536842 0.741645474,10.2798821 C0.741645474,4.60341895 6.381056,0 13.3395402,0 C20.2965423,0 25.9374349,4.60341895 25.9374349,10.2798821" id="Stroke-1010" stroke="url(#linearGradient-1)"></path>
+                            <path d="M14.08,22.9726316 C14.08,29.3278989 21.4905263,34.0884211 28.16,31.1242105 L34.0884211,33.3473684 L31.8652632,28.9010526 C33.7860716,27.3641095 34.8294737,25.3410358 34.8294737,22.9726316 C34.8294737,18.2980716 30.1845558,14.08 24.4547368,14.08 C18.7249179,14.08 14.08,18.2980716 14.08,22.9726316 L14.08,22.9726316 Z" id="Stroke-1011" stroke="url(#linearGradient-2)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

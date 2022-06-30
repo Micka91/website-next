@@ -9,6 +9,9 @@ $typo-xxl: 3.8rem;
 $typo-hero: 6rem;
 $typo-hero-tablet: 4rem;
 
+$s8: 740px;
+$s9: 670px;
+
 // FONT WEIGHT
 $f1: 100;
 $f2: 200;
@@ -64,17 +67,30 @@ $cool-blue-30: hsla(199, 55%, 51%, 0.3);
 $shadowNav: hsla(199, 49%, 49%, 0.2);
 $gradient: linear-gradient(236deg, $secondary-std, $primary-std);
 
+// LAYOUT
+$container: 120rem;
+
 // BREAKPOINTS
-$mobile: 47rem !default;
-$tablet: 70rem !default;
-$desktop-n: 120rem !default;
+$mobile-s: 20rem !default;
+$mobile-m: 24rem !default;
+$mobile-l: 27rem !default;
+$tablet: 48rem !default;
+$tablet-l: 52rem !default;
+$desktop: 64rem !default;
+$desktop-s: 74rem !default;
+$desktop-m: 90rem !default;
 $desktop-l: 160rem !default;
 $full: 100%;
 
 // MEDIA QUERIES
-$responsiveMobile: "(max-width: #{$mobile})";
+$responsiveMobileSmall: "(max-width: #{$mobile-s})";
+$responsiveMobileMedium: "(max-width: #{$mobile-m})";
+$responsiveMobileLarge: "(max-width: #{$mobile-l})";
 $responsiveTablet: "(max-width: #{$tablet})";
-$responsiveDesktopNormal: "(max-width: #{$desktop-n})";
+$responsiveTabletLarge: "(max-width: #{$tablet-l})";
+$responsiveDesktopNormal: "(max-width: #{$desktop})";
+$responsiveDesktopSmall: "(max-width: #{$desktop-s})";
+$responsiveDesktopMedium: "(max-width: #{$desktop-m})";
 $responsiveDesktopLarge: "(max-width: #{$desktop-l})";
 $responsiveDesktopFull: "(max-width: #{full})";
 

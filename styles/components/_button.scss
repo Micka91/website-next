@@ -1,5 +1,5 @@
 .button {
-  padding: 1rem 2rem;
+  padding: 1em 2em;
   outline: none;
   background: transparent;
   border: none;
@@ -21,30 +21,52 @@
 
     &:hover {
       box-shadow: 0 0.5rem 1.2rem 0 $cool-blue-30;
-      transform: translateY(-0.2rem);
     }
   }
 
   &__more {
     background-color: transparent;
-    border: 0.1rem solid $grey-medium-std;
     color: $grey-medium-std;
+    border: 0.1rem solid currentColor;
 
     &:hover {
       color: $secondary-std;
-      border: 0.1rem solid $secondary-std;
-      transform: translateY(-0.2rem);
+      border: 0.1rem solid currentColor;
     }
   }
 
   &__demo {
     background-color: transparent;
-    border: 0.2rem solid $secondary-std;
     color: $secondary-std;
+    border: 0.2rem solid currentColor;
+
+    &:hover {
+      box-shadow: 0 0.8rem 1.2rem 0 currentColor;
+    }
+  }
+
+  &__price {
+    background-color: transparent;
+    color: $white-std;
+    border: 0.2rem solid currentColor;
+
+    &:hover {
+      background-color: $white-std;
+      color: $cool-blue-30;
+    }
+  }
+
+  &__white {
+    background-color: $white-std;
+    color: $primary-std;
+    border: 0.2rem solid transparent;
 
     &:hover {
       box-shadow: 0 0.8rem 1.2rem 0 $cool-blue-30;
-      transform: translateY(-2px);
     }
+  }
+
+  &:hover {
+    transform: translateY(-2px);
   }
 }

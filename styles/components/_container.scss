@@ -1,9 +1,9 @@
 .container {
-  width: $desktop-n;
+  width: $container;
   margin: 0 auto;
 
   // MEDIA QUERY
-  @include media(tablet) {
+  @include media(desktop-s) {
     width: $full;
   }
 }

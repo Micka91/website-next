@@ -7,7 +7,7 @@
     width: 25%;
 
     // MEDIA QUERY
-    @include media(phone) {
+    @include media(phone-l) {
       width: 100%;
       margin-bottom: 2rem;
     }
@@ -90,10 +90,11 @@
   }
 
   // MEDIA QUERY
-  @include media(tablet) {
+  @include media(desktop-s) {
     padding: 0 $pad-tab;
   }
-  @include media(phone) {
+
+  @include media(phone-l) {
     display: block;
     padding: 0 $pad-phone;
   }

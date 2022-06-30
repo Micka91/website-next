@@ -1,7 +1,10 @@
 .simplification {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 5rem 0;
+
+  @include media(phone-l) {
+    margin: 5rem 0;
+    padding: 0 1.5rem;
+  }
 
   &__titleContainer {
     display: flex;
@@ -12,6 +15,12 @@
   &__title {
     color: $grey-dark-std;
     font-size: $typo-xxl;
+    font-weight: $f5;
+
+    @include media(phone-l) {
+      font-size: 2.5rem;
+      text-align: center;
+    }
   }
 
   &__paragraph {
@@ -22,6 +31,11 @@
     letter-spacing: normal;
     text-align: center;
     color: $grey-dark-85;
+
+    @include media(phone-l) {
+      width: 100%;
+      font-size: $typo-m;
+    }
   }
 
   &__cardContainer {
@@ -41,8 +55,24 @@
 
     img {
       width: 30rem;
-      height: 30rem;
+      // height: 30rem;
+      aspect-ratio: 1;
       object-fit: contain;
+
+      @include media(phone-l) {
+        width: 25rem;
+      }
+    }
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: $full;
+    }
+
+    @include media(phone-l) {
+      display: block;
+      padding: 0;
+      text-align: center;
     }
   }
 
@@ -50,12 +80,23 @@
     text-decoration: none;
     margin-left: 4rem;
 
+    @include media(phone-l) {
+      margin-left: 0;
+      text-align: center;
+    }
+
     h3 {
       padding-bottom: 1.2rem;
       font-size: $typo-xl;
       font-weight: $f6;
-      line-height: 2.8rem;
+      line-height: $typo-xl;
       color: $grey-dark-85;
+
+      @include media(phone-l) {
+        margin-left: 0;
+        text-align: center;
+        font-size: $typo-l;
+      }
     }
 
     p {

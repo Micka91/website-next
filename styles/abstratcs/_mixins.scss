@@ -1,22 +1,46 @@
 @mixin media($size) {
-  @if $size == phone {
-    @media #{$responsiveMobile} {
+  @if $size == phone-s {
+    @media only screen and #{$responsiveMobileSmall} {
+      @content;
+    }
+  } @else if $size == phone {
+    @media only screen and #{$responsiveMobileMedium} {
+      @content;
+    }
+  } @else if $size == phone-l {
+    @media only screen and #{$responsiveMobileLarge} {
+      @content;
+    }
+  } @else if $size == phone-l {
+    @media only screen and #{$responsiveMobileLarge} {
       @content;
     }
   } @else if $size == tablet {
-    @media #{$responsiveTablet} {
+    @media only screen and #{$responsiveTablet} {
       @content;
     }
-  } @else if $size == desktop-n {
-    @media #{$responsiveDesktopNormal} {
+  } @else if $size == tablet-l {
+    @media only screen and #{$responsiveTabletLarge} {
+      @content;
+    }
+  } @else if $size == desktop-s {
+    @media only screen and #{$responsiveDesktopSmall} {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media only screen and #{$responsiveDesktopNormal} {
+      @content;
+    }
+  } @else if $size == desktop-m {
+    @media only screen and #{$responsiveDesktopMedium} {
       @content;
     }
   } @else if $size == desktop-l {
-    @media #{$responsiveDesktopLarge} {
+    @media only screen and #{$responsiveDesktopLarge} {
       @content;
     }
   } @else if $size == full {
-    @media #{$responsiveDesktopFull} {
+    @media only screen and #{$responsiveDesktopFull} {
       @content;
     }
   }

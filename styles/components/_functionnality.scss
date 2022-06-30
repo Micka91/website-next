@@ -1,0 +1,154 @@
+.functionnality {
+  background-image: url("/images/background/pattern.svg");
+  padding: 5rem 0;
+
+  @include media(desktop-s) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include media(phone-l) {
+    margin: 0rem 0;
+  }
+
+  @include media(phone) {
+    margin: 5rem 0;
+  }
+
+  &__titleContainer {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: $typo-xxl;
+    font-weight: $f5;
+    margin-bottom: 1.5rem;
+
+    @include media(phone-l) {
+      font-size: $typo-xl;
+    }
+  }
+
+  &__paragraph {
+    text-align: center;
+    font-size: $typo-m;
+    margin-bottom: 4rem;
+
+    @include media(phone-l) {
+      font-size: $typo-n;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media(phone-l) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__images {
+    display: flex;
+    width: 22rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 20rem;
+    }
+
+    @include media(phone-l) {
+      width: 22rem;
+    }
+  }
+}
+
+.functionnalityLeft {
+  padding-top: 2.5rem;
+
+  &__container {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+
+  &__icones {
+    margin-right: 1.5rem;
+    width: 4.4rem;
+  }
+
+  &__content {
+    width: 35rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 20rem;
+    }
+
+    @include media(phone-l) {
+      width: $full;
+    }
+  }
+
+  &__title {
+    font-size: $typo-l;
+    font-weight: 500;
+    line-height: 2.4rem;
+    letter-spacing: normal;
+    color: $grey-dark-std;
+  }
+
+  &__paragraph {
+    margin-top: 0.4rem;
+    font-size: $typo-n;
+    line-height: 1.8rem;
+    letter-spacing: normal;
+    color: $grey-dark-85;
+  }
+}
+
+.functionnalityRight {
+  padding-top: 2.5rem;
+
+  &__container {
+    display: flex;
+    margin-bottom: 5rem;
+  }
+
+  &__icones {
+    margin-left: 1.5rem;
+    width: 4.4rem;
+  }
+
+  &__content {
+    width: 35rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 20rem;
+    }
+
+    @include media(phone-l) {
+      width: $full;
+    }
+  }
+
+  &__title {
+    font-size: $typo-l;
+    font-weight: $f5;
+    line-height: 2.4rem;
+    letter-spacing: normal;
+    color: $grey-dark-std;
+  }
+
+  &__paragraph {
+    margin-top: 0.4rem;
+    font-size: $typo-n;
+    line-height: 1.8rem;
+    letter-spacing: normal;
+    color: $grey-dark-85;
+  }
+}

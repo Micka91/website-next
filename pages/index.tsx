@@ -11,6 +11,9 @@ import { useTranslation } from "next-i18next";
 import Partners from "../components/Partners/Partners";
 import Button from "./../components/Button/Button";
 import Simplification from "../components/Simplification/Simplification";
+import Functionnality from "./../components/Functionnality/Functionnality";
+import Recommandations from "./../components/Recommandations/Recommandations";
+import BlueCard from './../components/BlueCard/BlueCard';
 
 interface IProps {
   locale: string;
@@ -32,13 +35,9 @@ const Home = ({ locale }: IProps) => {
           alt="Image de fond accueil de teamdoc"
           className="header__home"
         >
-          <img
-            src="/images/hero/hero-home.png"
-            alt="Deux téléphone, décrivant l'application teamdoc"
-            className="home__image"
-          />
           <Hero>
-            <Container>
+            {/* <Container> */}
+            <div className="home__banner">
               <div className="home__container">
                 <h1 className="home__title">
                   {`L’application sécurisée dédiée à la communication et
@@ -56,12 +55,20 @@ const Home = ({ locale }: IProps) => {
                   <Button className="button__more">En savoir plus</Button>
                 </div>
               </div>
-            </Container>
+              <img
+                src="/images/hero/hero-home.png"
+                alt="Deux téléphone, décrivant l'application teamdoc"
+                className="home__image"
+              />
+            </div>
+            {/* </Container> */}
           </Hero>
         </Background>
       </section>
       <Simplification />
-      <div style={{ width: "100%", height: 800 }}></div>
+      <Functionnality />
+      <Recommandations />
+      <BlueCard />
       <Partners />
     </>
   );

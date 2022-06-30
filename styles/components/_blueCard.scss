@@ -1,0 +1,122 @@
+.blueCard {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem 0;
+  border-radius: 2rem;
+  background-image: $gradient;
+  padding: 2.8rem 4.8rem 2.8rem 2.8rem;
+  gap: 2rem;
+
+  // MEDIA QUERY
+  @include media(desktop-s) {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-right: 2.8rem;
+  }
+
+  @include media(phone-l) {
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @include media(phone-l) {
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__logo {
+    width: 13rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 8rem;
+    }
+
+    @include media(phone-l) {
+      width: 6rem;
+    }
+  }
+
+  &__content {
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      max-width: 30rem;
+    }
+
+    h2 {
+      font-size: $typo-xl;
+      font-weight: $f6;
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      color: $white-std;
+
+      // MEDIA QUERY
+      @include media(tablet-l) {
+        font-size: $typo-l;
+      }
+
+      @include media(phone-l) {
+        font-size: $typo-m;
+        hyphens: auto;
+      }
+    }
+
+    p {
+      margin-top: 0.8rem;
+      font-size: $typo-n;
+      font-weight: $f5;
+      line-height: 1.2;
+      letter-spacing: 0.02em;
+      color: $white-std;
+
+      @include media(phone-l) {
+        font-size: $typo-s;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    button {
+      min-width: 16rem;
+      font-weight: $f5;
+
+      // MEDIA QUERY
+      @include media(tablet-l) {
+        min-width: 10rem;
+        font-size: $typo-xs;
+      }
+
+      @include media(tablet) {
+        font-size: 0.8rem;
+      }
+
+      img {
+        // MEDIA QUERY
+        @include media(tablet-l) {
+          width: 2rem;
+        }
+
+        @include media(tablet) {
+          width: 1.6rem;
+        }
+      }
+    }
+
+    button:first-child {
+      padding: 0.6em 1.5em;
+    }
+  }
+}

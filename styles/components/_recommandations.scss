@@ -1,0 +1,143 @@
+.recommandations {
+  padding: 5rem 2rem;
+
+  @include media(tablet-l) {
+    padding: 0rem 2rem;
+  }
+
+  &__arrows {
+    width: $full;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10rem;
+
+    @include media(phone-l) {
+      margin-top: 0rem;
+    }
+
+    @include media(phone) {
+      margin-top: 5rem;
+    }
+  }
+
+  &__arrowLeft,
+  &__arrowRight {
+    cursor: pointer;
+    width: 2.4rem;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: background-image 300ms ease;
+  }
+
+  &__arrowLeft {
+    background-image: url("/images/icones/arrowLeft.svg");
+    &:hover {
+      background-image: url("/images/icones/arrowLeftHover.svg");
+    }
+  }
+
+  &__arrowRight {
+    background-image: url("/images/icones/arrowRight.svg");
+    &:hover {
+      background-image: url("/images/icones/arrowRightHover.svg");
+    }
+  }
+}
+
+.recommandationsSlides {
+  width: 80%;
+  height: 40vh;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media(phone-l) {
+    width: 100%;
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    visibility: collapse;
+  }
+
+  &__active {
+    visibility: visible;
+  }
+
+  &__cite {
+    width: 65rem;
+    height: 12rem;
+    font-size: $typo-l;
+    font-weight: $f5;
+    font-stretch: normal;
+    line-height: 2.4rem;
+    letter-spacing: normal;
+    text-align: center;
+    color: $grey-dark-std;
+
+    @include media(phone-l) {
+      font-size: $typo-m;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  &__picture {
+    width: 10rem;
+    aspect-ratio: 1;
+
+    @include media(phone-l) {
+      width: 30%;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+  }
+
+  &__content {
+    width: 35rem;
+    margin-left: 2.5rem;
+    font-weight: $f3;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: $grey-dark-std;
+
+    @include media(phone-l) {
+      width: 70%;
+    }
+
+    h4 {
+      font-size: $typo-m;
+      font-weight: $f5;
+
+      @include media(phone-l) {
+        font-size: $typo-n;
+      }
+    }
+
+    p {
+      color: $grey-dark-55;
+      font-size: $typo-m;
+
+      @include media(phone-l) {
+        font-size: $typo-n;
+      }
+    }
+  }
+}

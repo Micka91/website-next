@@ -1,8 +1,8 @@
 .layout {
-  @include media(tablet) {
-    padding: 0 $pad-tab;
-  }
-  @include media(phone) {
-    padding: 0 $pad-phone;
-  }
+  // @include media(tablet-l) {
+  //   padding: 0 $pad-tab;
+  // }
+  // @include media(phone-l) {
+  //   padding: 0 $pad-phone;
+  // }
 }

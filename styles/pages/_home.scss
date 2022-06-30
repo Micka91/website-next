@@ -1,72 +1,116 @@
 .home {
   &__hero {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      min-height: 60vh;
+    }
+
+    @include media(phone-l) {
+      align-items: center;
+      min-height: 100vh;
+    }
   }
+
+  &__banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      flex-direction: column-reverse;
+    }
+  }
+
   &__image {
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    right: 0;
     object-fit: contain;
     max-height: 80rem;
 
     // MEDIA QUERY
-    @include media(tablet) {
-      top: 7rem;
-      right: -2.5rem;
-      max-height: 45rem;
-      transform: translate(0, 0);
+    @include media(tablet-l) {
+      max-height: 40rem;
+      height: auto;
     }
 
-    @include media(phone) {
-      right: -1.5rem;
-      max-height: 30rem;
+    @media only screen and (min-width: #{$desktop}) {
+      // @include media(desktop-n) {
+      max-height: 60rem;
     }
   }
+
   &__container {
-    width: 80rem;
+    // width: 80rem;
 
     // MEDIA QUERY
-    @include media(tablet) {
+    @include media(tablet-l) {
       width: $full;
     }
+
+    @include media(phone-l) {
+      padding: 0rem 1.5rem;
+      text-align: center;
+    }
   }
+
   &__title {
     font-size: $typo-hero;
 
     // MEDIA QUERY
-    @include media(tablet) {
-      width: 70%;
-      font-size: $typo-hero-tablet;
+    @include media(desktop-s) {
+      font-size: $typo-xxl;
     }
 
-    @include media(phone) {
-      width: $full;
+    @include media(tablet-l) {
       font-size: $typo-xl;
     }
+
+    @media only screen and (max-height: $s8) and (max-width: $mobile-s) {
+      font-size: $typo-l;
+    }
+
+    @media only screen and (max-height: $s9) and (max-width: $mobile-s) {
+      font-size: $typo-l;
+    }
   }
+
   &__paragraph {
     margin: 1.5rem 0;
     font-size: $typo-m;
     color: $grey-dark-85;
 
-    @include media(tablet) {
-      width: 55%;
+    @include media(tablet-l) {
       font-size: $typo-n;
     }
 
-    @include media(phone) {
-      width: $full;
+    @include media(phone-l) {
+      font-size: $typo-m;
+    }
+
+    @media only screen and (max-height: $s9) {
+      font-size: $typo-n;
+    }
+
+    @media only screen and (max-height: $s8) {
+      font-size: $typo-n;
     }
   }
+
   &__buttons {
     display: flex;
     gap: 1.5rem;
 
-    @include media(phone) {
+    @include media(phone-l) {
       flex-direction: column;
       padding: 0 5rem;
+    }
+
+    @include media(phone-s) {
+      padding: 0;
     }
   }
 }

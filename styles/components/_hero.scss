@@ -1,31 +1,22 @@
 .hero {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  left: 0;
-  right: 0;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
+  z-index: 1;
+  padding-left: 15rem;
 
   // MEDIA QUERY
-  @include media(tablet) {
-    padding: 1.5rem 0;
-    top: 12rem;
-    transform: translate(0, 0);
+  @include media(desktop) {
+    padding-left: 2rem;
   }
 
-  @include media(phone) {
-    top: 35rem;
+  @include media(tablet-l) {
+    padding-left: 2rem;
+    padding-top: 7rem;
   }
 
-  &__home {
-    &--image {
-      position: absolute;
-      top: 6rem;
-      right: 0;
-      object-fit: contain;
-      max-height: 64rem;
-    }
+  @include media(phone-l) {
+    padding-left: 0rem;
   }
+
+  // @media only screen and (max-height: 750px) {
+  //   padding: 5rem 0;
+  // }
 }

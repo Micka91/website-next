@@ -5,12 +5,15 @@
 @import "./base/reset";
 @import "./base/typography";
 // COMPONENTS
+@import "./components/blueCard";
 @import "./components/button";
 @import "./components/container";
+@import "./components/functionnality";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/partners";
-@import "./components/_simplification";
+@import "./components/recommandations";
+@import "./components/simplification";
 @import "./components/socialMedia";
 // LAYOUT
 @import "./layout/footer";

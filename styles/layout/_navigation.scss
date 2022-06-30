@@ -18,7 +18,7 @@
     transition: none;
 
     // MEDIA QUERY
-    @include media(tablet) {
+    @include media(tablet-l) {
       background-color: $bg-white-std;
     }
   }
@@ -36,14 +36,14 @@
   }
 
   // MEDIA QUERY
-  @include media(tablet) {
+  @include media(tablet-l) {
     padding: 0.5rem $pad-tab;
     justify-content: space-between;
   }
 
   &__link {
     // MEDIA QUERY
-    @include media(tablet) {
+    @include media(tablet-l) {
       width: 50%;
     }
   }
@@ -51,7 +51,7 @@
   &__logo {
     object-fit: contain;
     // MEDIA QUERY
-    @include media(tablet) {
+    @include media(tablet-l) {
       width: 15rem;
     }
   }
@@ -59,7 +59,7 @@
     margin-left: auto;
 
     // MEDIA QUERY
-    @include media(tablet) {
+    @include media(tablet-l) {
       display: none;
     }
   }
@@ -82,7 +82,13 @@
     gap: 1.5rem;
 
     // MEDIA QUERY
-    @include media(tablet) {
+    & button:last-child {
+      @include media(desktop-l) {
+        display: none;
+      }
+    }
+
+    @include media(tablet-l) {
       display: none;
     }
   }
