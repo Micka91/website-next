@@ -1,18 +1,22 @@
-import React from "react";
+/* eslint-disable @next/next/no-img-element */
+// INTERFACE
 import { IAnimation } from "./Functionnality";
+// TRANSLATION
+import { useTranslation } from "next-i18next";
 
 interface IProps {
   animationLeft: IAnimation;
 }
 
 const FunctionnalityLeft = ({ animationLeft }: IProps) => {
-  // Animation du Component BenefitsLeft:
+  // I18NEXT HOOKS
+  const { t } = useTranslation();
+  // STYLE FOR ANIMATION
   const firstAnimLeft = {
     transition: animationLeft.transition,
     opacity: animationLeft.opacity,
     transform: animationLeft.transform,
   };
-
   const secondAnimLeft = {
     transition: animationLeft.transition,
     opacity: animationLeft.opacity,
@@ -32,15 +36,14 @@ const FunctionnalityLeft = ({ animationLeft }: IProps) => {
         <img
           className="functionnalityLeft__icones"
           src="/images/icones/team.svg"
-          alt="logo_work_team"
+          alt={t("home:functionnalityLeft.alt1")}
         />
         <div className="functionnalityLeft__content">
           <h3 className="functionnalityLeft__title">
-            Communication 100% sécurisée
+            {t("home:functionnalityLeft.h3_1")}
           </h3>
           <p className="functionnalityLeft__paragraph">
-            Échangez des informations, photos et vidéos par la messagerie
-            instantanée sécurisée.
+            {t("home:functionnalityLeft.p1")}
           </p>
         </div>
       </div>
@@ -49,13 +52,15 @@ const FunctionnalityLeft = ({ animationLeft }: IProps) => {
         <img
           className="functionnalityLeft__icones"
           src="/images/icones/cloud.svg"
-          alt="logo_ToolBox"
+          alt={t("home:functionnalityLeft.alt2")}
         />
         <div className="functionnalityLeft__content">
-          <h3 className="functionnalityLeft__title">Cloud sécurisé</h3>
+          <h3 className="functionnalityLeft__title">
+            {" "}
+            {t("home:functionnalityLeft.h3_2")}
+          </h3>
           <p className="functionnalityLeft__paragraph">
-            Stockez et partagez des médias et documents et partagez-les avec
-            votre équipe ou d’autres professionnels de santé.
+            {t("home:functionnalityLeft.p2")}
           </p>
         </div>
       </div>
@@ -64,15 +69,14 @@ const FunctionnalityLeft = ({ animationLeft }: IProps) => {
         <img
           className="functionnalityLeft__icones"
           src="/images/icones/form.png"
-          alt="logo_transfer_team"
+          alt={t("home:functionnalityLeft.alt3")}
         />
         <div className="functionnalityLeft__content">
           <h3 className="functionnalityLeft__title">
-            Fiches de transmission numériques
+            {t("home:functionnalityLeft.h3_3")}
           </h3>
           <p className="functionnalityLeft__paragraph">
-            Remplissez des fiches patients préformatées de votre choix pour
-            gagner du temps et éviter de perdre des informations.
+            {t("home:functionnalityLeft.p3")}
           </p>
         </div>
       </div>

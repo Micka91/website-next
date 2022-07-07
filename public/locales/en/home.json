@@ -1,1 +1,53 @@
-{"welcome":"Welcome"}
+{
+  "hero": {
+    "h1": "The secure application dedicated to communication and organisation between caregivers",
+    "p": "Created by healthcare professionals, Team'Doc makes teamwork easier for all healthcare professionals, in hospitals, clinics and offices.",
+    "button": "Read more",
+    "alt1": "Background image teamdoc home",
+    "alt2": "White arrow",
+    "alt3": "Two phones, describing the teamdoc application"
+  },
+  "simplification": {
+    "h2": "Let's simplify the daily lives of caregivers",
+    "p1": "Team'Doc is a collaborative work tool that allows you to exchange patient information in total safety. Communicate in real time with your team, create or join a network of healthcare professionals.",
+    "h3": "Secure Instant Health Messaging",
+    "p2": "Developed as a secure application, Team'Doc integrates everyday tools: Whatsapp® medical secure and Dropbox® for health.",
+    "alt": "Image showing nursing staff"
+  },
+  "functionnalities": {
+    "h2": "The features of the application",
+    "p": "A secure solution with simple and interactive functionalities.",
+    "alt": "Image of a phone showing the teamdoc application"
+  },
+  "functionnalityLeft": {
+    "h3_1": "100% secure communication",
+    "p1": "Exchange information, photos and videos through secure instant messaging.",
+    "alt1": "Communication logo",
+    "h3_2": "Secure Cloud",
+    "p2": "Store and share media and documents with your team or other healthcare professionals.",
+    "alt2": "Secure cloud logo",
+    "h3_3": "Digital transmission sheets",
+    "p3": "Fill out pre-formatted transmission forms of your choice to save time and information.",
+    "alt3": "Transmittal form logo"
+  },
+  "functionnalityRight": {
+    "h3_1": "Network of professionals",
+    "p1": "Exchange with your contacts or with other professionals by creating different networks (my office, my team at the hospital)",
+    "alt1": "Professional network logo",
+    "h3_2": "Right to disconnect",
+    "p2": "Indicate your status (available, busy, unavailable). Easily find available people (on duty, on call, on advice).",
+    "alt2": "Right to disconnect logo",
+    "h3_3": "Planned tasks",
+    "p3": "Ensure the coordination of care or a particular follow-up of a patient by creating your tasks.",
+    "alt3": "Task logo"
+  },
+  "recommandations": {
+    "citation1": "Patient records allow us to have all the information about patients in real time, follow-ups, diagnoses to be made, results of medical examinations... It significantly improves the fluidity of our patients' medical transmissions in Anesthesia and Resuscitation.",
+    "status1": "Physician in the Department of Anesthesia-Resuscitation Department in Beaujon Hospital",
+    "citation2": "The beeps we use are clearly slowing down communication. Team'Doc allows us to create more links between seniors and interns, and between specialties..",
+    "status2": "Physician in the Department of Anesthesia-Resuscitation Department in Beaujon Hospital",
+    "citation3": "Today, everyone does as they wish for medical transmissions, some write everything down on a piece of paper, others only note down the tasks to be carried out. The result is that a lot of time is spent repeating information and some is sometimes forgotten..",
+    "status3": "Physician in the Department of Anesthesia-Resuscitation Department in Beaujon Hospital",
+    "alt": "Photo de {{name}}"
+  }
+}

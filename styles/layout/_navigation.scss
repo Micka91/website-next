@@ -1,12 +1,10 @@
 .navigation {
-  width: $full;
-  padding: 0 2.4rem;
-  display: flex;
-  align-items: center;
-
-  z-index: 100;
+  @include flexAlignCenter;
   position: absolute;
+  width: $full;
   background-color: transparent;
+  padding: 0 2.4rem;
+  z-index: 100;
 
   &.sticky {
     box-shadow: 0 0.2rem 1.2rem 0 $shadowNav;
@@ -74,11 +72,14 @@
     a.active {
       color: $secondary-std;
     }
+
+    &--lang {
+      cursor: pointer;
+    }
   }
   &__buttons {
+    @include flexAlignCenter;
     padding-left: 1.5rem;
-    display: flex;
-    align-items: center;
     gap: 1.5rem;
 
     // MEDIA QUERY

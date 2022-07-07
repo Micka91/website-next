@@ -1,0 +1,73 @@
+.blueCardSupport {
+  width: 97.6rem;
+  margin: 12.5rem auto 14rem auto;
+  height: 24.4rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1.2rem 0 $grey-medium-20;
+  background-image: $gradient;
+
+  @include flexCenterAround;
+
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    width: 95%;
+    padding: 0 2rem;
+  }
+
+  @include media(phone-l) {
+    margin: 5.5rem auto 7rem auto;
+    height: 19rem;
+  }
+
+  &__image {
+    width: 24.4rem;
+    object-fit: contain;
+
+    @include media(phone-l) {
+      display: none;
+    }
+  }
+
+  &__text {
+    width: 46.4rem;
+    padding: 8rem 0;
+
+    h2 {
+      color: $white-std;
+      margin-bottom: 0.5rem;
+
+      @include media(phone-l) {
+        font-size: 2.3rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    p {
+      font-size: $typo-n;
+      font-weight: $f5;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: $grey-light-std;
+
+      @include media(phone-l) {
+        font-size: $typo-s;
+        text-align: center;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: underline;
+
+    a {
+      color: $white-std;
+      &:hover {
+        color: $secondary-std;
+      }
+    }
+  }
+}

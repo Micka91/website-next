@@ -1,0 +1,18 @@
+export const namespaces = [
+  "cgu",
+  "cgv",
+  "common",
+  "contact",
+  "cookies",
+  "footer",
+  "home",
+  "joinUs",
+  "legalsmentions",
+  "navigation",
+  "partners",
+  "privacy",
+  "security",
+  "seo",
+  "solution",
+  "support",
+];

@@ -1,0 +1,175 @@
+.otherTools {
+  width: 100%;
+  max-width: 100%;
+  padding-top: 15rem;
+  padding-bottom: 12rem;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 41;
+  background-image: url("/images/solutions/bluewave.png");
+
+  // OTHERKEYS
+  &__otherKeys {
+    width: $full;
+    box-shadow: 0 2px 8px 0 rgb(38 50 56 / 40%);
+    border-radius: 0.8rem;
+    background-color: $white-std;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 80;
+    padding: 6rem 8rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 95%;
+      padding: 2rem;
+    }
+
+    // @include media(phone-l) {
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
+  }
+
+  &__otherKeysTitle {
+    width: 100%;
+    margin-bottom: 6rem;
+    text-align: center;
+    color: $grey-dark-85;
+    font-weight: $f5;
+    font-size: $typo-xl;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      margin-bottom: 4rem;
+    }
+
+    @include media(phone-l) {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__otherKeysContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  &__otherKeysCardContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    > div {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+
+      // MEDIA QUERY
+      @include media(tablet-l) {
+        gap: 0.5rem;
+      }
+    }
+
+    img {
+      height: auto;
+
+      // MEDIA QUERY
+      @include media(tablet-l) {
+        width: 3rem;
+      }
+    }
+  }
+
+  &__otherKeysCard {
+    max-width: 25rem;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      max-width: 30rem;
+    }
+
+    h3 {
+      padding-top: 0.5rem;
+      font-size: $typo-m;
+      font-weight: $f5;
+      line-height: 2.4rem;
+      color: $grey-dark-std;
+
+      // MEDIA QUERY
+      @include media(tablet-l) {
+        font-size: 1.7rem;
+      }
+    }
+
+    p {
+      padding-top: 1.2rem;
+      font-size: $typo-n;
+      line-height: 1.29;
+      color: $grey-dark-85;
+    }
+  }
+
+  // SECURETOOL
+  &__secureTool {
+    margin-top: 8rem;
+    color: $white-std;
+  }
+
+  &__secureToolTitle {
+    margin-bottom: 6rem;
+    text-align: center;
+    font-weight: $f5;
+    font-size: $typo-xl;
+  }
+
+  &__secureToolContainer {
+    display: flex;
+    gap: 2rem;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+  }
+
+  &__secureToolImage {
+    flex: 0.5;
+    text-align: center;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__secureToolContent {
+    flex: 0.4;
+
+    h3 {
+      margin-top: 2.5rem;
+      font-size: $typo-l;
+      font-weight: 500;
+      line-height: 1.33;
+      letter-spacing: 1px;
+      padding-bottom: 1rem;
+    }
+
+    p {
+      padding-bottom: 1rem;
+      line-height: 1.38;
+    }
+  }
+}

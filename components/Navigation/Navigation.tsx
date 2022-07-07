@@ -1,28 +1,24 @@
 /* eslint-disable @next/next/no-img-element */
-
+// REACT
 import { useState, useEffect } from "react";
+// NEXT
 import { useRouter } from "next/router";
-import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/images/logo/teamdoc.png";
+// UTILS
 import { PATHS } from "../../enums/paths";
+// COMPONENTS
 import Button from "./../Button/Button";
-
-const ROUTES = [
-  { path: "Solution", key: PATHS.SOLUTION },
-  { path: "Notre équipe", key: PATHS.TEAM },
-  { path: "Offres", key: PATHS.OFFERS },
-  { path: "Presse", key: PATHS.PRESS },
-  { path: "Contact", key: PATHS.CONTACT },
-  { path: "Nous rejoindre", key: PATHS.JOIN_US },
-];
+// TRANSLATION
+import { useTranslation } from "next-i18next";
 
 const Navigation = () => {
   // NEXT HOOK
   const router = useRouter();
+  // i18NEXT HOOK
+  const { t } = useTranslation();
   // STATE
   const [visible, setVisible] = useState<boolean>(false);
-  const [prevScrollpos, setPrevScrollpos] = useState<number>(0);
+  const [currentLocale, setCurrentLocale] = useState(router.locale);
   const navstyle = visible ? ["navigation", "sticky"].join(" ") : "navigation";
 
   const handleScroll = (): void => {
@@ -32,16 +28,31 @@ const Navigation = () => {
     } else {
       setVisible(false);
     }
-    setPrevScrollpos(currentScrollPos);
+  };
+
+  const handleLocaleChange = () => {
+    const lang = currentLocale === "fr" ? "en" : "fr";
+    router.push(router.route, router.asPath, {
+      locale: lang,
+    });
+    setCurrentLocale(lang);
   };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const ROUTES = [
+    { path: t("navigation:solution"), key: PATHS.SOLUTION },
+    { path: t("navigation:team"), key: PATHS.TEAM },
+    { path: t("navigation:offers"), key: PATHS.OFFERS },
+    { path: t("navigation:press"), key: PATHS.PRESS },
+    { path: t("navigation:contact"), key: PATHS.CONTACT },
+    { path: t("navigation:joinUs"), key: PATHS.JOIN_US },
+  ];
 
   return (
     <header className={navstyle}>
@@ -69,15 +80,18 @@ const Navigation = () => {
             </li>
           ))}
 
-          <li className="navigation__item">
-            {/* SWITCHLANG */}
-            EN
+          {/* SWITCHLANG */}
+          <li
+            className="navigation__item navigation__item--lang"
+            onClick={handleLocaleChange}
+          >
+            {currentLocale === "fr" ? "en" : "fr"}
           </li>
         </ul>
       </nav>
       {/* Buttons */}
       <div className="navigation__buttons">
-        <Button className="button__demo">RESERVER UNE DEMO</Button>
+        <Button className="button__demo">{t("navigation:book")}</Button>
         <Button className="button__gradient">{`TEAM'DOC WEB`}</Button>
       </div>
     </header>

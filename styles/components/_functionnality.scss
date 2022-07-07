@@ -42,9 +42,7 @@
   }
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenterBetween;
     overflow: hidden;
 
     @include media(phone-l) {
@@ -63,7 +61,7 @@
     }
 
     @include media(phone-l) {
-      width: 22rem;
+      width: 20rem;
     }
   }
 }

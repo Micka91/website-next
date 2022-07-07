@@ -1,14 +1,13 @@
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  &__home {
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    max-height: $full;
-    height: auto;
+  &__home,
+  &__solutions,
+  &__privacy,
+  &__legalsMentions,
+  &__cgu,
+  &__cookies,
+  &__security,
+  &__support,
+  &__cgv {
+    @include backgroundHeader;
   }
 }

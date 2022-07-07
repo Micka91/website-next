@@ -1,0 +1,156 @@
+{
+  "header": "Terms of Use",
+  "article1": {
+    "title": "Article 1. Preamble",
+    "texte1": "TEAM’DOC is a simplified joint-stock company (SAS) with a share capital of € 182,700, registered with the Paris Registry of Companies under the number 823 684 063, headquartered at 22 rue Drouot, 75009 Paris, represented by Michel ROZENCWAJG, as its President.",
+    "textestrong": {
+      "texte1": "Phone number: ",
+      "texte2": "Email address: "
+    },
+    "texte2": "+33 1 42 46 42 67",
+    "texte3": "TEAM’DOC developed an I.T. platform (hereafter referred to as the “SOFTWARE”) for healthcare professionals, enabling the secure transmission of data between users and facilitating the standardisation of hospital admissions.",
+    "texte4": "The SOFTWARE offered by the company TEAM’DOC is a standard product developed to meet the needs of the greatest number of USERS. For this purpose, TEAM’DOC has entered into a contract with the health facility (hereafter referred to as the “CLIENT”) in which the USER practices their profession or with which the USER has formed a partnership. It is nonetheless incumbent upon the USER to ensure the SOFTWARE is suitable for their purposes."
+  },
+  "article2": {
+    "title": "Article 2. Definitions",
+    "texte1": "The implementation of this agreement requires that the following terms be understood in the meaning set out below:",
+    "texte2": "« CONTRACT » ou « ToU » refers to this agreement, under which TEAM’DOC gives the USER the right to use the SOFTWARE and makes the EQUIPMENT available.",
+    "texte3": "« SOFTWARE » refers to the software Team’Doc provided by TEAM’DOC to the USER.",
+    "texte4": "« PARTY » ou « PARTIES » refers, individually or collectively, to TEAM’DOC and the USER.",
+    "texte5": "« TEAM’DOC » refers to the USER’s contractual partner: the company Team’Doc.",
+    "texte6": "« USER » refers to the natural person, of legal age and capacity, practicing a regulated healthcare profession as defined by the French Public Health Code (doctors, dental surgeons, midwives, chemists) or a regulated profession of a paramedical or social nature (healthcare assistant, paramedic, childcare assistant, healthcare manager, chiropractor, dietician, occupational therapist, nurse, nurse anesthetist, surgical nurse, radiological technician, physiotherapist, optician, speech therapist, osteopath, chiropodist, podiatrist, pedorthist, pharmacy technician, dental technician, psychologist, rehabilitation therapist, childcare worker, biomedical lab technician, social worker). Students and retirees of the above mentioned professions are also included in this definition."
+  },
+  "article3": {
+    "title": "Article 3. Acceptance of terms",
+    "texte1": "3.1. The USER is deemed to have familiarised themselves with these ToU and to have accepted them unconditionally.",
+    "texte2": "3.2. By creating a USER profile on the SOFTWARE, the USER fully accepts these ToU, and declares having familiarised themselves with the ToU in their entirety and expressly gives their informed consent to comply with same.",
+    "texte3": "3.3. Electronic acceptance of these ToU holds the same evidential value between the PARTIES as a written agreement."
+  },
+  "article4": {
+    "title": "Article 4. Aim",
+    "texte1": "4.1. The purpose of these GCU is to define the terms and conditions under which the USER may use the SOFTWARE and EQUIPMENT provided by TEAM’DOC.",
+    "texte2": "4.2. By using the SOFTWARE, the USER accepts and expressly acknowledges that he has understood, agrees to abide by and is legally bound by these TOS. ."
+  },
+  "article5": {
+    "title": "Article 5. Registration and USER profile creation",
+    "texte1": "5.1. USER registration on the SOFTWARE is subject to CLIENT approval of an authentication form, in which all of the information necessary to identify the USER will be requested.",
+    "texte2": "5.2. Validation of this authentication form leads to the creation of a USER profile (henceforth referred to as “the PROFILE”), that will allow the USER to log in and use the SOFTWARE and the EQUIPMENT.",
+    "texte3": "5.3. Finalising the registration process will prompt the USER to set a password when they first log in, which will grant them future use of the SOFTWARE."
+  },
+  "article6": {
+    "title": "Article 6. Granting rights of use of the SOFTWARE",
+    "texte1": "6.1. The SOFTWARE is the property of TEAM’DOC. All rights, and in particular intellectual property rights, concerning the SOFTWARE, associated documentation or copies belong to TEAM’DOC or, where appropriate, to the SOFTWARE AUTHOR (henceforth the “AUTHOR”). Consequently, in accordance with these ToU, the USER only acquires the non-exclusive, non-assignable, non-transferable right to use the SOFTWARE from TEAM’DOC.",
+    "texte2": "6.2. The USER acknowledges and accepts that the extent of the rights of use granted for the SOFTWARE under the CONTRACT constitutes the non-exclusive, non-transferable and indivisible rights of use. For this reason, the USER is prohibited from making the SOFTWARE, associated documentation or EQUIPMENT available, directly or indirectly, to a third party under any circumstances, whether in return for payment or free of charge.",
+    "texte3": "6.3. Confidentiality - no copying : ",
+    "texteli1": " The USER is prohibited from copying the SOFTWARE or associated documentation in any form, subject to any legal exceptions as set out under the French Intellectual Property Code",
+    "texteli2": "6.3.2. The USER undertakes to keep the content of the SOFTWARE and associated documentation confidential and is prohibited from transferring, publishing, showing, divulging or making available in any way the SOFTWARE or its associated documentation to a third party.",
+    "texteli3": "6.3.3. The USER is prohibited from translating, modifying, changing the order, undoing, disassembling or creating derivative works from the SOFTWARE, or part of the SOFTWARE, and prohibited from allowing a third party to do so except (in the case of software used to develop a software application) in the context of use of the SOFTWARE in accordance with its documentation.",
+    "textestrong": {
+      "texte1": "6.4. ",
+      "texte2": "Technical protection measures of the SOFTWARE:",
+      "texte3": "TEAM’DOC reserves the right to integrate a security device into the SOFTWARE to monitor its use and verify that the USER is adhering to the terms set out in the ToU. Such a device records data concerning the use of the SOFTWARE and the number of copies made. TEAM’DOC reserves the right to use a locking system and/or a license authorisation key to monitor access to the SOFTWARE. The USER is not authorised to attempt to avoid or thwart such measures. It is prohibited to use the SOFTWARE without the locking system or the license authorisation key. The USER authorises TEAM’DOC to monitor at any time and without prior notice, the recording of the security mechanism put in place to monitor the rates of use of the SOFTWARE. In order to determine proper use, the USER authorises TEAM’DOC to collect any relevant information by way of use of tracking tools or security mechanisms integrated into the SOFTWARE."
+    }
+  },
+  "article7": {
+    "title": "Article 7. Delivery, installation and guarantee",
+    "texte1": "7.1. The SOFTWARE conformity guarantee is explicitly limited to its conformity with the documentation and does not extend to the specific needs of the USER, regarding local standards, usage or regulations. TEAM’DOC does not guarantee that the SOFTWARE is free from defects but undertakes to rectify, with reasonable prudence, any SOFTWARE abnormalities in relation to its documentation.",
+    "texte2": "7.2. TEAM’DOC does not guarantee the capacity of the SOFTWARE to meet aims established by the USER or the execution of specific tasks that may have motivated the USER’s to decide to use the SOFTWARE."
+  },
+  "article8": {
+    "title": "Article 8. Contract duration",
+    "texte1": "These ToU are intended for an unspecified duration and may be terminated at any time in accordance with the conditions set out under article 9 of this document."
+  },
+  "article9": {
+    "title": "Article 9. Termination",
+    "textestrong": {
+      "texte1": "9.1. ",
+      "texte2": "Termination by the USER"
+    },
+    "texteli1": "9.1.1. The USER is entitled to terminate the CONTRACT at any time by simply unsubscribing or deactivating their PROFILE or requesting that CLIENT do so on their behalf. Terminating the CONTRACT will result in the USER losing access to the SOFTWARE.",
+    "textestrong2": {
+      "texte1": "9.2. ",
+      "texte2": "Suspension/Termination by TEAM’DOC"
+    },
+    "texteli2": "9.2.1. TEAM’DOC reserves the right to suspend access to the SOFTWARE without compensation, if needs be, without prior notice depending on the seriousness of the breach of contract, if the USER fails to adhere to the rules set out in this document, and notably in the event of any of the following:",
+    "texteli3": "Any form of piracy or attempt to make illicit use of information from the SOFTWARE having as its origin the USER’s account;",
+    "texteli4": "Any form of piracy or attempted piracy of the SOFTWARE resulting from connection to the USER’S PROFILE;",
+    "texteli5": "Any use of the SOFTWARE that harms third parties, or is contrary to public decency or public order.",
+    "texteli6": "9.2.2. Once access to the SOFTWARE is suspected and formal notice has been sent to the USER without response within fifteen (15) days, TEAM’DOC has the right to definitively withdraw the USER’s access to the SOFTWARE without compensation unless the reason for the suspension is rectified within the 15 days or if TEAM’DOC grants the USER an extension to fulfil their obligations.",
+    "texteli7": "9.2.3. Moreover, TEAM’DOC reserves the right to terminate the contract with the CLIENT, in accordance with the terms and subject to said contract. Such a termination will result in the automatic and concurrent termination of this CONTRACT with the USER."
+  },
+  "article10": {
+    "title": "Article 10. USER obligations",
+    "texte1": "10.1. For the fulfilment of the Contrat, the USER:",
+    "texteli1": "Certifies their use of I.T. equipment that is in good working order and that meets TEAM’DOC’s minimum computer system requirements, in the event that the USER is not using the EQUIPMENT to access the SOFTWARE.",
+    "texteli2": "Undertakes to install the most recent update made available by TEAM’DOC on reception of same and to use only the latest version of the SOFTWARE.",
+    "texteli3": "Undertakes to inform TEAM’DOC, without undue delay, of any change of professional or personal contact details. The USER is solely responsible for any consequences due to a delay in providing this information.",
+    "texte2": "10.2. The USER is prohibited from disclosing any content contrary to public order or public decency, third party interests, the guidelines of their profession or applicable laws and regulations.",
+    "texte3": "10.3. Furthermore, the USER must observe the rules of courtesy and decorum with respect to other USERS, in any exchanges and interactions that they may have with them. The USER must strictly respect normal standards of politeness.",
+    "texte4": "10.4. The USER must not engage in any conduct that might facilitate any breach or hacking of the SOFTWARE system, or an attack on the proper running of the SOFTWARE by way of a virus, Trojan horse or any other computerised device that might impair its proper functioning.",
+    "texte5": "10.5. The USER must not engage in the attempt of any form of piracy or any misuse or unintended use of the features available to them through the SOFTWARE for any purpose other than that for which it is intended or any use deviating from normal use of the SOFTWARE.",
+    "texte6": "10.6. The USER must keep their login details (identification and password) confidential and not disclose them to anyone who might log in to the SOFTWARE on their behalf, be in with or without their permission. The USER bears sole responsibility for any unauthorised third party logging in using their login details, which are strictly confidential.",
+    "texte7": "10.7. The USER must immediately report any loss or breach of their login information to TEAM’DOC."
+  },
+  "article11": {
+    "title": "Article 11. Equipment and HARDWARE",
+    "texte1": "11.1. TEAM'DOC shall under no circumstances be held liable vis-à-vis the USER or any third party for any damage, direct or indirect, loss of profits or loss of earnings that may arise in connection with the use of the SOFTWARE. ",
+    "texte2": "11.2. In particular, TEAM'DOC shall not be held liable in the following cases, without this being an exhaustive list: ",
+    "texteli1": "Interruption of service for technical maintenance of the SOFTWARE ;",
+    "texteli2": "Interruption of networks, delays or delays in the routing of electronic messages or any other data ;",
+    "texteli3": "Hardware or Software Failures ;",
+    "texteli4": "Malicious acts, data theft, computer viruses, inadequate protection and backup measures ;",
+    "texteli5": "Handling errors, misuse of the SOFTWARE ;",
+    "texteli6": "Resulting loss of data, business interruption or other loss of a pecuniary nature ;",
+    "texteli7": "Misappropriated or malicious use of data collected through the use of the SOFTWARE;",
+    "texteli8": "All cases of force majeure, unforeseeable events or any other causes that do not depend on the deliberate will of TEAM'DOC.",
+    "texte3": "11.3. In addition, the SOFTWARE provides the USER with various checklists for medical diagnosis and prescription, with the aim of homogenizing the methods of patient management. Although TEAM'DOC scrupulously ensures that the content of the SOFTWARE is correct, the information provided may be incomplete or contain errors. No assurance or warranty, express or implied, can be given by TEAM'DOC as to the accuracy and reliability of the information or data in the SOFTWARE. Use of the SOFTWARE is at the USER's own risk. TEAM'DOC shall not be held liable if the USER commits or refrains from committing any action as a result of its use of the SOFTWARE. The USER shall systematically check the relevance of the information provided by the SOFTWARE and shall remain solely responsible for his decisions. ",
+    "texte4": "11.4. TEAM'DOC shall incur no liability in the event of misuse of the SOFTWARE, lack of maintenance of the SOFTWARE, incorrect use of the SOFTWARE, or use of a non-conventional system. ",
+    "texte5": "11.5. TEAM'DOC's obligations under this CONTRACT are obligations of means and in no way obligations of result. "
+  },
+  "article12": {
+    "title": "Article 12. USER data - Personal data",
+    "texte1": "12.1. The USER must take all the necessary measures to protect its information system and in particular with regard to protection against viruses, worms and other hostile intrusion processes.",
+    "texte2": "12.2. Any operations to restore or reconstitute lost or damaged data, programs or files are not covered by this CONTRACT.",
+    "texte3": "12.3.  USERS' PERSONAL DATA - TEAM'DOC collects and processes Personal Data (the term 'Personal Data' being understood in accordance with the French Data Protection Act of 6 January 1978 and the General Data Protection Regulations (known as the 'RGPD') of 27 April 2016) from USERS for the operation of the SOFTWARE, in particular for the creation of the USER'S PROFILE, the maintenance of the SOFTWARE and for security purposes.",
+    "texte4": "As data controller, TEAM'DOC shall only collect and use the Personal Data necessary for the performance of the CONTRACT and for which TEAM'DOC has a legal basis. The legal bases include the USER's consent, the contract (where the processing of the data is necessary for the performance of the contract concluded between TEAM'DOC and the USER to enable the USER to use the SOFTWARE) and TEAM'DOC's 'legitimate interests'.",
+    "texte5": "USERS' Personal Data will not be disclosed to third parties and will be kept under the conditions and for the duration strictly necessary for the purposes set out in ",
+    "privacy": "the privacy Policy.",
+    "texte6": "Data subjects have rights, as set out in the privacy Policy, and may exercise their rights by sending an e-mail to the following address, ",
+    "texte6bis": " indicating their surname, first name and address.",
+    "texte7": "12.4. Data provided by USERS - In the course of using the SOFTWARE, USERS may provide Personal Data about third parties, in particular patient information. ",
+    "texte8": "In this case, TEAM'DOC shall carry out Personal Data processing operations on behalf of the USERS and their establishment, where applicable, as a subcontractor.",
+    "texte9": "Les obligations des PARTIES concernant ce traitement sont définies dans les Conditions Générales de Vente.",
+    "texte10": "12.5. Deletion of data - The USER is warned that the data contained in his PROFILE will be deleted in the event of complete inactivity of his PROFILE, characterized by a total absence of connection for an uninterrupted period of one year. ",
+    "texte10strong": " Thirty (30) days",
+    "texte10bis": " before the definitive deletion of his PROFILE, the USER will receive a notification informing him that his PROFILE is considered inactive and the consequences of this inactivity.",
+    "texte11": "The USER is also warned that the data he provides on third parties in the context of the use of the SOFTWARE will be deleted in the event of complete inactivity of the profile associated with the third party, characterized by the total absence of activity on this profile for an uninterrupted period of one year."
+  },
+  "article13": {
+    "title": "Article 13. Intellectual Property",
+    "texte1": "13.1. TEAM'DOC shall retain, as the holder of the rights, the entire intellectual property of the SOFTWARE, as well as all the prerogatives attached thereto.",
+    "texte2": "13.2. The USER shall not acquire any intellectual property rights, nor any other rights other than those conferred by this AGREEMENT.",
+    "texte3": "13.3 By accepting the present conditions of use of the SOFTWARE, the USER shall refrain from infringing the legitimate interests of TEAM'DOC. The USER shall refrain from any type of use not explicitly provided for by the Intellectual Property Code for the benefit of the user or not expressly authorised by this CONTRACT, and in particular :",
+    "texteli1": "To use the SOFTWARE or to make backup copies of the SOFTWARE outside the terms and conditions of this AGREEMENT;",
+    "texteli2": "Correct any errors or anomalies in the SOFTWARE itself or have them corrected by a third party without the prior written consent of TEAM'DOC;",
+    "texteli3": "To lend or make available the SOFTWARE by any means, including via the Internet;",
+    "texteli4": "To proceed with the remote transmission of the SOFTWARE or its distribution, its networking and in particular on the Internet and in any other form;",
+    "texteli5": "Decompile the SOFTWARE, including for interoperability purposes or in particular for the purpose of creating a work derived from or competing with the SOFTWARE;",
+    "texteli6": "To translate, adapt, arrange, modify the SOFTWARE.",
+    "texte4": "13.4. This AGREEMENT does not give the USER the right to access the source codes of the SOFTWARE.",
+    "texte5": "13.5. Any act by the USER contrary to the foregoing provisions shall constitute an infringement and justify legal proceedings."
+  },
+  "article14": {
+    "title": "Article 14. Confidentiality",
+    "texte1": "14.1. The USER undertakes to treat as confidential during the period of acceptance of this Agreement and without limitation after its termination, all information, in particular commercial, financial, technical, strategic, personal, nominative or other information relating to TEAM'DOC and obtained in the context of the CONTRACT.",
+    "texte2": "14.2. Each PARTY undertakes to obtain the same confidentiality undertakings from its personnel and employees who may have knowledge of them or who may become aware of them in the course of their duties."
+  },
+  "article15": {
+    "title": "Article 15. Miscellaneous provisions",
+    "texte1": "15.1. TEAM'DOC reserves the right to modify the content of these GCU at any time, an updated copy of which shall then be immediately brought to the USER's attention prior to its entry into force.",
+    "texte2": "15.2. The USER shall be invited to read the content of the modified T&Cs and to expressly accept them before resuming normal use of the service offered by TEAM'DOC. Any failure to accept the content of the modified GCU submitted for the USER's approval shall result in the suspension of the USER's PROFILE until validation of the modified GCU."
+  },
+  "article16": {
+    "title": "Article 16. Law and Jurisdiction",
+    "texte1": "THIS CONTRACT IS SUBJECT TO FRENCH LAW BOTH FOR THE RULES OF FORM AND FOR THE RULES OF SUBSTANCE. IN THE EVENT OF A DISPUTE, EXPRESS JURISDICTION IS ATTRIBUTED TO THE COURTS OF THE JURISDICTION OF PARIS NOTWITHSTANDING PLURALITY OF DEFENDANTS OR APPEAL IN WARRANTY."
+  }
+}

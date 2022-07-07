@@ -1,0 +1,143 @@
+.support {
+  @include flexAlignBaseline;
+
+  padding-bottom: 14rem;
+  gap: 3rem;
+
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    padding: 0 2rem;
+  }
+
+  @include media(phone-l) {
+    padding: 0;
+  }
+
+  &__header {
+    @include flexAlignCenter;
+
+    text-align: center;
+    position: relative;
+    min-height: 50vh;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      min-height: 40vh;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      font-size: $typo-xl;
+    }
+  }
+
+  &__searchContainer {
+    position: absolute;
+    margin-bottom: 10rem;
+    width: 100%;
+    height: 8rem;
+    box-shadow: 0 0 1.2rem 0 $grey-medium-20;
+    background-image: $gradient;
+
+    @include flexCenter;
+  }
+
+  &__inputContainer {
+    position: relative;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+
+  &__input {
+    width: 65rem;
+    height: 4rem;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 1.2rem 0 $cool-blue-30;
+    background-color: $white-std;
+    padding: 0.9rem 1.2rem;
+
+    @include media(phone-l) {
+      width: $full;
+    }
+
+    &::placeholder {
+      width: 55rem;
+      height: 2.2rem;
+      font-weight: $f5;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+      color: $grey-medium-std;
+
+      @include media(phone-l) {
+        width: 90%;
+      }
+    }
+  }
+
+  &__pdfContainer {
+    padding: 1.6rem 0;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      padding: 1.6rem 1rem;
+    }
+  }
+
+  &__pdfLink {
+    @include flexJustifyBetween;
+
+    width: 65rem;
+    height: 6.4rem;
+    margin: 0 auto 1.6rem auto;
+    padding: 2rem 2.4rem;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 1.2rem 0 $grey-medium-70;
+    background-color: $white-std;
+    text-decoration: none;
+
+    @include media(phone-l) {
+      width: $full;
+      padding: 1.5rem;
+      align-items: center;
+    }
+
+    h2 {
+      font-size: $typo-m;
+      line-height: 1.33;
+      color: $grey-dark-std;
+      font-weight: $f5;
+
+      // MEDIA QUERY
+      @include media(phone-l) {
+        font-size: 1.3rem;
+        width: 90%;
+      }
+    }
+
+    &:hover {
+      .support__pdfLogo {
+        background-image: url("/images/icones/download-blue.svg");
+        width: 2rem;
+        height: 2rem;
+        object-fit: contain;
+      }
+    }
+  }
+
+  &__pdfLogo {
+    background-image: url("/images/icones/download.svg");
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+  }
+}

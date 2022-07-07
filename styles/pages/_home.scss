@@ -2,29 +2,17 @@
   &__hero {
     position: relative;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
 
     // MEDIA QUERY
-    @include media(tablet-l) {
-      min-height: 60vh;
-    }
-
-    @include media(phone-l) {
-      align-items: center;
-      min-height: 100vh;
-    }
+    @include mediaQueryHeader;
   }
 
   &__banner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenterBetween;
 
     // MEDIA QUERY
-    @include media(phone-l) {
-      flex-direction: column-reverse;
-    }
+    @include mediaQueryHeaderBanner;
   }
 
   &__image {
@@ -32,50 +20,19 @@
     max-height: 80rem;
 
     // MEDIA QUERY
-    @include media(tablet-l) {
-      max-height: 40rem;
-      height: auto;
-    }
-
-    @media only screen and (min-width: #{$desktop}) {
-      // @include media(desktop-n) {
-      max-height: 60rem;
-    }
+    @include mediaQueryHeaderImage;
   }
 
   &__container {
-    // width: 80rem;
-
     // MEDIA QUERY
-    @include media(tablet-l) {
-      width: $full;
-    }
-
-    @include media(phone-l) {
-      padding: 0rem 1.5rem;
-      text-align: center;
-    }
+    @include mediaQueryHeaderContainer;
   }
 
   &__title {
     font-size: $typo-hero;
 
     // MEDIA QUERY
-    @include media(desktop-s) {
-      font-size: $typo-xxl;
-    }
-
-    @include media(tablet-l) {
-      font-size: $typo-xl;
-    }
-
-    @media only screen and (max-height: $s8) and (max-width: $mobile-s) {
-      font-size: $typo-l;
-    }
-
-    @media only screen and (max-height: $s9) and (max-width: $mobile-s) {
-      font-size: $typo-l;
-    }
+    @include mediaQueryHeaderTitle;
   }
 
   &__paragraph {
@@ -83,34 +40,15 @@
     font-size: $typo-m;
     color: $grey-dark-85;
 
-    @include media(tablet-l) {
-      font-size: $typo-n;
-    }
-
-    @include media(phone-l) {
-      font-size: $typo-m;
-    }
-
-    @media only screen and (max-height: $s9) {
-      font-size: $typo-n;
-    }
-
-    @media only screen and (max-height: $s8) {
-      font-size: $typo-n;
-    }
+    // MEDIA QUERY
+    @include mediaQueryHeaderParagraph;
   }
 
   &__buttons {
     display: flex;
     gap: 1.5rem;
 
-    @include media(phone-l) {
-      flex-direction: column;
-      padding: 0 5rem;
-    }
-
-    @include media(phone-s) {
-      padding: 0;
-    }
+    // MEDIA QUERY
+    @include mediaQueryHeaderButtons;
   }
 }

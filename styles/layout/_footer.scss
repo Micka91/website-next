@@ -52,8 +52,7 @@
 
   &__adressContainer,
   &__mailContainer {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     gap: 0.5rem;
   }
 
@@ -72,17 +71,14 @@
   }
 
   &__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flexCenterBetween;
+
     gap: 0.5rem;
     margin-top: 1rem;
   }
 
   &__copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     height: 3.2rem;
     background-color: $grey-light-55;
     margin-top: 2rem;

@@ -1,3 +1,4 @@
+// MEDIA QUERY
 @mixin media($size) {
   @if $size == phone-s {
     @media only screen and #{$responsiveMobileSmall} {
@@ -44,4 +45,199 @@
       @content;
     }
   }
+}
+
+// COMMON
+
+// FLEXBOX
+@mixin flexAlignCenter {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexAlignBetween {
+  display: flex;
+  align-items: space-between;
+}
+
+@mixin flexJustifyCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flexJustifyBetween {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexAlignBaseline {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+@mixin flexCenterBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flexCenterAround {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin flexColumnAlignCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@mixin flexColumnReverseAlignCenter {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+@mixin flexColumnCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin flexColumnCenterBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@mixin flexColumnReverseCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+@mixin flexColumnReverseCenterBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
+// HEADER
+@mixin mediaQueryHeader {
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    min-height: 60vh;
+  }
+
+  @include media(phone-l) {
+    align-items: center;
+    min-height: 100vh;
+  }
+}
+
+@mixin mediaQueryHeaderBanner {
+  // MEDIA QUERY
+  @include media(phone-l) {
+    flex-direction: column-reverse;
+  }
+}
+
+@mixin mediaQueryHeaderImage {
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    max-height: 40rem;
+    margin-right: -4.5rem;
+    height: auto;
+  }
+
+  @include media(phone) {
+    margin-right: 0;
+  }
+
+  @media only screen and (min-width: #{$desktop}) {
+    max-height: 60rem;
+  }
+}
+
+@mixin mediaQueryHeaderContainer {
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    width: $full;
+  }
+
+  @include media(phone-l) {
+    padding: 0rem 1.5rem;
+    text-align: center;
+  }
+}
+
+@mixin mediaQueryHeaderTitle {
+  // MEDIA QUERY
+  @include media(desktop-s) {
+    font-size: $typo-xxl;
+  }
+
+  @include media(tablet-l) {
+    font-size: $typo-xl;
+  }
+
+  // @media only screen and (max-height: $s8) and (max-width: $mobile-s) {
+  //   font-size: $typo-l;
+  // }
+
+  // @media only screen and (max-height: $s9) and (max-width: $mobile-s) {
+  //   font-size: $typo-l;
+  // }
+}
+
+@mixin mediaQueryHeaderParagraph {
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    font-size: $typo-n;
+  }
+
+  @include media(phone-l) {
+    font-size: $typo-m;
+  }
+
+  @media only screen and (max-height: $s9) {
+    font-size: $typo-n;
+  }
+
+  @media only screen and (max-height: $s8) {
+    font-size: $typo-n;
+  }
+}
+
+@mixin mediaQueryHeaderButtons {
+  // MEDIA QUERY
+  @include media(phone-l) {
+    flex-direction: column;
+    padding: 0 5rem;
+  }
+
+  @include media(phone-s) {
+    padding: 0;
+  }
+}
+
+@mixin backgroundHeader {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  max-height: $full;
+  height: auto;
 }

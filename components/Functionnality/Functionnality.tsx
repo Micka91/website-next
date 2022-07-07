@@ -1,7 +1,13 @@
+/* eslint-disable @next/next/no-img-element */
+
+// REACT
 import { useState, useEffect, useRef, useCallback } from "react";
+// COMPONENTS
 import FunctionnalityLeft from "./FunctionnalityLeft";
 import FunctionnalityRight from "./FunctionnalityRight";
 import Container from "./../Container/Container";
+// TRANSLATION
+import { useTranslation } from "next-i18next";
 
 export interface IAnimation {
   transition: string;
@@ -9,6 +15,7 @@ export interface IAnimation {
   transform: string;
 }
 
+// INITIAL CSS VALUE
 const initialLeftAnimation = {
   transition: "all 0.5s ease-out",
   opacity: "0",
@@ -30,17 +37,19 @@ const scrollAnimation = {
 const Functionnality = () => {
   // REACT HOOKS
   const containerRef = useRef(null);
+  // i18NEXT HOOK
+  const { t } = useTranslation();
   // REACT STATE
   const [innerWidth, setInnerWidth] = useState(0);
   const [animationLeft, setAnimationLeft] = useState(initialLeftAnimation);
   const [animationRight, setAnimationRight] = useState(initialRightAnimation);
 
-  const listenScrollEvent = useCallback(() => {
+  const handleScroll = useCallback(() => {
     const card: HTMLElement = containerRef.current!;
-    let scrollPosition = card.offsetHeight + card.offsetHeight / 5;
+    let scrollPosition = card?.offsetHeight + card?.offsetHeight / 5;
 
     if (window.scrollY > 1200) {
-      scrollPosition = card.offsetHeight + card.offsetHeight / 16;
+      scrollPosition = card?.offsetHeight + card?.offsetHeight / 16;
     }
     if (window.scrollY > scrollPosition) {
       setAnimationRight(scrollAnimation);
@@ -56,22 +65,21 @@ const Functionnality = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", listenScrollEvent);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", listenScrollEvent);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [listenScrollEvent]);
+  }, [handleScroll]);
 
   return (
     <section className="functionnality" ref={containerRef}>
       <Container>
         <div className="functionnality__titleContainer">
           <h2 className="functionnality__title">
-            Les fonctionnalités de l’application
+            {t("home:functionnalities.h2")}
           </h2>
           <p className="functionnality__paragraph">
-            Une solution sécurisée avec des fonctionnalités simples et
-            interactives.
+            {t("home:functionnalities.p")}
           </p>
         </div>
         <div className="functionnality__container">
@@ -79,7 +87,7 @@ const Functionnality = () => {
           <div className="functionnality__images">
             <img
               src="/images/home/phone.png"
-              alt="Image d'un téléphone montrant l'application teamdoc"
+              alt={t("home:functionnalities.alt")}
             />
           </div>
           <FunctionnalityRight

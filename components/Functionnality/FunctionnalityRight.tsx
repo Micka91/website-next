@@ -1,28 +1,30 @@
-import React, { RefObject } from "react";
+/* eslint-disable @next/next/no-img-element */
+// INTERFACE
 import { IAnimation } from "./Functionnality";
+// TRANSLATION
+import { useTranslation } from "next-i18next";
 
 interface IProps {
   animationRight: IAnimation;
   innerWidth: number;
-  // innerWidth: RefObject<number>;
 }
 
 const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
-  // Animation du Component BenefitsRight:
+  // I18NEXT HOOKS
+  const { t } = useTranslation();
+  // STYLE FOR ANIMATION
   const firstAnim = {
     transition: animationRight.transition,
     opacity: animationRight.opacity,
     transform: animationRight.transform,
     transitionDelay: innerWidth > 576 ? "0s" : "1.5s",
   };
-
   const secondAnim = {
     transition: animationRight.transition,
     opacity: animationRight.opacity,
     transform: animationRight.transform,
     transitionDelay: innerWidth > 576 ? "0.5s" : "2s",
   };
-
   const thirdAnim = {
     transition: animationRight.transition,
     opacity: animationRight.opacity,
@@ -35,47 +37,47 @@ const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
       <div style={firstAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
           <h3 className="functionnalityRight__title">
-            Réseau de professionnels
+            {t("home:functionnalityRight.h3_1")}
           </h3>
           <p className="functionnalityRight__paragraph">
-            Échangez avec vos contacts ou avec d’autres professionnels en créant
-            différents réseaux (mon cabinet, mon équipe à l’hôpital)
+            {t("home:functionnalityRight.p1")}
           </p>
         </div>
         <img
           src="/images/icones/network.png"
-          alt="logo_NetworkPro"
+          alt={t("home:functionnalityRight.alt1")}
           className="functionnalityRight__icones"
         />
       </div>
 
       <div style={secondAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
-          <h3 className="functionnalityRight__title">Droit à la déconnexion</h3>
+          <h3 className="functionnalityRight__title">
+            {t("home:functionnalityRight.h3_2")}
+          </h3>
           <p className="functionnalityRight__paragraph">
-            Indiquez votre statut (disponible, occupé, indisponible). Retrouvez
-            facilement les personnes disponibles (de garde, d’astreinte,
-            d’avis).
+            {t("home:functionnalityRight.p2")}
           </p>
         </div>
         <img
           src="/images/icones/deconnexion.png"
-          alt="logo_secureData"
+          alt={t("home:functionnalityRight.alt2")}
           className="functionnalityRight__icones"
         />
       </div>
 
       <div style={thirdAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
-          <h3 className="functionnalityRight__title">Tâches planifiées</h3>
+          <h3 className="functionnalityRight__title">
+            {t("home:functionnalityRight.h3_3")}
+          </h3>
           <p className="functionnalityRight__paragraph">
-            Assurez la coordination des soins ou un suivi particulier d’un
-            patient en créant vos tâches.
+            {t("home:functionnalityRight.p3")}
           </p>
         </div>
         <img
           src="/images/icones/tasks.png"
-          alt="logo_ToolBox"
+          alt={t("home:functionnalityRight.alt3")}
           className="functionnalityRight__icones"
         />
       </div>

@@ -1,8 +1,11 @@
+// REACT
 import { useState } from "react";
+// COMPONENTS
 import RecommandationsSlides from "./RecommandationsSlides";
 import Container from "./../Container/Container";
 
 const Recommandations = () => {
+  // REACT STATE
   const [currentReco, setCurrentReco] = useState<number>(0);
 
   // FONCTION pour le slide des recommandations vers la droite:

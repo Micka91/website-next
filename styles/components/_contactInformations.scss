@@ -1,0 +1,26 @@
+.contactInformations {
+  padding-top: 8rem;
+  width: 80%;
+  margin: 0 auto;
+
+  &__title {
+    text-align: center;
+    color: $secondary-std;
+    font-size: $typo-xl;
+    font-weight: $f5;
+    margin-bottom: 4rem;
+  }
+
+  p {
+    padding-bottom: 2rem;
+    font-weight: $f3;
+
+    a {
+      text-decoration: none;
+      color: $secondary-std;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

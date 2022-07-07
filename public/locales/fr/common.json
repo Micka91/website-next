@@ -1,1 +1,10 @@
-{}
+{
+  "download": "télécharger",
+  "seePrice": "voir les prix",
+  "logo": "Logo de teamdoc",
+  "blueCard": {
+    "h2": "Téléchargez gratuitement l’application !",
+    "p": "L’application est disponible sur les stores Android et iOS.",
+    "alt": "Flèche blanche"
+  }
+}

@@ -1,0 +1,79 @@
+.security {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-bottom: 14rem;
+  gap: 3rem;
+
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    padding: 0 2rem;
+  }
+
+  @include media(phone-l) {
+    flex-direction: column;
+  }
+
+  &__header {
+    text-align: center;
+    position: relative;
+    min-height: 50vh;
+    @include flexAlignCenter;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      min-height: 40vh;
+    }
+  }
+
+  &__title {
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      font-size: $typo-xl;
+    }
+  }
+
+  &__card {
+    width: 30rem;
+    background-color: transparent;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 100%;
+    }
+
+    img {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__cardTitle {
+    font-size: $typo-xl;
+    font-weight: $f5;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: $grey-dark-std;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      text-align: center;
+    }
+  }
+
+  &__strongText,
+  &__text {
+    padding: 1.1rem 0;
+    font-weight: $f3;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: $grey-dark-85;
+  }
+
+  &__lists {
+    padding-left: 1.5rem;
+  }
+}

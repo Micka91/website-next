@@ -9,7 +9,7 @@ interface IProps {
 
 const Background = ({ src, alt, className, children }: IProps) => {
   return (
-    <div>
+    <div className="background">
       <img src={src} alt={alt} className={className} />
       {children}
     </div>

@@ -1,0 +1,65 @@
+.contactCards {
+  @include flexJustifyCenter;
+  gap: 5rem;
+
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    gap: 2rem;
+  }
+
+  @include media(phone-l) {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+
+  &__card {
+    @include flexColumnCenter;
+    background-color: $white-std;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 1.2rem 0 $grey-medium-20;
+    padding: 5rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      padding: 2rem;
+    }
+  }
+
+  &__title {
+    font-weight: $f6;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: 0.1rem;
+    color: $grey-dark-85;
+  }
+
+  &__image {
+    width: 30rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 15rem;
+    }
+  }
+
+  &__linkContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    img {
+      width: 2rem;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $grey-dark-85;
+    transition: 0.3s ease;
+    &:hover {
+      color: $secondary-std;
+    }
+  }
+}

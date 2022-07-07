@@ -1,6 +1,5 @@
 .partners {
-  display: flex;
-  justify-content: space-between;
+  @include flexJustifyBetween;
   gap: 3rem;
 
   .partner {
@@ -23,6 +22,10 @@
         gap: 0.5rem;
       }
 
+      @include media(phone-l) {
+        gap: 1rem;
+      }
+
       img {
         // width: 100px;
         aspect-ratio: 16/ 9;
@@ -33,6 +36,10 @@
         @include media(tablet-l) {
           height: 6rem;
         }
+
+        @include media(phone-l) {
+          height: 5rem;
+        }
       }
     }
 
@@ -40,7 +47,7 @@
     @include media(phone-l) {
       width: $full;
       max-width: $full;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
   }
 

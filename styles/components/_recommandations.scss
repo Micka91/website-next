@@ -6,9 +6,8 @@
   }
 
   &__arrows {
+    @include flexJustifyBetween;
     width: $full;
-    display: flex;
-    justify-content: space-between;
     margin-top: -10rem;
 
     @include media(phone-l) {
@@ -46,23 +45,18 @@
 }
 
 .recommandationsSlides {
+  @include flexCenter;
   width: 80%;
   height: 40vh;
   margin: 0 auto;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   @include media(phone-l) {
     width: 100%;
   }
 
   &__slide {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexColumnCenter;
     position: absolute;
     visibility: collapse;
   }
@@ -90,9 +84,7 @@
   }
 
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
     margin-top: 2rem;
   }
 

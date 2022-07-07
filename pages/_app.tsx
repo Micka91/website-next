@@ -1,16 +1,17 @@
 import "../styles/main.scss";
 import type { AppProps } from "next/app";
 import Layout from "./../components/Layout/Layout";
-import LanguageProvider from "../context/LanguageContext/LanguageContext";
+// TRANSLATION
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 import { appWithTranslation } from "next-i18next";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <LanguageProvider>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </LanguageProvider>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
   );
 }
 

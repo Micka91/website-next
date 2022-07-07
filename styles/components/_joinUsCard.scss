@@ -1,0 +1,41 @@
+.joinUsCard {
+  background-image: url("/images/background/pattern.svg");
+  padding: 8rem 0;
+
+  &__container {
+    background-color: $white-std;
+    padding: 5rem 6rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 1.2rem 0 $grey-medium-20;
+    text-align: center;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 95%;
+      margin: 0 auto;
+    }
+
+    @include media(phone-l) {
+      padding: 2rem 0rem;
+      text-align: left;
+    }
+
+    p {
+      width: 90%;
+      margin: 0 auto;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.38;
+      letter-spacing: normal;
+      color: $grey-dark-85;
+
+      padding-bottom: 1rem;
+
+      a {
+        color: $secondary-std;
+        font-weight: $f5;
+        text-decoration: none;
+      }
+    }
+  }
+}

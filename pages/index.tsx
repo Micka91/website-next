@@ -1,7 +1,7 @@
 // TRANSLATION
-import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { namespaces } from "../utils/namespaces";
 // COMPONENTS
 import Partners from "../components/Partners/Partners";
 import Simplification from "../components/Simplification/Simplification";
@@ -11,18 +11,15 @@ import BlueCard from "./../components/BlueCard/BlueCard";
 import HomeHero from "./../components/HomeHero/HomeHero";
 import SEO from "../components/SEO/SEO";
 
-interface IProps {
-  locale: string;
-}
-
 const Home = () => {
+  // i18NEXT HOOK
   const { t } = useTranslation();
 
   return (
     <>
       <SEO
-        title="La communication et l’organisation entre soignants dans une application sécurisée : Team’Doc"
-        description="Team'Doc est une application sécurisée qui facilite la communication et l'organisation entre soignants. Découvrez l’outil ici et téléchargez-le gratuitement."
+        title={t("seo:home.title")}
+        description={t("seo:home.description")}
       />
       <HomeHero />
       <Simplification />
@@ -34,10 +31,14 @@ const Home = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+interface Iprops {
+  locale: string;
+}
+
+export const getStaticProps = async ({ locale }: Iprops) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale!, ["home"])),
+      ...(await serverSideTranslations(locale, namespaces)),
     },
   };
 };

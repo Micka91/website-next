@@ -1,0 +1,7 @@
+.background {
+  width: 100%;
+
+  @include media(phone-l) {
+    margin-top: 5rem;
+  }
+}

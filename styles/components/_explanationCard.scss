@@ -1,0 +1,108 @@
+.explanation {
+  &__card {
+    margin-bottom: 10rem;
+  }
+
+  // MEDIA QUERY
+  @include media(tablet-l) {
+    padding: 0 2rem;
+  }
+
+  &__row {
+    display: flex;
+    gap: 10rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      gap: 2rem;
+    }
+
+    @include media(phone-l) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      gap: 2rem;
+    }
+
+    @include media(phone-l) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__imageContainer {
+    height: 38rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      height: 30rem;
+    }
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__container {
+    flex: 1;
+  }
+
+  &__title {
+    font-size: $typo-xl;
+    font-weight: $f4;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.29;
+    color: $secondary-std;
+  }
+
+  &__paragraph {
+    padding: 1.2rem 0 2rem;
+    font-size: $typo-m;
+    font-weight: $f3;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 1.38;
+    color: $grey-dark-85;
+  }
+
+  &__subContainer {
+    margin-top: 2rem;
+  }
+
+  &__subTitleContainer {
+    display: flex;
+  }
+
+  &__subTitle {
+    padding-left: 1.2rem;
+    margin: auto 0;
+    font-size: $typo-m;
+    font-weight: $f5;
+    color: $grey-dark-std;
+  }
+
+  &__subParagraph {
+    // width: 36rem;
+    margin-left: 4rem;
+    padding: 0.8rem 0 1.7rem;
+    font-size: $typo-n;
+    font-weight: $f3;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: $grey-dark-85;
+  }
+}

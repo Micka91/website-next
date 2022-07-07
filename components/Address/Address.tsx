@@ -1,18 +1,25 @@
+/* eslint-disable @next/next/no-img-element */
+// TRANSLATION
+import { useTranslation } from "next-i18next";
+// COMPONENTS
 import SocialMedia from "./../SocialMedia/SocialMedia";
 
 const Address = () => {
+  // I18NEXT HOOKS
+  const { t } = useTranslation();
+
   return (
     <div className="footer__container">
       <img
         src="/images/footer/teamdoc.png"
-        alt="logo teamdoc"
+        alt={t("common:logo")}
         className="footer__logo"
       />
       <address>
         <div className="footer__adressContainer">
           <img
             src="/images/footer/address.png"
-            alt="logo teamdoc"
+            alt={t("footer:altAddress")}
             className="footer__image"
           />
           <span className="footer__adress">22 rue Drouot- 75009 Paris</span>
@@ -20,7 +27,7 @@ const Address = () => {
         <div className="footer__mailContainer">
           <img
             src="/images/footer/mail.png"
-            alt="logo teamdoc"
+            alt={t("footer:altMail")}
             className="footer__image"
           />
           <a href="mailto:contact@teamdoc.fr" className="footer__mail">

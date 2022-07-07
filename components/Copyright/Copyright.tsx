@@ -1,9 +1,13 @@
-import React from "react";
+// TRANSLATION
+import { useTranslation } from "next-i18next";
 
 const Copyright = () => {
+  // I18NEXT HOOKS
+  const { t } = useTranslation();
+
   return (
     <div className="footer__copyright">
-      Copyright 2022 &copy; Tous droits réservés
+      Copyright {new Date().getFullYear()} &copy; {t("footer:copyright")}
     </div>
   );
 };

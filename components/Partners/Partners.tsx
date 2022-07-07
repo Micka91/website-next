@@ -1,36 +1,53 @@
+// TRANSLATION
+import { useTranslation } from "next-i18next";
+// COMPONENTS
 import Container from "../Container/Container";
 import Partner from "./Partner";
 
-const datas = [
-  {
-    title: "Accélérateurs & supports :",
-    partners: [
-      "/images/partners/jei.png",
-      "/images/partners/medicen.png",
-      "/images/partners/adrenaline.png",
-      "/images/partners/bpi.png",
-      "/images/partners/impactHealthcare.png",
-      "/images/partners/echofirst.png",
-      "/images/partners/branchet.svg",
-    ],
-  },
-  {
-    title: "Application créée conformément aux référentiels de :",
-    partners: [
-      "/images/partners/has.png",
-      "/images/partners/ans.png",
-      "/images/partners/cnil.png",
-      "/images/partners/masante-2022.png",
-      "/images/partners/rgpd.png",
-    ],
-  },
-  {
-    title: "Serveur HDS :",
-    partners: ["/images/partners/cegedim.png"],
-  },
-];
-
 const Partners = () => {
+  // i18NEXT HOOK
+  const { t } = useTranslation();
+
+  const datas = [
+    {
+      title: "Accélérateurs & supports :",
+      partners: [
+        { src: "/images/partners/jei.png", alt: t("partners:jei") },
+        { src: "/images/partners/medicen.png", alt: t("partners:medicen") },
+        {
+          src: "/images/partners/adrenaline.png",
+          alt: t("partners:adrenaline"),
+        },
+        { src: "/images/partners/bpi.png", alt: t("partners:bpi") },
+        {
+          src: "/images/partners/impactHealthcare.png",
+          alt: t("partners:impact"),
+        },
+        { src: "/images/partners/echofirst.png", alt: t("partners:echofirst") },
+        { src: "/images/partners/branchet.svg", alt: t("partners:branchet") },
+      ],
+    },
+    {
+      title: "Application créée conformément aux référentiels de :",
+      partners: [
+        { src: "/images/partners/has.png", alt: t("partners:has") },
+        { src: "/images/partners/ans.png", alt: t("partners:ans") },
+        { src: "/images/partners/cnil.png", alt: t("partners:cnil") },
+        {
+          src: "/images/partners/masante-2022.png",
+          alt: t("partners:masante"),
+        },
+        { src: "/images/partners/rgpd.png", alt: t("partners:rgpd") },
+      ],
+    },
+    {
+      title: "Serveur HDS :",
+      partners: [
+        { src: "/images/partners/cegedim.png", alt: t("partners:cegedim") },
+      ],
+    },
+  ];
+
   return (
     <Container>
       <div className="partners">
