@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+// REACT
+import { useContext } from "react";
 // NEXT
 import Link from "next/link";
 // TRANSLATION
@@ -6,10 +8,14 @@ import { useTranslation } from "next-i18next";
 // COMPONENTS
 import Container from "../Container/Container";
 import Button from "./../Button/Button";
+// CONTEXT
+import { DrawerContext } from "../../context/DrawerContext";
 
 const BlueCard = () => {
   // I18NEXT HOOKS
   const { t } = useTranslation();
+  // REACT HOOKS
+  const { handleOpen } = useContext(DrawerContext);
 
   return (
     <Container>
@@ -26,7 +32,7 @@ const BlueCard = () => {
           </div>
         </div>
         <div className="blueCard__buttons">
-          <Button className="button__white">
+          <Button className="button__white" onClick={handleOpen}>
             {t("common:download")}
             <img
               src="/images/icones/arrow.svg"

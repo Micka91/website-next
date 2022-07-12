@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 61.2 (101010) - https://sketch.com -->
+    <title>1534BB4D-1056-4BAF-991A-43C278A79776</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <circle id="path-1" cx="20" cy="20" r="20"></circle>
+        <path d="M20,22 C16.8888636,22 11,23.7088889 11,27.3333333 L11,28 L29,28 L29,27.3333333 C29,23.7088889 23.1111364,22 20,22 Z M20,19.2679426 C22.3295044,19.2679426 24.2244898,17.4135612 24.2244898,15.1339713 C24.2244898,12.8543814 22.3295044,11 20,11 C17.6704956,11 15.7755102,12.8543814 15.7755102,15.1339713 C15.7755102,17.4135612 17.6704956,19.2679426 20,19.2679426 Z" id="path-3"></path>
+    </defs>
+    <g id="NOTRE-EQUIPE" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="NOTRE-EQUIPE/1_Default" transform="translate(-162.000000, -2217.000000)">
+            <g id="BLOCK-4" transform="translate(0.000000, 2014.000000)">
+                <g id="Group-2" transform="translate(122.000000, 154.000000)">
+                    <g id="_UI/2.-Molecules/Blocks/Team/Scientific/Item+Spe" transform="translate(24.000000, 12.000000)">
+                        <g id="Contact" transform="translate(16.000000, 36.000000)">
+                            <g id="_UI/1-Atomes/Avatar/Small/Placeholder" transform="translate(0.000000, 1.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <use id="BG" fill="#F1F2F1" xlink:href="#path-1"></use>
+                                <mask id="mask-4" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <use id="icon/action/record_voice_over_24px" fill="#B8B8B8" fill-rule="nonzero" xlink:href="#path-3"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

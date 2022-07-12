@@ -3,6 +3,10 @@
   gap: 5rem;
 
   // MEDIA QUERY
+  @include media(desktop-s) {
+    padding: 0 2rem;
+  }
+
   @include media(tablet-l) {
     gap: 2rem;
   }

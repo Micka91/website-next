@@ -1,0 +1,73 @@
+.pressRealease {
+  margin: 15rem auto;
+  text-align: center;
+
+  // MEDIA QUERY
+  @include media(phone-l) {
+    padding: 0 1.5rem;
+  }
+
+  &__title {
+    font-size: $typo-xl;
+    line-height: 1.29;
+    font-weight: $f5;
+  }
+
+  &__paragraph {
+    width: 60%;
+    margin: 3rem auto 5rem auto;
+    color: $grey-dark-85;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      width: 80%;
+    }
+  }
+
+  &__card {
+    position: relative;
+    width: 50rem;
+    padding: 3.2rem;
+    margin: 0 auto;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 12px 0 rgb(200 199 204 / 20%);
+    background-color: $white-std;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      width: $full;
+    }
+  }
+
+  &__logo {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  &__container {
+    margin-top: 2rem;
+    text-align: left;
+  }
+
+  &__date {
+    font-size: $typo-n;
+    font-weight: 300;
+    line-height: 1.29;
+    letter-spacing: normal;
+    color: $grey-dark-55;
+  }
+
+  &__article {
+    margin-top: 2rem;
+    color: $grey-dark-85;
+    font-weight: $f3;
+  }
+
+  &__link {
+    display: block;
+    font-size: $typo-s;
+    color: $secondary-std;
+    text-align: right;
+    margin-top: 2rem;
+  }
+}

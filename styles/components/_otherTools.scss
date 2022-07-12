@@ -26,7 +26,7 @@
     padding: 6rem 8rem;
 
     // MEDIA QUERY
-    @include media(tablet-l) {
+    @include media(desktop-s) {
       width: 95%;
       padding: 2rem;
     }

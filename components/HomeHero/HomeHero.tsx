@@ -1,15 +1,20 @@
 /* eslint-disable @next/next/no-img-element */
-
+// REACT
+import { useContext } from "react";
 // TRANSLATION
 import { useTranslation } from "next-i18next";
 // COMPONENTS
 import Background from "./../Background/Background";
 import Hero from "./../Hero/Hero";
 import Button from "./../Button/Button";
+// CONTEXT
+import { DrawerContext } from './../../context/DrawerContext';
 
 const HomeHero = () => {
   // I18NEXT HOOKS
   const { t } = useTranslation();
+  // REACT HOOKS
+  const { handleOpen } = useContext(DrawerContext);
 
   return (
     <section className="home__hero">
@@ -24,7 +29,7 @@ const HomeHero = () => {
               <h1 className="home__title">{t("home:hero.h1")}</h1>
               <p className="home__paragraph">{t("home:hero.p")}</p>
               <div className="home__buttons">
-                <Button className="button__gradient">
+                <Button className="button__gradient" onClick={handleOpen}>
                   {t("common:download")}
                   <img
                     src="/images/icones/whiteArrow.svg"

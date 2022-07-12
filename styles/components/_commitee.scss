@@ -1,0 +1,95 @@
+.commitee {
+  padding: 20rem 0;
+  background-image: url("/images/solutions/bluewave.png");
+
+  &__title {
+    text-align: center;
+    color: $white-std;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-weight: $f5;
+      font-size: $typo-xl;
+    }
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      gap: 2rem;
+    }
+
+    @include media(phone-l) {
+      gap: 5rem;
+      flex-direction: column;
+      padding: 0 1rem;
+    }
+  }
+
+  &__container {
+    width: 48rem;
+    padding: 0.9rem 4rem 2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 1.2rem 0 $grey-medium-20;
+    background-color: $white-std;
+    margin: 1.6rem auto 0;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      width: 38rem;
+    }
+
+    @include media(tablet) {
+      width: 36rem;
+    }
+
+    @include media(phone-l) {
+      width: $full;
+      padding: 0.9rem 2rem 2rem;
+    }
+  }
+
+  &__cardTitle {
+    margin: 1rem 0;
+    font-weight: $f6;
+    line-height: 1.29;
+    color: $secondary-std;
+  }
+
+  &__card {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__name {
+    font-weight: $f5;
+    line-height: 1.33;
+    color: $grey-dark-std;
+    font-size: $typo-l;
+  }
+
+  &__places {
+    font-weight: $f3;
+    font-style: italic;
+    font-size: $typo-n;
+    line-height: 1.29;
+    color: $grey-dark-85;
+  }
+
+  &__blueHr {
+    width: 100%;
+    border-bottom: 1px solid $secondary-std;
+    margin: 1.5rem 0;
+  }
+
+  &__dashedHr {
+    width: calc(100% - 6rem);
+    border-bottom: 2px dotted $grey-medium-std;
+    margin: 1.5rem 0;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,35 @@
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2.4rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 0 12px 0 $grey-medium-20;
+  background-color: $white-std;
+  transition: all 0.3s ease;
+
+  &__logo {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    img {
+      width: 13rem;
+      height: 5.2rem;
+      object-fit: contain;
+    }
+  }
+
+  &__date {
+    color: $grey-medium-std;
+    margin-bottom: 2rem;
+  }
+
+  &__resume {
+    margin-bottom: 2rem;
+  }
+
+  &__link {
+    text-align: right;
+    color: $secondary-std;
+  }
+}

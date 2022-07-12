@@ -1,5 +1,6 @@
 .header {
   &__home,
+  &__ourTeams,
   &__solutions,
   &__privacy,
   &__legalsMentions,
@@ -7,6 +8,7 @@
   &__cookies,
   &__security,
   &__support,
+  &__press,
   &__cgv {
     @include backgroundHeader;
   }

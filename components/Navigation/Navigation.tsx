@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 // REACT
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+// CONTEXT
+import { DrawerContext } from "./../../context/DrawerContext";
 // NEXT
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -14,6 +16,8 @@ import { useTranslation } from "next-i18next";
 const Navigation = () => {
   // NEXT HOOK
   const router = useRouter();
+  // REACT HOOKS
+  const { handleOpen } = useContext(DrawerContext);
   // i18NEXT HOOK
   const { t } = useTranslation();
   // STATE
@@ -36,6 +40,14 @@ const Navigation = () => {
       locale: lang,
     });
     setCurrentLocale(lang);
+  };
+
+  const handleOpenBook = () => {
+    window.open("https://calendly.com/tamsaguine/teamdoc");
+  };
+
+  const handleOpenWebapp = () => {
+    window.open("https://webapp.teamdoc.fr/");
   };
 
   useEffect(() => {
@@ -87,12 +99,26 @@ const Navigation = () => {
           >
             {currentLocale === "fr" ? "en" : "fr"}
           </li>
+          {/* DRAWER */}
+          <li className="navigation__drawer" onClick={handleOpen}>
+            <img
+              src="/images/icones/drawer.svg"
+              alt=""
+              width={24}
+              height={24}
+            />
+          </li>
         </ul>
       </nav>
       {/* Buttons */}
       <div className="navigation__buttons">
-        <Button className="button__demo">{t("navigation:book")}</Button>
-        <Button className="button__gradient">{`TEAM'DOC WEB`}</Button>
+        <Button className="button__demo" onClick={handleOpenBook}>
+          {t("navigation:book")}
+        </Button>
+        <Button
+          className="button__gradient"
+          onClick={handleOpenWebapp}
+        >{`TEAM'DOC WEB`}</Button>
       </div>
     </header>
   );

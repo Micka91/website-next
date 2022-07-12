@@ -10,7 +10,7 @@
     text-align: center;
 
     // MEDIA QUERY
-    @include media(tablet-l) {
+    @include media(desktop-s) {
       width: 95%;
       margin: 0 auto;
     }

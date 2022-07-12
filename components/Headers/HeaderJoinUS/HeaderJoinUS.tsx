@@ -1,9 +1,7 @@
 // TRANSLATION
 import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // COMPONENTS
 import Background from "../../Background/Background";
-import { namespaces } from "../../../utils/namespaces";
 
 const HeaderJoinUS = () => {
   // i18NEXT HOOK
@@ -20,18 +18,6 @@ const HeaderJoinUS = () => {
       </Background>
     </section>
   );
-};
-
-interface Iprops {
-  locale: string;
-}
-
-export const getStaticProps = async ({ locale }: Iprops) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, namespaces)),
-    },
-  };
 };
 
 export default HeaderJoinUS;

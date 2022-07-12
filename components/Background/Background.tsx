@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 interface IProps {
-  src: string | undefined;
+  src?: string | undefined;
   alt: string;
   className: string;
   children?: React.ReactNode;

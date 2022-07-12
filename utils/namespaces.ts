@@ -10,9 +10,11 @@ export const namespaces = [
   "legalsmentions",
   "navigation",
   "partners",
+  "press",
   "privacy",
   "security",
   "seo",
   "solution",
   "support",
+  "teams",
 ];

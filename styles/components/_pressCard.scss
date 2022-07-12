@@ -1,0 +1,117 @@
+.pressCards {
+  display: flex;
+  justify-content: space-between;
+
+  // MEDIA QUERY
+  @include media(desktop-s) {
+    padding: 0 1.5rem;
+  }
+
+  @include media(tablet-l) {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  @include media(phone) {
+    padding-top: 5rem;
+  }
+
+  &__card {
+    position: relative;
+    width: 50rem;
+    padding: 3.2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 0 24px 0 rgb(61 156 199 / 30%);
+    background-color: $white-std;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      padding: 2rem;
+      width: $full;
+    }
+
+    &--fld {
+      border: 2px solid #0288d1;
+    }
+  }
+
+  &__cardTitle {
+    line-height: 1.14;
+    color: $secondary-std;
+    font-weight: $f5;
+  }
+
+  &__folder {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 0;
+
+    @include media(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    img {
+      width: 13rem;
+    }
+
+    p {
+      color: $grey-dark-std;
+      font-weight: $f3;
+    }
+  }
+
+  &__button {
+    position: absolute;
+    bottom: -1.9rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    &:hover {
+      transform: translate(-50%, -2px);
+    }
+  }
+
+  &__downloadContainer {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+
+    @include media(phone) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__download {
+    width: 50%;
+    text-align: center;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      width: $full;
+    }
+
+    img {
+      height: 10rem;
+      object-fit: contain;
+      width: 100%;
+      background-color: $grey-light-55;
+    }
+
+    p {
+      color: $grey-dark-85;
+      margin-top: 0.4rem;
+      font-size: $typo-n;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $secondary-std;
+    font-size: $typo-n;
+    text-transform: capitalize;
+  }
+}

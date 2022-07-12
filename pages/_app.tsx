@@ -1,17 +1,20 @@
+// GLOBAL STYLE
 import "../styles/main.scss";
+// TYPES
 import type { AppProps } from "next/app";
+// COMPONENTS
 import Layout from "./../components/Layout/Layout";
+import DrawerContextProvider from "./../context/DrawerContext";
 // TRANSLATION
-import { GetStaticProps } from "next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 import { appWithTranslation } from "next-i18next";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <DrawerContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </DrawerContextProvider>
   );
 }
 

@@ -1,0 +1,17 @@
+.pressVideos {
+  --col-width: 50rem;
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--col-width), 1fr));
+  grid-gap: 2rem;
+
+  // MEDIA QUERY
+  @include media(desktop-s) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  @include media(phone-l) {
+    --col-width: 1fr;
+  }
+}

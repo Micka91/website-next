@@ -9,34 +9,26 @@ const Address = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="footer__container">
-      <img
-        src="/images/footer/teamdoc.png"
-        alt={t("common:logo")}
-        className="footer__logo"
-      />
-      <address>
-        <div className="footer__adressContainer">
-          <img
-            src="/images/footer/address.png"
-            alt={t("footer:altAddress")}
-            className="footer__image"
-          />
-          <span className="footer__adress">22 rue Drouot- 75009 Paris</span>
-        </div>
-        <div className="footer__mailContainer">
-          <img
-            src="/images/footer/mail.png"
-            alt={t("footer:altMail")}
-            className="footer__image"
-          />
-          <a href="mailto:contact@teamdoc.fr" className="footer__mail">
-            contact@teamdoc.fr
-          </a>
-        </div>
-      </address>
-      <SocialMedia />
-    </div>
+    <address>
+      <div className="footer__adressContainer">
+        <img
+          src="/images/footer/address.png"
+          alt={t("footer:altAddress")}
+          className="footer__image"
+        />
+        <span className="footer__adress">22 rue Drouot- 75009 Paris</span>
+      </div>
+      <div className="footer__mailContainer">
+        <img
+          src="/images/footer/mail.png"
+          alt={t("footer:altMail")}
+          className="footer__image"
+        />
+        <a href="mailto:contact@teamdoc.fr" className="footer__mail">
+          contact@teamdoc.fr
+        </a>
+      </div>
+    </address>
   );
 };
 

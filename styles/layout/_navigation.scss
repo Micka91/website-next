@@ -63,12 +63,20 @@
   }
   &__items {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
     list-style: none;
   }
+
   &__item {
     font-size: $typo-n;
     text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $secondary-std;
+    }
+
     a.active {
       color: $secondary-std;
     }
@@ -77,6 +85,24 @@
       cursor: pointer;
     }
   }
+
+  &__drawer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-image: $drawer;
+    border-radius: 0.2rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    transition: all 0.8s ease;
+
+    &:hover {
+      box-shadow: 0 8px 12px 0 rgb(61 156 199 / 30%);
+      transform: translateY(-2px);
+    }
+  }
+
   &__buttons {
     @include flexAlignCenter;
     padding-left: 1.5rem;
@@ -84,7 +110,7 @@
 
     // MEDIA QUERY
     & button:last-child {
-      @include media(desktop-l) {
+      @include media(desktop-s) {
         display: none;
       }
     }

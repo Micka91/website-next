@@ -35,6 +35,8 @@
     h2 {
       color: $white-std;
       margin-bottom: 0.5rem;
+      font-size: $typo-xl;
+      font-weight: $f5;
 
       @include media(phone-l) {
         font-size: 2.3rem;
@@ -44,7 +46,7 @@
     }
 
     p {
-      font-size: $typo-n;
+      font-size: $typo-l;
       font-weight: $f5;
       font-stretch: normal;
       font-style: normal;
@@ -65,9 +67,6 @@
 
     a {
       color: $white-std;
-      &:hover {
-        color: $secondary-std;
-      }
     }
   }
 }
