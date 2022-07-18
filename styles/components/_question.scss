@@ -1,0 +1,47 @@
+.question {
+  padding: 2.4rem;
+  margin-bottom: 2rem;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 1.2rem 0 $grey-medium-20;
+  background-color: $white-std;
+  cursor: pointer;
+
+  &__open {
+    box-shadow: 0 0 1.2rem 0 $cool-blue-30;
+  }
+
+  &__titleContainer {
+    @include flexCenterBetween;
+  }
+
+  &__title {
+    font-weight: $f5;
+    font-size: $typo-l;
+
+    @include media(phone-l) {
+      font-size: $typo-m;
+    }
+  }
+
+  &__titleOpen {
+    color: $secondary-std;
+  }
+
+  &__titleClose {
+    color: $grey-dark-std;
+  }
+
+  &__textOpen {
+    display: block;
+    margin-top: 2rem;
+  }
+
+  &__textClose {
+    display: none;
+  }
+
+  &__icon {
+    width: 2.4rem;
+    aspect-ratio: 1;
+  }
+}

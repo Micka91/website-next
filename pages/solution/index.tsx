@@ -16,7 +16,11 @@ const Solution = () => {
 
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:solution.title")}
+        description={t("seo:solution.description")}
+        type="website"
+      />
       <HeaderSolutions />
       <Explanations />
       <OthersTools />

@@ -47,7 +47,11 @@ const Security = () => {
 
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:security.title")}
+        description={t("seo:security.description")}
+        type="website"
+      />
       <HeaderSecurity />
       <Container>
         <section className="security">

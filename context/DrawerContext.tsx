@@ -15,7 +15,6 @@ const DrawerContextProvider = ({ children }: IProps) => {
   const [open, setOpen] = useState<boolean>(false);
 
   const handleOpen = () => {
-    console.log("CLICKED");
     setOpen((open) => !open);
   };
 

@@ -8,13 +8,13 @@ const HeaderJoinUS = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="support__header">
+    <section className="joinUs__header">
       <Background
         src="/images/headers/common.svg"
         alt="Image de fond cgv teamdoc"
-        className="header__support"
+        className="header__joinUs"
       >
-        <h1 className="support__title">{t("joinUs:title")}</h1>
+        <h1 className="joinUs__title">{t("joinUs:title")}</h1>
       </Background>
     </section>
   );

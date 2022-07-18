@@ -35,7 +35,7 @@
 
   // MEDIA QUERY
   @include media(tablet-l) {
-    padding: 0.5rem $pad-tab;
+    padding: 0.5rem $pad-phone;
     justify-content: space-between;
   }
 
@@ -50,20 +50,30 @@
     object-fit: contain;
     // MEDIA QUERY
     @include media(tablet-l) {
-      width: 15rem;
+      width: 14rem;
     }
   }
+
   &__navbar {
     margin-left: auto;
 
     // MEDIA QUERY
-    @include media(tablet-l) {
+    @include media(desktop) {
       display: none;
     }
   }
+
+  &__burger {
+    display: none;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      display: block;
+    }
+  }
+
   &__items {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     gap: 1.5rem;
     list-style: none;
   }
@@ -84,12 +94,20 @@
     &--lang {
       cursor: pointer;
     }
+
+    // MEDIA QUERY
+    @include media(desktop) {
+      font-size: $typo-s;
+    }
+
+    @include media(phone-l) {
+      font-size: $typo-n;
+    }
   }
 
   &__drawer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexCenter;
+
     cursor: pointer;
     background-image: $drawer;
     border-radius: 0.2rem;

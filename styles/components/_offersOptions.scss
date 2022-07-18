@@ -1,0 +1,43 @@
+.offersOptions {
+  &__cards {
+    display: flex;
+    gap: 3rem;
+    padding: 10rem 0;
+
+    // MEDIA QUERY
+    @include media(desktop-s) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    @include media(tablet-l) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__roadmap {
+    text-align: center;
+    margin: 5rem 0;
+
+    // MEDIA QUERY
+    @include media(desktop-s) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    @include media(phone-l) {
+      display: none;
+    }
+  }
+
+  &__roadmapMobile {
+    display: none;
+    flex-direction: column;
+
+    // MEDIA QUERY
+    @include media(phone-l) {
+      display: flex;
+    }
+  }
+}

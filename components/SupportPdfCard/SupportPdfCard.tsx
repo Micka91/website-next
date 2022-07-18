@@ -1,3 +1,4 @@
+// COMPONENTS
 import { ISupport } from "./../SupportContent/SupportContent";
 
 interface IPdf {

@@ -15,7 +15,11 @@ const JoinUs = () => {
 
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:joinUs.title")}
+        description={t("seo:joinUs.description")}
+        type="website"
+      />
       <HeaderJoinUS />
       <JoinUsCard />
       <BlueCard />

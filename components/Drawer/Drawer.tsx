@@ -25,7 +25,10 @@ const Drawer = () => {
 
   return (
     <div className="drawer">
-      <div className={drawerBackdropClasses.join(" ")}></div>
+      <div
+        className={drawerBackdropClasses.join(" ")}
+        onClick={handleOpen}
+      ></div>
       <div className={drawerContainerClasses.join(" ")}>
         <div className="drawer__close" onClick={handleOpen}>
           <img src="/images/icones/close.svg" alt="" />

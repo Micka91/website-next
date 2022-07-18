@@ -1,7 +1,5 @@
 .security {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
+  @include flexAlignBaseline;
   padding-bottom: 14rem;
   gap: 3rem;
 

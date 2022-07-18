@@ -1,6 +1,5 @@
 .pressCards {
-  display: flex;
-  justify-content: space-between;
+  @include flexJustifyBetween;
 
   // MEDIA QUERY
   @include media(desktop-s) {
@@ -43,8 +42,7 @@
   }
 
   &__folder {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     gap: 2rem;
     padding: 2rem 0;
 

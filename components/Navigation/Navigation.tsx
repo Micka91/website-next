@@ -3,6 +3,7 @@
 import { useState, useEffect, useContext } from "react";
 // CONTEXT
 import { DrawerContext } from "./../../context/DrawerContext";
+import { MenuContext } from "./../../context/MenuContext";
 // NEXT
 import { useRouter } from "next/router";
 import Link from "next/link";
@@ -18,6 +19,7 @@ const Navigation = () => {
   const router = useRouter();
   // REACT HOOKS
   const { handleOpen } = useContext(DrawerContext);
+  const { handleOpenMenu } = useContext(MenuContext);
   // i18NEXT HOOK
   const { t } = useTranslation();
   // STATE
@@ -110,6 +112,10 @@ const Navigation = () => {
           </li>
         </ul>
       </nav>
+      {/* BURGER */}
+      <div className="navigation__burger" onClick={handleOpenMenu}>
+        <img src="/images/icones/burger.svg" alt="" />
+      </div>
       {/* Buttons */}
       <div className="navigation__buttons">
         <Button className="button__demo" onClick={handleOpenBook}>

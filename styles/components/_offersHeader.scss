@@ -1,0 +1,84 @@
+.offersHeader {
+  @include media(desktop-s) {
+    padding: 0 1.5rem;
+  }
+
+  &__header {
+    @include flexCenter;
+    gap: 5rem;
+
+    @include media(phone-l) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+
+    > div {
+      @include media(phone-l) {
+        width: $full;
+      }
+    }
+  }
+
+  &__button {
+    min-height: 14rem;
+    width: 30rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+    padding: 4rem 2rem;
+    font-size: 2.5rem;
+    box-shadow: 3.3px 2.4px 12.4px rgb(0 0 0 / 4%),
+      8.6px 6.2px 22.2px rgb(0 0 0 / 4%), 19.8px 14.4px 35.9px rgb(0 0 0 / 6%),
+      58px 42px 72px rgb(0 0 0 / 9%);
+    border-radius: 0.7rem;
+    transition: all 0.3s ease;
+
+    @include media(phone-l) {
+      width: $full;
+    }
+  }
+
+  &__unselected {
+    color: $unselected;
+    background-color: $unselected-bg;
+    transform: scale(1);
+  }
+
+  &__B2BSelected {
+    color: $white-std;
+    background-color: $secondary-std;
+    transform: scale(1.1);
+    @include media(phone-l) {
+      transform: scale(1.05);
+    }
+  }
+
+  &__B2CSelected {
+    color: $white-std;
+    background-color: $primary-std;
+    transform: scale(1.1);
+    @include media(phone-l) {
+      transform: scale(1.05);
+    }
+  }
+
+  &__text {
+    font-size: $typo-l;
+    font-weight: $f4;
+    text-align: center;
+
+    &:first-of-type {
+      margin-top: 5rem;
+    }
+
+    strong {
+      text-decoration: underline;
+    }
+
+    a {
+      color: $secondary-std;
+    }
+  }
+}

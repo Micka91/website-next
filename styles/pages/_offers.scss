@@ -1,0 +1,43 @@
+.offers {
+  &__header {
+    @include flexAlignCenter;
+    text-align: center;
+    position: relative;
+    min-height: 50vh;
+
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      min-height: 40vh;
+    }
+  }
+
+  &__title {
+    margin-bottom: 2rem;
+    // MEDIA QUERY
+    @include media(tablet-l) {
+      font-size: $typo-xl;
+    }
+
+    @include media(phone) {
+      padding-top: 5rem;
+    }
+  }
+
+  &__paragraph {
+    width: 60%;
+    margin: 0 auto;
+
+    @include media(phone-l) {
+      width: 90%;
+    }
+
+    a {
+      color: $secondary-std;
+    }
+  }
+
+  &__background {
+    padding: 5rem 0;
+    background-image: url("/images/background/pattern.svg");
+  }
+}

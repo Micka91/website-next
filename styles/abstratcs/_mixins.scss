@@ -1,6 +1,10 @@
 // MEDIA QUERY
 @mixin media($size) {
-  @if $size == phone-s {
+  @if $size == phone-xs {
+    @media only screen and #{$responsiveMobileXSmall} {
+      @content;
+    }
+  } @else if $size == phone-s {
     @media only screen and #{$responsiveMobileSmall} {
       @content;
     }
@@ -55,6 +59,11 @@
   align-items: center;
 }
 
+@mixin flexAlignStart {
+  display: flex;
+  align-items: flex-start;
+}
+
 @mixin flexAlignBetween {
   display: flex;
   align-items: space-between;
@@ -68,6 +77,26 @@
 @mixin flexJustifyBetween {
   display: flex;
   justify-content: space-between;
+}
+
+@mixin flexJustifyEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@mixin flexRowReverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+@mixin flexRowColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flexWrap {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 @mixin flexCenter {
@@ -98,6 +127,12 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+@mixin flexColumnBetween {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 @mixin flexColumnReverseAlignCenter {
@@ -158,8 +193,12 @@
   // MEDIA QUERY
   @include media(tablet-l) {
     max-height: 40rem;
-    margin-right: -4.5rem;
+
     height: auto;
+  }
+
+  @include media(phone-l) {
+    margin-right: -4.5rem;
   }
 
   @include media(phone) {
@@ -237,7 +276,7 @@
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 0;
+  right: 0;
   // max-height: $full;
   height: auto;
 }

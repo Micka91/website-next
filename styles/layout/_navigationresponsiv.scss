@@ -1,0 +1,42 @@
+.navigationresponsiv {
+  @include flexAlignCenter;
+  position: absolute;
+  width: $full;
+  background-color: transparent;
+  padding: 0 2.4rem;
+  z-index: 100;
+
+  &__navbar {
+    margin-left: auto;
+  }
+
+  &__items {
+    @include flexRowColumn;
+
+    gap: 1.5rem;
+    list-style: none;
+  }
+
+  &__item {
+    font-size: $typo-n;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $secondary-std;
+    }
+
+    a.active {
+      color: $secondary-std;
+    }
+
+    &--lang {
+      cursor: pointer;
+    }
+  }
+
+  &__buttons {
+    @include flexAlignCenter;
+    gap: 1.5rem;
+  }
+}

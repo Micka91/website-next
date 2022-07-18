@@ -1,11 +1,28 @@
 // TRANSLATION
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+import { namespaces } from "./../../utils/namespaces";
+// COMPONENTS
+import HeaderOffers from "./../../components/Headers/HeaderOffers/HeaderOffers";
+import SEO from "./../../components/SEO/SEO";
+import OffersCards from "../../components/OffersCards/OffersCards";
+import FaQ from "./../../components/FaQ/FaQ";
 
 const Offers = () => {
+  // i18NEXT HOOK
+  const { t } = useTranslation();
+
   return (
-    <div>
-      <div style={{ width: "100%", height: 5000 }}></div>Offers
-    </div>
+    <>
+      <SEO
+        title={t("seo:offers.title")}
+        description={t("seo:offers.description")}
+        type="product"
+      />
+      <HeaderOffers />
+      <OffersCards />
+      <FaQ />
+    </>
   );
 };
 
@@ -16,14 +33,7 @@ interface Iprops {
 export const getStaticProps = async ({ locale }: Iprops) => {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [
-        "home",
-        "common",
-        "seo",
-        "navigation",
-        "partners",
-        "footer",
-      ])),
+      ...(await serverSideTranslations(locale, namespaces)),
     },
   };
 };

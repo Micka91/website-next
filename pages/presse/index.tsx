@@ -18,7 +18,11 @@ const Press = () => {
 
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:press.title")}
+        description={t("seo:press.description")}
+        type="article"
+      />
       <HeaderPress />
       <PressCards />
       <PressRelease />

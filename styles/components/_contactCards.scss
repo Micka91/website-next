@@ -22,6 +22,7 @@
     border-radius: 1.2rem;
     box-shadow: 0 0 1.2rem 0 $grey-medium-20;
     padding: 5rem;
+    transition: background-color 0.3s ease-in-out;
 
     // MEDIA QUERY
     @include media(tablet-l) {
@@ -48,8 +49,7 @@
   }
 
   &__linkContainer {
-    display: flex;
-    align-items: center;
+    @include flexAlignCenter;
     gap: 1rem;
     margin-top: 2rem;
 

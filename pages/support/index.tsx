@@ -9,10 +9,16 @@ import SEO from "./../../components/SEO/SEO";
 import HeaderSupport from "../../components/Headers/HeaderSupport/HeaderSupport";
 
 const Support = () => {
+  // i18NEXT HOOK
   const { t } = useTranslation();
+
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:support.title")}
+        description={t("seo:support.description")}
+        type="website"
+      />
       <HeaderSupport />
       <SupportContent />
       <BlueCardSupport />

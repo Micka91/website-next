@@ -1,0 +1,162 @@
+.offerCard {
+  @include flexRowColumn;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  border: 0.1rem solid whitesmoke;
+  width: 38.5rem;
+  animation-duration: 0.7s;
+  animation-name: fadeIn;
+
+  &:not(:last-child) {
+    margin-right: 4rem;
+  }
+
+  @include media(desktop-s) {
+    margin-bottom: 3rem;
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+  }
+
+  @include media(tablet-l) {
+    margin-right: 0;
+    width: 35rem;
+  }
+
+  &__title {
+    @include flexAlignCenter;
+    background-image: $offers;
+    color: $white-std;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    font-weight: normal;
+
+    p {
+      font-size: 2.2rem;
+    }
+
+    &--dot {
+      height: 0.8rem;
+      width: 0.8rem;
+      margin: 0 0.5rem;
+      margin-top: 0.5rem;
+      background: $white-std;
+      border-radius: 50%;
+    }
+
+    &--offers {
+      font-weight: bold;
+    }
+  }
+
+  &__image {
+    @include flexCenter;
+    position: relative;
+    min-height: 22rem;
+
+    &--one {
+      height: 20rem;
+
+      @include media(phone-xs) {
+        &:not(:last-child) {
+          height: 15rem;
+        }
+      }
+    }
+
+    &--two {
+      height: 15rem;
+      margin-left: -5rem;
+      margin-top: 1.5rem;
+
+      @include media(phone-xs) {
+        &:not(:last-child) {
+          height: 10rem;
+        }
+      }
+    }
+  }
+
+  &__price {
+    margin-bottom: 4rem;
+    min-height: 11rem;
+
+    &--month {
+      @include flexAlignBaseline;
+      p {
+        font-size: 7rem;
+        font-weight: bold;
+      }
+    }
+
+    span {
+      font-size: 2.2rem;
+    }
+
+    &__year {
+      text-align: center;
+      padding-left: 3rem;
+
+      &--price {
+        font-size: 2rem;
+        font-weight: $f6;
+      }
+    }
+  }
+
+  &__options {
+    list-style-type: none;
+    padding: 0 0 0 4.5rem;
+    margin-bottom: 1rem;
+    min-height: 13.5rem;
+
+    @include media(tablet-l) {
+      padding-right: 0.5rem;
+    }
+
+    &--option {
+      font-weight: $f4;
+      position: relative;
+      &::before {
+        content: ("✓");
+        position: absolute;
+        top: 0;
+        left: -1.5rem;
+      }
+
+      &__color {
+        color: $secondary-std;
+        font-weight: $f6;
+      }
+    }
+  }
+
+  &__downloadButton {
+    background-image: $offers;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 1.5rem 0;
+    color: $white-std;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    cursor: pointer;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

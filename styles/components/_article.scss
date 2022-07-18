@@ -1,12 +1,14 @@
 .article {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  @include flexColumnBetween;
   padding: 2.4rem 2rem;
   border-radius: 0.8rem;
-  box-shadow: 0 0 12px 0 $grey-medium-20;
+  box-shadow: 0 0 1.2rem 0 $grey-medium-20;
   background-color: $white-std;
   transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   &__logo {
     text-align: center;

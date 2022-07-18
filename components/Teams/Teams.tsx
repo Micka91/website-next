@@ -1,9 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 // TRANSLATION
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
 // COMPONENTS
 import Container from "./../Container/Container";
-
+// TEAM PICTURES
 const apolline = "/images/teams/Apolline.jpg";
 const dominique = "/images/teams/Dominique.jpg";
 const eliran = "/images/teams/Eliran.jpg";
@@ -115,10 +116,12 @@ const Teams = () => {
                 title={t("teams:linkTitle", { name: user.name })}
               >
                 <div className="teams__imageContainer">
-                  <img
+                  <Image
                     src={user.src}
                     alt={t("teams:alt", { name: user.name })}
                     className="teams__avatar"
+                    width="250"
+                    height="250"
                   />
                   <div className="teams__overlay"></div>
                   <img
@@ -135,7 +138,12 @@ const Teams = () => {
                   className="teams__logo"
                   title={t("teams:linkTitle", { name: user.name })}
                 >
-                  <img src={linkedin} alt="Logo linkedin" />
+                  <Image
+                    src={linkedin}
+                    alt="Logo linkedin"
+                    width="25"
+                    height="25"
+                  />
                 </a>
               </div>
               <p className="teams__status">{user.status}</p>

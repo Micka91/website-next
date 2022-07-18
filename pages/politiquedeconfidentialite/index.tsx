@@ -2,7 +2,6 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { namespaces } from "../../utils/namespaces";
-
 // COMPONENTS
 import SEO from "../../components/SEO/SEO";
 import BlueCard from "../../components/BlueCard/BlueCard";
@@ -16,7 +15,11 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:privacy.title")}
+        description={t("seo:privacy.description")}
+        type="article"
+      />
       <HeaderPrivacyPolicy />
       <PrivacyPolicyContent />
       <BlueCard />

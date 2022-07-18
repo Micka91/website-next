@@ -53,6 +53,8 @@ $secondary-std: hsl(199, 92%, 56%);
 $secondary-55: hsla(199, 92%, 56%, 0.55);
 $secondary-85: hsla(199, 92%, 56%, 0.85);
 $secondary-dark: hsl(201, 98%, 41%);
+$unselected: hsla(0, 1%, 34%, 0.851);
+$unselected-bg: hsla(0, 1%, 34%, 0.36);
 $valid-dark: hsl(122, 52%, 32%);
 $valid-std: hsl(122, 39%, 49%);
 $valid-light: hsl(88, 50%, 60%);
@@ -65,15 +67,21 @@ $bg-azure: hsla(199, 92%, 56%, 0.1);
 $cool-blue-30: hsla(199, 55%, 51%, 0.3);
 $shadowNav: hsla(199, 49%, 49%, 0.2);
 $gradient: linear-gradient(236deg, $secondary-std, $primary-std);
+$offers: linear-gradient(
+  236deg,
+  hsla(199, 92%, 56%, 0.8),
+  hsla(174, 63%, 40%, 0.55)
+);
 $drawer: linear-gradient(265deg, #81888b, #263238);
 
 // LAYOUT
 $container: 120rem;
 
 // BREAKPOINTS
+$mobile-xs: 17.5rem !default;
 $mobile-s: 20rem !default;
 $mobile-m: 24rem !default;
-$mobile-l: 27rem !default;
+$mobile-l: 33.75rem !default;
 $tablet: 48rem !default;
 $tablet-l: 52rem !default;
 $desktop: 64rem !default;
@@ -83,6 +91,7 @@ $desktop-l: 160rem !default;
 $full: 100%;
 
 // MEDIA QUERIES
+$responsiveMobileXSmall: "(max-width: #{$mobile-xs})";
 $responsiveMobileSmall: "(max-width: #{$mobile-s})";
 $responsiveMobileMedium: "(max-width: #{$mobile-m})";
 $responsiveMobileLarge: "(max-width: #{$mobile-l})";

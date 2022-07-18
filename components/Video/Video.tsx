@@ -14,7 +14,6 @@ const Video = ({ video }: IProps) => {
   // PROPS
   const { url, cover } = video;
   // REACT STATE
-  const [windowWidth, setWindowWidth] = useState<number>(0);
   const [playerHeight, setPlayerHeight] = useState<number>(450);
 
   useEffect(() => {

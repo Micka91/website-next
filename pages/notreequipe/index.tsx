@@ -17,7 +17,11 @@ const Team = () => {
 
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:teams.title")}
+        description={t("seo:teams.description")}
+        type="website"
+      />
       <HeaderTeams />
       <Founder />
       <Teams />

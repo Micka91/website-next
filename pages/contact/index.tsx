@@ -15,7 +15,11 @@ const Contact = () => {
 
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:contact.title")}
+        description={t("seo:contact.description")}
+        type="website"
+      />
       <HeaderContact />
       <ContactContent />
       <BlueCard />

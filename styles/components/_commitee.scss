@@ -14,8 +14,7 @@
   }
 
   &__grid {
-    display: flex;
-    justify-content: center;
+    @include flexJustifyCenter;
     gap: 5rem;
 
     // MEDIA QUERY

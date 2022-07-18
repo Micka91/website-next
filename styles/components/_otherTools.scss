@@ -13,15 +13,12 @@
 
   // OTHERKEYS
   &__otherKeys {
+    @include flexColumnCenter;
     width: $full;
     box-shadow: 0 2px 8px 0 rgb(38 50 56 / 40%);
     border-radius: 0.8rem;
     background-color: $white-std;
     margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     z-index: 80;
     padding: 6rem 8rem;
 
@@ -30,11 +27,6 @@
       width: 95%;
       padding: 2rem;
     }
-
-    // @include media(phone-l) {
-    //   flex-direction: column;
-    //   align-items: center;
-    // }
   }
 
   &__otherKeysTitle {
@@ -56,14 +48,12 @@
   }
 
   &__otherKeysContainer {
-    display: flex;
-    justify-content: center;
+    @include flexJustifyCenter;
     gap: 5rem;
   }
 
   &__otherKeysCardContainer {
-    display: flex;
-    align-items: flex-start;
+    @include flexAlignStart;
     gap: 2rem;
 
     // MEDIA QUERY
@@ -73,8 +63,7 @@
     }
 
     > div {
-      display: flex;
-      align-items: flex-start;
+      @include flexAlignStart;
       gap: 2rem;
 
       // MEDIA QUERY

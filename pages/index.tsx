@@ -20,6 +20,7 @@ const Home = () => {
       <SEO
         title={t("seo:home.title")}
         description={t("seo:home.description")}
+        type="website"
       />
       <HomeHero />
       <Simplification />

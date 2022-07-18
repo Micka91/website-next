@@ -24,8 +24,7 @@
   }
 
   &__reverse {
-    display: flex;
-    flex-direction: row-reverse;
+    @include flexRowReverse;
     gap: 10rem;
 
     // MEDIA QUERY

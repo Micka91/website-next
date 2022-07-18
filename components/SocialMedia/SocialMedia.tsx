@@ -1,4 +1,5 @@
-import React from "react";
+// NEXT
+import Image from "next/image";
 
 const socialsMedias = [
   {
@@ -29,10 +30,12 @@ const SocialMedia = () => {
             rel="noopener noreferrer"
             className="socialMedia__link"
           >
-            <img
+            <Image
               src={socialsMedia.img}
               alt={socialsMedia.alt}
               className="socialMedia__image"
+              width="28"
+              height="31"
             />
           </a>
         </li>

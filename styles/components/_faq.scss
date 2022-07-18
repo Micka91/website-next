@@ -1,0 +1,27 @@
+.faq {
+  padding: 5rem 0;
+
+  &__title {
+    text-align: center;
+    font-size: $typo-xl;
+    font-weight: $f5;
+    margin: 3rem 0;
+  }
+
+  &__questions {
+    @include flexColumnCenter;
+    padding: 0 5rem;
+
+    @include media(phone-l) {
+      padding: 0 1.5rem;
+    }
+  }
+
+  &__questionContainer {
+    width: 60rem;
+
+    @include media(phone-l) {
+      width: $full;
+    }
+  }
+}

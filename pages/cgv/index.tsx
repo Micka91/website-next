@@ -2,7 +2,6 @@
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { namespaces } from "../../utils/namespaces";
-
 // COMPONENTS
 import HeaderCgv from "../../components/Headers/HeaderCgv/HeaderCgv";
 import SEO from "../../components/SEO/SEO";
@@ -16,7 +15,11 @@ const Cgv = () => {
 
   return (
     <>
-      <SEO title={t("seo:cgu.title")} description={t("seo:cgu.description")} />
+      <SEO
+        title={t("seo:cgv.title")}
+        description={t("seo:cgv.description")}
+        type="article"
+      />
       <HeaderCgv />
       <CgvContent />
       <BlueCard />
