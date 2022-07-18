@@ -34,7 +34,7 @@
   }
 
   // MEDIA QUERY
-  @include media(tablet-l) {
+  @include media(desktop) {
     padding: 0.5rem $pad-phone;
     justify-content: space-between;
   }
@@ -67,7 +67,7 @@
     display: none;
 
     // MEDIA QUERY
-    @include media(tablet-l) {
+    @include media(desktop) {
       display: block;
     }
   }
