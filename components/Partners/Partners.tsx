@@ -28,7 +28,7 @@ const Partners = () => {
         { src: "/images/partners/psc.png", alt: t("partners:psc") },
         { src: "/images/partners/SCC.png", alt: t("partners:scc") },
         // Doc e-santé
-        { src: "/images/partners/branchet.svg", alt: t("partners:branchet") },
+        // { src: "/images/partners/branchet.svg", alt: t("partners:branchet") },
       ],
     },
     {
@@ -43,7 +43,7 @@ const Partners = () => {
         },
         { src: "/images/partners/rgpd.png", alt: t("partners:rgpd") },
         // Conseil e-santé
-        { src: "/images/partners/rgpd.png", alt: t("partners:rgpd") },
+        // { src: "/images/partners/rgpd.png", alt: t("partners:rgpd") },
       ],
     },
     {
