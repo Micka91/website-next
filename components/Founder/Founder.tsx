@@ -21,6 +21,8 @@ const Founder = () => {
             href="https://www.linkedin.com/in/sacha-rozencwajg-281466104/"
             className="founder__imageLink"
             title={t("teams:linkTitle", { name: "Dr. Sacha Rozencwajg" })}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <div className="founder__imageContainer">
               <img
@@ -42,6 +44,8 @@ const Founder = () => {
                 href="https://www.linkedin.com/in/sacha-rozencwajg-281466104/"
                 className="founder__linkedinLink"
                 title={t("teams:linkTitle", { name: "Dr. Sacha Rozencwajg" })}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <img
                   src={linkedin}

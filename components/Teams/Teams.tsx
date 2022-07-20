@@ -17,6 +17,16 @@ const mickael = "/images/teams/Micka.jpg";
 const taha = "/images/teams/Taha.JPG";
 const thomas = "/images/teams/Thomas.jpg";
 const tristan = "/images/teams/Tristan.jpg";
+
+const jerome = "/images/teams/jerome.jpg";
+const jeanmarc = "/images/teams/jeanmarc.jpeg";
+const denis = "/images/teams/denis.jpeg";
+const guillaume = "/images/teams/guillaume.jpeg";
+const jeanyves = "/images/teams/jeanyves.jpeg";
+const thibault = "/images/teams/thibault.jpeg";
+// const audrey = "/images/teams/Tristan.jpg";
+// const amine = "/images/teams/Tristan.jpg";
+
 const pentagone = "/images/background/pentagone.png";
 const linkedin = "/images/social/linkedin-gray.svg";
 
@@ -50,6 +60,38 @@ const Teams = () => {
       status: t("teams:teams.tristan"),
       linkedin: "https://www.linkedin.com/in/tristan-t-19b821155/",
     },
+    // INVESTISSEURS
+    {
+      src: jerome,
+      name: "Jerome",
+      status: t("teams:teams.jerome"),
+      linkedin:
+        "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-raby-lemoine-02ba6611b/",
+    },
+    {
+      src: jeanmarc,
+      name: "Jean Marc",
+      status: t("teams:teams.jeanmarc"),
+      linkedin: "https://www.linkedin.com/in/dr-jean-marc-coursier-b24aa263/",
+    },
+    {
+      src: denis,
+      name: "Denis",
+      status: t("teams:teams.denis"),
+      linkedin: "https://www.linkedin.com/in/denis-gihan-56b514/",
+    },
+    {
+      src: jeanyves,
+      name: "Jean Yves",
+      status: t("teams:teams.jeanyves"),
+      linkedin: "https://www.linkedin.com/in/jeanyvesrobin/",
+    },
+    {
+      src: thibault,
+      name: "Thibault",
+      status: t("teams:teams.thibault"),
+      linkedin: "https://www.linkedin.com/in/thibault-maitre-8044524/",
+    },
     // DEVS
     {
       src: thomas,
@@ -74,6 +116,12 @@ const Teams = () => {
       name: "Kaiqiang",
       status: t("teams:teams.kaiqiang"),
       linkedin: "https://www.linkedin.com/in/kaikrk/",
+    },
+    {
+      src: guillaume,
+      name: "Guillaume",
+      status: t("teams:teams.guillaume"),
+      linkedin: "https://www.linkedin.com/in/guillaume-donzeau/",
     },
     // SUPPORT AND MARKETING
     {
@@ -114,6 +162,8 @@ const Teams = () => {
                 href={user.linkedin}
                 className="teams__link"
                 title={t("teams:linkTitle", { name: user.name })}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <div className="teams__imageContainer">
                   <Image
@@ -137,6 +187,8 @@ const Teams = () => {
                   href={user.linkedin}
                   className="teams__logo"
                   title={t("teams:linkTitle", { name: user.name })}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Image
                     src={linkedin}

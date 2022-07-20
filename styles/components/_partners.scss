@@ -1,10 +1,12 @@
 .partners {
-  @include flexJustifyBetween;
-  gap: 3rem;
+  // @include flexJustifyBetween;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
 
   .partner {
     min-width: 15rem;
-    max-width: 33.33333333%;
+    // max-width: 33.33333333%;
 
     &__title {
       font-size: $typo-n;
@@ -26,19 +28,18 @@
       }
 
       img {
-        // width: 100px;
+        height: 6rem;
         aspect-ratio: 16/ 9;
-        height: 7rem;
         object-fit: contain;
 
         // MEDIA QUERY
-        @include media(tablet-l) {
-          height: 6rem;
-        }
+        // @include media(tablet-l) {
+        //   height: 6rem;
+        // }
 
-        @include media(phone-l) {
-          height: 5rem;
-        }
+        // @include media(phone-l) {
+        //   height: 5rem;
+        // }
       }
     }
 
