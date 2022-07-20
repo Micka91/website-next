@@ -17,6 +17,8 @@ const GooglePlay = () => {
       <img
         src="/images/logo/googlePlay.png"
         alt={t("footer:col4.altGooglePlay")}
+        // width="125px"
+        // height="40px"
       />
     </a>
   );

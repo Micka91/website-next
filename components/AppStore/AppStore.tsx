@@ -14,7 +14,12 @@ const AppStore = () => {
       rel="noopener noreferrer"
       title={t("footer:col4.titleAppStore")}
     >
-      <img src="/images/logo/appStore.png" alt={t("footer:col4.altAppStore")} />
+      <img
+        src="/images/logo/appStore.png"
+        alt={t("footer:col4.altAppStore")}
+        // width="125px"
+        // height="40px"
+      />
     </a>
   );
 };

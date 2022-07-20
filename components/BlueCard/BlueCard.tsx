@@ -10,6 +10,7 @@ import Container from "../Container/Container";
 import Button from "./../Button/Button";
 // CONTEXT
 import { DrawerContext } from "../../context/DrawerContext";
+import { PATHS } from "../../enums/paths";
 
 const BlueCard = () => {
   // I18NEXT HOOKS
@@ -40,8 +41,8 @@ const BlueCard = () => {
             />
           </Button>
           <Button className="button__price">
-            <Link href={t("navigation:paths.offers")}>
-              {t("common:seePrice")}
+            <Link href={PATHS.OFFERS}>
+              <a>{t("common:seePrice")}</a>
             </Link>
           </Button>
         </div>

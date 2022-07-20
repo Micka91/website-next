@@ -2,6 +2,7 @@
 
 // TRANSLATION
 import { useTranslation } from "next-i18next";
+// NEXT
 import Image from "next/image";
 // COMPONENTS
 import Container from "../Container/Container";
@@ -23,7 +24,7 @@ const Simplification = () => {
         </div>
         <div className="simplification__cardContainer">
           <div className="simplification__card">
-            <Image
+            <img
               src="/images/home/caregivers.png"
               alt={t("home:simplification.alt")}
               width="300"
