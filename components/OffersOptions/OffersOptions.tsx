@@ -10,12 +10,12 @@ interface IProps {
   type: string;
 }
 
-const ROADMAP = "/images/offers/ROADMAP.png";
-const r1 = "/images/offers/roadmap-1.png";
-const r2 = "/images/offers/roadmap-2.png";
-const r3 = "/images/offers/roadmap-3.png";
-const r4 = "/images/offers/roadmap-4.png";
-const r5 = "/images/offers/roadmap-5.png";
+const ROADMAP = "/images/offers/ROADMAP.jpg";
+const r1 = "/images/offers/roadmap-1.jpg";
+const r2 = "/images/offers/roadmap-2.jpg";
+const r3 = "/images/offers/roadmap-3.jpg";
+const r4 = "/images/offers/roadmap-4.jpg";
+const r5 = "/images/offers/roadmap-5.jpg";
 
 const doctor = "/images/offers/doctor.png";
 const team = "/images/offers/team.png";

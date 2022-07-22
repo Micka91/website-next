@@ -15,7 +15,7 @@ const BlueCardSupport = () => {
           <img src="/images/support/support.png" alt="" />
         </div>
         <div className="blueCardSupport__text">
-          <h2>{t("support:blueCard.title")}</h2>
+          <h3>{t("support:blueCard.title")}</h3>
           <p>
             {t("support:blueCard.texte")}
 
