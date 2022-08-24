@@ -10,8 +10,6 @@ interface IProps {
 const SEO = ({ title, description, type }: IProps) => {
   const router = useRouter();
 
-  console.log(router);
-
   return (
     <Head>
       <title>{title}</title>

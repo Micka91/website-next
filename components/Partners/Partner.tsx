@@ -1,5 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
+import Image from "next/image";
 interface IData {
   src: string;
   alt: string;
@@ -19,10 +18,14 @@ const Partner = ({ datas }: IProps) => {
       <h3 className="partner__title">{title}</h3>
       <div className="partner__container">
         {partners.map((partner, index) => (
-          <img
+          <Image
             key={index}
             src={partner.src}
             alt={partner.alt}
+            // layout="responsive"
+            width={105}
+            height={60}
+            loading="eager"
             className="partner__logo"
           />
         ))}

@@ -57,7 +57,7 @@ const Partners = () => {
         { src: "/images/partners/biolabs.webp", alt: t("partners:biolabs") },
         { src: "/images/partners/nabla.png", alt: t("partners:nabla") },
         { src: "/images/partners/echofirst.png", alt: t("partners:echofirst") },
-        { src: "/images/partners/jei.png", alt: t("partners:jei") },
+        // { src: "/images/partners/jei.png", alt: t("partners:jei") },
       ],
     },
     {
