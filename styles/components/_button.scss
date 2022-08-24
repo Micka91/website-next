@@ -23,18 +23,17 @@
   }
 
   &__more {
-    background-color: transparent;
+    background-color: $white-std;
     color: $grey-medium-std;
     border: 0.1rem solid currentColor;
 
     &:hover {
       color: $secondary-std;
-      border: 0.1rem solid currentColor;
     }
   }
 
   &__demo {
-    background-color: transparent;
+    background-color: $white-std;
     color: $secondary-std;
     border: 0.2rem solid currentColor;
 
@@ -57,7 +56,7 @@
   &__white {
     background-color: $white-std;
     color: $primary-std;
-    border: 0.2rem solid transparent;
+    border: 0.2rem solid $white-std;
 
     &:hover {
       box-shadow: 0 0.8rem 1.2rem 0 $cool-blue-30;

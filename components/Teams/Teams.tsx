@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 // TRANSLATION
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
@@ -15,13 +14,12 @@ const ludovic = "/images/teams/ludoInd.png";
 const michel = "/images/teams/Michel.jpg";
 const mickael = "/images/teams/Micka.jpg";
 const taha = "/images/teams/Taha.JPG";
-const thomas = "/images/teams/Thomas.jpg";
+// const thomas = "/images/teams/Thomas.jpg";
 const tristan = "/images/teams/Tristan.jpg";
 
 const jerome = "/images/teams/jerome.jpg";
 const jeanmarc = "/images/teams/jeanmarc.jpeg";
 const denis = "/images/teams/denis.jpeg";
-const guillaume = "/images/teams/guillaume.jpeg";
 const jeanyves = "/images/teams/jeanyves.jpeg";
 const thibault = "/images/teams/thibault.jpeg";
 // const audrey = "/images/teams/Tristan.jpg";
@@ -93,12 +91,12 @@ const Teams = () => {
       linkedin: "https://www.linkedin.com/in/thibault-maitre-8044524/",
     },
     // DEVS
-    {
-      src: thomas,
-      name: "Thomas",
-      status: t("teams:teams.thomas"),
-      linkedin: "https://www.linkedin.com/in/thomas-martin-273b6430/",
-    },
+    // {
+    //   src: thomas,
+    //   name: "Thomas",
+    //   status: t("teams:teams.thomas"),
+    //   linkedin: "https://www.linkedin.com/in/thomas-martin-273b6430/",
+    // },
     {
       src: eliran,
       name: "Eliran",
@@ -116,12 +114,6 @@ const Teams = () => {
       name: "Kaiqiang",
       status: t("teams:teams.kaiqiang"),
       linkedin: "https://www.linkedin.com/in/kaikrk/",
-    },
-    {
-      src: guillaume,
-      name: "Guillaume",
-      status: t("teams:teams.guillaume"),
-      linkedin: "https://www.linkedin.com/in/guillaume-donzeau/",
     },
     // SUPPORT AND MARKETING
     {
@@ -174,11 +166,15 @@ const Teams = () => {
                     height="250"
                   />
                   <div className="teams__overlay"></div>
-                  <img
+                  <div
+                    style={{ backgroundImage: `url(${pentagone})` }}
+                    className="teams__pentagone"
+                  />
+                  {/* <img
                     src={pentagone}
                     alt="Image décorative en forme de pentagone"
                     className="teams__pentagone"
-                  />
+                  /> */}
                 </div>
               </a>
               <div className="teams__nameContainer">

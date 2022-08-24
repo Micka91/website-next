@@ -51,4 +51,25 @@
     // MEDIA QUERY
     @include mediaQueryHeaderButtons;
   }
+
+  &__link {
+    @include flexCenter;
+    min-width: 17.5rem;
+    background-color: $white-std;
+    padding: 1em 2em;
+    outline: none;
+    color: $grey-medium-std;
+    border: 0.1rem solid currentColor;
+    border-radius: 0.4rem;
+    text-transform: uppercase;
+    font-size: $typo-s;
+    font-weight: $f5;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s ease-in 0s;
+
+    &:hover {
+      transform: translateY(-2px);
+      color: $secondary-std;
+    }
+  }
 }

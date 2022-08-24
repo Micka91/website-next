@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 // REACT
 import { useContext } from "react";
+// NEXT
+import Link from "next/link";
 // TRANSLATION
 import { useTranslation } from "next-i18next";
 // COMPONENTS
@@ -8,7 +10,8 @@ import Background from "./../Background/Background";
 import Hero from "./../Hero/Hero";
 import Button from "./../Button/Button";
 // CONTEXT
-import { DrawerContext } from './../../context/DrawerContext';
+import { DrawerContext } from "./../../context/DrawerContext";
+import { PATHS } from "../../enums/paths";
 
 const HomeHero = () => {
   // I18NEXT HOOKS
@@ -36,9 +39,9 @@ const HomeHero = () => {
                     alt={t("home:hero.alt2")}
                   />
                 </Button>
-                <Button className="button__more">
-                  {t("home:hero.button")}
-                </Button>
+                <Link href={PATHS.OFFERS}>
+                  <a className="home__link">{t("home:hero.button")}</a>
+                </Link>
               </div>
             </div>
             <img

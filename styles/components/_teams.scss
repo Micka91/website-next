@@ -37,9 +37,6 @@
     }
   }
 
-  &__link {
-  }
-
   &__imageContainer {
     position: relative;
     text-align: center;
@@ -74,12 +71,15 @@
   }
 
   &__pentagone {
-    width: 100%;
-    height: 100%;
+    // width: 100%;
+    // height: 100%;
     position: absolute;
     left: 0;
     bottom: 0;
     right: 0;
+    top: 0;
+    background-position: center center;
+    background-size: cover;
   }
 
   &__nameContainer {

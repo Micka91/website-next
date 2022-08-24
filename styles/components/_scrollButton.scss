@@ -20,6 +20,9 @@
     background-color: $secondary-55;
     box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
     transition: background-color 1s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     &:hover {
       cursor: pointer;
