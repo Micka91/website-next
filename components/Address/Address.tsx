@@ -1,4 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 import { useTranslation } from "next-i18next";
 // COMPONENTS
@@ -11,18 +13,22 @@ const Address = () => {
   return (
     <address>
       <div className="footer__adressContainer">
-        <img
+        <Image
           src="/images/footer/address.png"
           alt={t("footer:altAddress")}
           className="footer__image"
+          width={18}
+          height={18}
         />
         <span className="footer__adress">22 rue Drouot- 75009 Paris</span>
       </div>
       <div className="footer__mailContainer">
-        <img
+        <Image
           src="/images/footer/mail.png"
           alt={t("footer:altMail")}
           className="footer__image"
+          width={18}
+          height={18}
         />
         <a href="mailto:contact@teamdoc.fr" className="footer__mail">
           contact@teamdoc.fr

@@ -1,4 +1,6 @@
+// NEXT
 import Image from "next/image";
+
 interface IData {
   src: string;
   alt: string;

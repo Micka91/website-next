@@ -5,7 +5,14 @@ import Image from "next/image";
 // TRANSLATION
 import { useTranslation } from "next-i18next";
 
-const AppStore = () => {
+interface IProps {
+  href: string;
+  title: string;
+  src: string;
+  alt: string;
+}
+
+const AppButton = ({ href, title, src, alt }: IProps) => {
   // I18NEXT HOOKS
   const { t } = useTranslation();
   // REACT STATE
@@ -18,15 +25,10 @@ const AppStore = () => {
   }, []);
 
   return (
-    <a
-      href="https://apple.co/35jrBTM"
-      target="_blank"
-      rel="noopener noreferrer"
-      title={t("footer:col4.titleAppStore")}
-    >
+    <a href={href} target="_blank" rel="noopener noreferrer" title={title}>
       <Image
-        src="/images/logo/appStore.png"
-        alt={t("footer:col4.altAppStore")}
+        src={src}
+        alt={alt}
         width={matches ? 140 : 240}
         height={matches ? 44 : 75}
         loading="eager"
@@ -35,4 +37,4 @@ const AppStore = () => {
   );
 };
 
-export default AppStore;
+export default AppButton;

@@ -1,11 +1,21 @@
-/* eslint-disable @next/next/no-img-element */
-
+// REACT
+import { useState, useEffect } from "react";
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 import { useTranslation } from "next-i18next";
 
 const GooglePlay = () => {
   // I18NEXT HOOKS
   const { t } = useTranslation();
+  // REACT STATE
+  const [matches, setMatches] = useState(true);
+
+  useEffect(() => {
+    window
+      .matchMedia("(min-width: 768px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
 
   return (
     <a
@@ -14,11 +24,12 @@ const GooglePlay = () => {
       rel="noopener noreferrer"
       title={t("footer:col4.titleGooglePlay")}
     >
-      <img
+      <Image
         src="/images/logo/googlePlay.png"
         alt={t("footer:col4.altGooglePlay")}
-        // width="125px"
-        // height="40px"
+        width={matches ? 140 : 240}
+        height={matches ? 44 : 75}
+        loading="eager"
       />
     </a>
   );

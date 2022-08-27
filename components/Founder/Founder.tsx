@@ -1,6 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
+// REACT
+import { useState } from "react";
 // TRANSLATION
 import { useTranslation } from "next-i18next";
+// NEXT
+import Image from "next/image";
 // COMPONENTS
 import Container from "./../Container/Container";
 
@@ -11,6 +15,8 @@ const linkedin = "/images/social/linkedin-gray.svg";
 const Founder = () => {
   // i18NEXT HOOK
   const { t } = useTranslation();
+
+  const [image, setImage] = useState(sacha);
 
   return (
     <article className="founder">
@@ -24,17 +30,27 @@ const Founder = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="founder__imageContainer">
-              <img
-                src={sacha}
+            <div
+              className="founder__imageContainer"
+              onMouseOver={() => setImage(sachaHover)}
+              onMouseLeave={() => setImage(sacha)}
+            >
+              <Image
+                src={image}
                 alt={t("teams:alt", { name: "Dr. Sacha Rozencwajg" })}
                 className="founder__image"
+                layout="responsive"
+                width={450}
+                height={380}
               />
-              <img
+              {/* <Image
                 src={sachaHover}
                 alt={t("teams:founder.alt")}
                 className="founder__imageHover"
-              />
+                layout="responsive"
+                width={450}
+                height={380}
+              /> */}
             </div>
           </a>
           <div className="founder__presentation">
