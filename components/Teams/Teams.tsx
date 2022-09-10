@@ -59,13 +59,13 @@ const Teams = () => {
       linkedin: "https://www.linkedin.com/in/tristan-t-19b821155/",
     },
     // INVESTISSEURS
-    {
-      src: jerome,
-      name: "Jerome",
-      status: t("teams:teams.jerome"),
-      linkedin:
-        "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-raby-lemoine-02ba6611b/",
-    },
+    // {
+    //   src: jerome,
+    //   name: "Jerome",
+    //   status: t("teams:teams.jerome"),
+    //   linkedin:
+    //     "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-raby-lemoine-02ba6611b/",
+    // },
     {
       src: jeanmarc,
       name: "Jean Marc",
@@ -84,12 +84,12 @@ const Teams = () => {
       status: t("teams:teams.jeanyves"),
       linkedin: "https://www.linkedin.com/in/jeanyvesrobin/",
     },
-    {
-      src: thibault,
-      name: "Thibault",
-      status: t("teams:teams.thibault"),
-      linkedin: "https://www.linkedin.com/in/thibault-maitre-8044524/",
-    },
+    // {
+    //   src: thibault,
+    //   name: "Thibault",
+    //   status: t("teams:teams.thibault"),
+    //   linkedin: "https://www.linkedin.com/in/thibault-maitre-8044524/",
+    // },
     // DEVS
     // {
     //   src: thomas,

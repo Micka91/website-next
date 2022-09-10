@@ -13,12 +13,20 @@ const ht = "./images/press/articles/650.logo_large.png";
 const mfss = "./images/press/articles/mffs.png";
 const majors = "./images/press/articles/Majors.jpg";
 const sih = "./images/press/articles/sih.png";
+const mindHealth = "./images/press/articles/mindHealth.jpg";
 
 const PressArticles = () => {
   // i18NEXT HOOK
   const { t } = useTranslation();
 
   const articles = [
+    {
+      logo: mindHealth,
+      date: t("press:pressArticles.date11"),
+      article: t("press:pressArticles.article11"),
+      url: "https://www.mindhealth.fr/parcours-de-soins/lisni-distingue-3-start-up-du-soin-digital-a-lhotel-dieu/",
+      link: t("press:pressArticles.reading"),
+    },
     {
       logo: sih,
       date: t("press:pressArticles.date10"),
