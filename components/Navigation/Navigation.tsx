@@ -44,9 +44,9 @@ const Navigation = () => {
     setCurrentLocale(lang);
   };
 
-  const handleOpenBook = () => {
-    window.open("https://calendly.com/tamsaguine/teamdoc");
-  };
+  // const handleOpenBook = () => {
+  //   window.open("https://calendly.com/tamsaguine/teamdoc");
+  // };
 
   const handleOpenWebapp = () => {
     window.open("https://webapp.teamdoc.fr/");
@@ -118,9 +118,9 @@ const Navigation = () => {
       </div>
       {/* Buttons */}
       <div className="navigation__buttons">
-        <Button className="button__demo" onClick={handleOpenBook}>
+        {/* <Button className="button__demo" onClick={handleOpenBook}>
           {t("navigation:book")}
-        </Button>
+        </Button> */}
         <Button
           className="button__gradient"
           onClick={handleOpenWebapp}
