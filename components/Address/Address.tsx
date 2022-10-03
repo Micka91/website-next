@@ -16,6 +16,7 @@ const Address = () => {
         <Image
           src="/images/footer/address.png"
           alt={t("footer:altAddress")}
+          loading="eager"
           className="footer__image"
           width={18}
           height={18}
@@ -26,6 +27,7 @@ const Address = () => {
         <Image
           src="/images/footer/mail.png"
           alt={t("footer:altMail")}
+          loading="eager"
           className="footer__image"
           width={18}
           height={18}

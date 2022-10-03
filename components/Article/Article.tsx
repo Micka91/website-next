@@ -17,7 +17,13 @@ const Article = ({ article }: IProps) => {
     <article className="article">
       <div>
         <div className="article__logo">
-          <Image src={logo} alt={text} width="130" height="52" />
+          <Image
+            src={logo}
+            alt={text}
+            width="130"
+            height="52"
+            loading="eager"
+          />
         </div>
         <p className="article__date">
           <time dateTime={date}>{date}</time>

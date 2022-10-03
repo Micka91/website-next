@@ -41,6 +41,7 @@ const BlueCard = () => {
               width={matches ? "80" : "130"}
               height="130"
               className="blueCard__logo"
+              loading="eager"
             />
           )}
           <div className="blueCard__content">
@@ -56,6 +57,7 @@ const BlueCard = () => {
               alt={t("common:blueCard.alt")}
               width="20"
               height="20"
+              loading="eager"
             />
           </Button>
           <Button className="button__price">

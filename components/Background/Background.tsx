@@ -20,6 +20,7 @@ const Background = ({ src, alt, className, children }: IProps) => {
         width="100vw"
         height="100vh"
         objectFit="cover"
+        priority={true}
       />
       {children}
     </div>

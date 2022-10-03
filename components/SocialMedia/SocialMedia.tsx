@@ -34,6 +34,7 @@ const SocialMedia = () => {
               src={socialsMedia.img}
               alt={socialsMedia.alt}
               className="socialMedia__image"
+              loading="eager"
               width="28"
               height="31"
             />
