@@ -61,8 +61,7 @@ const HomeHero = () => {
             <Image
               src="/images/hero/hero-home.png"
               alt={t("home:hero.alt3")}
-              // layout="fill"
-              // objectFit="contain"
+              priority={true}
               width="600"
               height="800"
               className="home__image"
