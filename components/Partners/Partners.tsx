@@ -50,7 +50,7 @@ const Partners = () => {
       title: t("partners:title.col3"),
       partners: [
         { src: "/images/partners/jei.png", alt: t("partners:jei") },
-        { src: "/images/press/APHP.jpg", alt: t("partners:aphp") },
+        { src: "/images/press/APHP.png", alt: t("partners:aphp") },
         { src: "/images/partners/ssa.png", alt: t("partners:ssa") },
         { src: "/images/partners/CNS.png", alt: t("partners:cns") },
         { src: "/images/partners/dmh.png", alt: t("partners:dmh") },

@@ -52,20 +52,21 @@ const HomeHero = () => {
                 {t("navigation:book")}
               </Button>
             </div>
-            <div className="home__imageContainer">
-              <Image
-                src="/images/hero/hero-home.png"
-                alt={t("home:hero.alt3")}
-                layout="fill"
-                sizes="100vw"
-                className="home__image"
-              />
-            </div>
+
             {/* <img
               src="/images/hero/hero-home.png"
               alt={t("home:hero.alt3")}
               className="home__image"
             /> */}
+            <Image
+              src="/images/hero/hero-home.png"
+              alt={t("home:hero.alt3")}
+              // layout="fill"
+              // objectFit="contain"
+              width="600"
+              height="800"
+              className="home__image"
+            />
           </div>
         </Hero>
       </Background>

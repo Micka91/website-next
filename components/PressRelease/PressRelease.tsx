@@ -13,7 +13,7 @@ const PressRelease = () => {
 
       <div className="pressRealease__card">
         <div className="pressRealease__logo">
-          <img src="/images/press/APHP.jpg" alt="" />
+          <img src="/images/press/APHP.png" alt="" />
         </div>
         <div className="pressRealease__container">
           <p className="pressRealease__date">{t("press:pressRelease.date")}</p>

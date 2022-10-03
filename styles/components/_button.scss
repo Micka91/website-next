@@ -41,6 +41,10 @@
     // width: 50%;
     font-size: $typo-m;
 
+    @include media(phone-l) {
+      width: $full;
+    }
+
     // &:hover {
     //   box-shadow: 0 0.8rem 1.2rem 0 currentColor;
     // }

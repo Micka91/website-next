@@ -25,8 +25,8 @@ const Partner = ({ datas }: IProps) => {
             src={partner.src}
             alt={partner.alt}
             // layout="responsive"
-            width={105}
-            height={60}
+            width="105"
+            height="60"
             loading="eager"
             className="partner__logo"
           />
