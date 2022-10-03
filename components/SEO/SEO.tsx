@@ -19,7 +19,12 @@ const SEO = ({ title, description, type }: IProps) => {
         content="GzV4nLIKcZn-yTe6lD2sxVA7H2-uL2Df7GZdm_zsxXE"
       />
       {/* SEO */}
+      <meta name="robots" content="index, follow" />
       <meta name="description" content={description} />
+      <meta
+        name="keywords"
+        content="messagerie instantanée,messagerie sécurisée de santé,messagerie,instantanée,sécurisée,santé,professions médicales, assistant médical"
+      />
       <meta property="og:title" content={title} />
       <meta property="og:type" content={type} />
       <meta
