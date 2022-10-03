@@ -33,6 +33,23 @@
   }
 
   &__demo {
+    background-image: $gradient;
+    color: $white-std;
+    // color: $secondary-std;
+    // border: 0.2rem solid currentColor;
+    padding: 1em 2em;
+    // width: 50%;
+    font-size: $typo-m;
+
+    // &:hover {
+    //   box-shadow: 0 0.8rem 1.2rem 0 currentColor;
+    // }
+    &:hover {
+      box-shadow: 0 0.5rem 1.2rem 0 $cool-blue-30;
+    }
+  }
+
+  &__webapp {
     background-color: $white-std;
     color: $secondary-std;
     border: 0.2rem solid currentColor;

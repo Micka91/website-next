@@ -17,23 +17,20 @@
   "teams": {
     "title": "L'équipe",
     "michel": "Président & co-fondateur",
-    "yvan": "RH et Trésorerie",
+    "yvan": "CFO",
     "ludovic": "Directeur Technique",
     "tristan": "Directeur Scientifique",
-    "thomas": "Développeur principal IOS",
     "dominique": "Responsable support",
     "apolline": "Marketing et Communication",
     "mickael": "Développeur principal Web",
     "eliran": "Développeur principal Android",
     "kaiqiang": "Développeur Back End",
-    "kevin": "Support Technique",
+    "kevin": "Développeur iOS",
     "taha": "Business Developper",
-    "jerome": "Directeur général des opérations",
     "jeanmarc": "Expert e-santé",
-    "denis": "Responsable du chiffre d'affaires",
-    "guillaume": "Développeur IOS",
+    "denis": "CRO",
     "jeanyves": "Expert e-santé",
-    "thibault": "Directeur général des produits"
+    "audrey": "Resp. infrastructure & Développeur iOS"
   },
   "comity": {
     "title": "Notre Comité Scientifique",

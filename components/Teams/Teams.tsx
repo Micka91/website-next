@@ -14,16 +14,11 @@ const ludovic = "/images/teams/ludoInd.png";
 const michel = "/images/teams/Michel.jpg";
 const mickael = "/images/teams/Micka.jpg";
 const taha = "/images/teams/Taha.JPG";
-// const thomas = "/images/teams/Thomas.jpg";
 const tristan = "/images/teams/Tristan.jpg";
-
-const jerome = "/images/teams/jerome.jpg";
 const jeanmarc = "/images/teams/jeanmarc.jpeg";
 const denis = "/images/teams/denis.jpeg";
 const jeanyves = "/images/teams/jeanyves.jpeg";
-const thibault = "/images/teams/thibault.jpeg";
-// const audrey = "/images/teams/Tristan.jpg";
-// const amine = "/images/teams/Tristan.jpg";
+const audrey = "/images/teams/Audrey.jpg";
 
 const pentagone = "/images/background/pentagone.png";
 const linkedin = "/images/social/linkedin-gray.svg";
@@ -58,14 +53,6 @@ const Teams = () => {
       status: t("teams:teams.tristan"),
       linkedin: "https://www.linkedin.com/in/tristan-t-19b821155/",
     },
-    // INVESTISSEURS
-    // {
-    //   src: jerome,
-    //   name: "Jerome",
-    //   status: t("teams:teams.jerome"),
-    //   linkedin:
-    //     "https://www.linkedin.com/in/j%C3%A9r%C3%B4me-raby-lemoine-02ba6611b/",
-    // },
     {
       src: jeanmarc,
       name: "Jean Marc",
@@ -84,19 +71,7 @@ const Teams = () => {
       status: t("teams:teams.jeanyves"),
       linkedin: "https://www.linkedin.com/in/jeanyvesrobin/",
     },
-    // {
-    //   src: thibault,
-    //   name: "Thibault",
-    //   status: t("teams:teams.thibault"),
-    //   linkedin: "https://www.linkedin.com/in/thibault-maitre-8044524/",
-    // },
     // DEVS
-    // {
-    //   src: thomas,
-    //   name: "Thomas",
-    //   status: t("teams:teams.thomas"),
-    //   linkedin: "https://www.linkedin.com/in/thomas-martin-273b6430/",
-    // },
     {
       src: eliran,
       name: "Eliran",
@@ -114,6 +89,12 @@ const Teams = () => {
       name: "Kaiqiang",
       status: t("teams:teams.kaiqiang"),
       linkedin: "https://www.linkedin.com/in/kaikrk/",
+    },
+    {
+      src: audrey,
+      name: "Audrey",
+      status: t("teams:teams.audrey"),
+      linkedin: "https://www.linkedin.com/in/audrey-di-vito-b67301213/",
     },
     // SUPPORT AND MARKETING
     {

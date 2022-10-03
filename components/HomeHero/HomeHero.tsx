@@ -20,6 +20,10 @@ const HomeHero = () => {
   // REACT HOOKS
   const { handleOpen } = useContext(DrawerContext);
 
+  const handleOpenBook = () => {
+    window.open("https://calendly.com/tamsaguine/teamdoc");
+  };
+
   return (
     <section className="home__hero">
       <Background
@@ -32,7 +36,7 @@ const HomeHero = () => {
             <div className="home__container">
               <h1 className="home__title">{t("home:hero.h1")}</h1>
               <p className="home__paragraph">{t("home:hero.p")}</p>
-              <div className="home__buttons">
+              {/* <div className="home__buttons">
                 <Button className="button__gradient" onClick={handleOpen}>
                   {t("common:download")}
                   <img
@@ -43,7 +47,10 @@ const HomeHero = () => {
                 <Link href={PATHS.OFFERS}>
                   <a className="home__link">{t("home:hero.button")}</a>
                 </Link>
-              </div>
+              </div> */}
+              <Button className="button__demo" onClick={handleOpenBook}>
+                {t("navigation:book")}
+              </Button>
             </div>
             <div className="home__imageContainer">
               <Image
