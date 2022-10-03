@@ -12,6 +12,7 @@ import Button from "./../Button/Button";
 // CONTEXT
 import { DrawerContext } from "./../../context/DrawerContext";
 import { PATHS } from "../../enums/paths";
+import Image from "next/image";
 
 const HomeHero = () => {
   // I18NEXT HOOKS
@@ -44,11 +45,20 @@ const HomeHero = () => {
                 </Link>
               </div>
             </div>
-            <img
+            <div className="home__imageContainer">
+              <Image
+                src="/images/hero/hero-home.png"
+                alt={t("home:hero.alt3")}
+                layout="fill"
+                sizes="100vw"
+                className="home__image"
+              />
+            </div>
+            {/* <img
               src="/images/hero/hero-home.png"
               alt={t("home:hero.alt3")}
               className="home__image"
-            />
+            /> */}
           </div>
         </Hero>
       </Background>

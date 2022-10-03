@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface IProps {
   article: {
     logo: string;
@@ -15,7 +17,7 @@ const Article = ({ article }: IProps) => {
     <article className="article">
       <div>
         <div className="article__logo">
-          <img src={logo} alt="logo" />
+          <Image src={logo} alt={text} width="130" height="52" />
         </div>
         <p className="article__date">
           <time dateTime={date}>{date}</time>

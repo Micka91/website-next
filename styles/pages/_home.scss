@@ -15,12 +15,25 @@
     @include mediaQueryHeaderBanner;
   }
 
+  &__imageContainer {
+    width: 100%;
+
+    > span {
+      position: unset !important;
+    }
+  }
+
   &__image {
     object-fit: contain;
-    max-height: 80rem;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
 
-    // MEDIA QUERY
-    @include mediaQueryHeaderImage;
+    // object-fit: contain;
+    // max-height: 80rem;
+
+    // // MEDIA QUERY
+    // @include mediaQueryHeaderImage;
   }
 
   &__container {

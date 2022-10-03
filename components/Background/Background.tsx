@@ -1,7 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 
+import Image from "next/image";
+
 interface IProps {
-  src?: string | undefined;
+  src: string;
   alt: string;
   className: string;
   children?: React.ReactNode;
@@ -10,7 +12,15 @@ interface IProps {
 const Background = ({ src, alt, className, children }: IProps) => {
   return (
     <div className="background">
-      <img src={src} alt={alt} className={className} />
+      <Image
+        src={src}
+        alt={alt}
+        className={className}
+        layout="fill"
+        width="100vw"
+        height="100vh"
+        objectFit="cover"
+      />
       {children}
     </div>
   );

@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 // REACT
-import { useContext } from "react";
+import { useState, useEffect, useContext } from "react";
 // NEXT
 import Link from "next/link";
 // TRANSLATION
@@ -11,22 +11,38 @@ import Button from "./../Button/Button";
 // CONTEXT
 import { DrawerContext } from "../../context/DrawerContext";
 import { PATHS } from "../../enums/paths";
+import Image from "next/image";
+import useWindowMatches from "../../hooks/useWindowMatches";
 
 const BlueCard = () => {
   // I18NEXT HOOKS
   const { t } = useTranslation();
   // REACT HOOKS
   const { handleOpen } = useContext(DrawerContext);
+  // CUSTOM HOOKS
+  const { isNotMobile } = useWindowMatches();
+  // REACT STATE
+  const [matches, setMatches] = useState(true);
+
+  useEffect(() => {
+    window
+      .matchMedia("(max-width: 520px)")
+      .addEventListener("change", (e) => setMatches(e.matches));
+  }, []);
 
   return (
     <Container>
       <div className="blueCard">
         <div className="blueCard__container">
-          <img
-            src="/images/logo/teamdoc-logo.svg"
-            alt={t("common:logo")}
-            className="blueCard__logo"
-          />
+          {isNotMobile && (
+            <Image
+              src="/images/logo/teamdoc-logo.svg"
+              alt={t("common:logo")}
+              width={matches ? "80" : "130"}
+              height="130"
+              className="blueCard__logo"
+            />
+          )}
           <div className="blueCard__content">
             <h2>{t("common:blueCard.h2")}</h2>
             <p>{t("common:blueCard.p")}</p>
@@ -35,9 +51,11 @@ const BlueCard = () => {
         <div className="blueCard__buttons">
           <Button className="button__white" onClick={handleOpen}>
             {t("common:download")}
-            <img
+            <Image
               src="/images/icones/arrow.svg"
               alt={t("common:blueCard.alt")}
+              width="20"
+              height="20"
             />
           </Button>
           <Button className="button__price">

@@ -16,10 +16,6 @@
     @media only screen and #{$responsiveMobileLarge} {
       @content;
     }
-  } @else if $size == phone-l {
-    @media only screen and #{$responsiveMobileLarge} {
-      @content;
-    }
   } @else if $size == tablet {
     @media only screen and #{$responsiveTablet} {
       @content;

@@ -4,16 +4,16 @@ import { useTranslation } from "next-i18next";
 import Article from "./../Article/Article";
 import Container from "./../Container/Container";
 
-const express = "images/press/articles/Express.svg";
-const maddy = "images/press/articles/Maddynesslogo.svg";
-const ticSante = "./images/press/articles/logo_tic_sante.jpg";
-const wudoc = "./images/press/articles/logo-wudoc.png";
-const hos = "./images/press/articles/hospitalia.png";
-const ht = "./images/press/articles/650.logo_large.png";
-const mfss = "./images/press/articles/mffs.png";
-const majors = "./images/press/articles/Majors.jpg";
-const sih = "./images/press/articles/sih.png";
-const mindHealth = "./images/press/articles/mindHealth.jpg";
+const express = "/images/press/articles/Express.svg";
+const maddy = "/images/press/articles/Maddynesslogo.svg";
+const ticSante = "/images/press/articles/logo_tic_sante.jpg";
+const wudoc = "/images/press/articles/logo-wudoc.png";
+const hos = "/images/press/articles/hospitalia.png";
+const ht = "/images/press/articles/650.logo_large.png";
+const mfss = "/images/press/articles/mffs.png";
+const majors = "/images/press/articles/Majors.jpg";
+const sih = "/images/press/articles/sih.png";
+const mindHealth = "/images/press/articles/mindHealth.jpg";
 
 const PressArticles = () => {
   // i18NEXT HOOK
