@@ -93,7 +93,15 @@ const Navigation = () => {
               </Link>
             </li>
           ))}
-
+          <li className="navigation__item">
+            <a
+              href="https://blog.teamdoc.fr/blog/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              BLOG
+            </a>
+          </li>
           {/* SWITCHLANG */}
           <li
             className="navigation__item navigation__item--lang"
