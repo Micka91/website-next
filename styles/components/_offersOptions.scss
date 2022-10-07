@@ -35,6 +35,11 @@
     display: none;
     flex-direction: column;
 
+    img:nth-child(even) {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
     // MEDIA QUERY
     @include media(phone-l) {
       display: flex;

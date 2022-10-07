@@ -20,11 +20,13 @@
     "or": "or ",
     "perYear": "year",
     "options": {
-      "optionsOne": "Secure messaging",
+      "optionsOne": "HDS messaging",
       "optionsTwo": "Document sharing and storage",
       "optionsThree": "Unlimited teams",
       "optionsFour": "Unlimited task list",
-      "optionsFive": "Unlimited and configurable transmission records"
+      "optionsFive": "Unlimited and configurable transmission records",
+      "optionsFreeOne": "Unlimited task creation",
+      "optionsFreeTwo": "2 types of transmission records (creation limited to 25 records)"
     },
     "_storage": {
       "100MO": "100 MB HDS storage",

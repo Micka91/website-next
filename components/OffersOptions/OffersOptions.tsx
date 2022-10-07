@@ -39,6 +39,8 @@ const OffersOptions = ({ type }: IProps) => {
       options: [
         t("offers:cards.options.optionsOne"),
         t("offers:cards.options.optionsTwo"),
+        t("offers:cards.options.optionsFreeOne"),
+        t("offers:cards.options.optionsFreeTwo"),
         t("offers:cards._storage.100MO"),
       ],
       downloadNow: t("offers:cards.downloadNow"),
