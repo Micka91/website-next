@@ -40,6 +40,7 @@
     padding: 1em 2em;
     // width: 50%;
     font-size: $typo-m;
+    position: relative;
 
     @include media(phone-l) {
       width: $full;
