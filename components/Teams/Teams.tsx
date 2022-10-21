@@ -1,5 +1,6 @@
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+import { teams } from "../../translations/fr/teams";
+// NEXT
 import Image from "next/image";
 // COMPONENTS
 import Container from "./../Container/Container";
@@ -24,102 +25,99 @@ const pentagone = "/images/background/pentagone.png";
 const linkedin = "/images/social/linkedin-gray.svg";
 
 const Teams = () => {
-  // i18NEXT HOOK
-  const { t } = useTranslation();
-
   const teamdocTeams = [
     // DIRECTION
     {
       src: michel,
       name: "Michel",
-      status: t("teams:teams.michel"),
+      status: teams.teams.michel,
       linkedin: "https://www.linkedin.com/in/michel-rozencwajg-2156031b/",
     },
     {
       src: yvan,
       name: "Yvan",
-      status: t("teams:teams.yvan"),
+      status: teams.teams.yvan,
       linkedin: "https://www.linkedin.com/in/yvan-gabelica-256a562a/",
     },
     {
       src: ludovic,
       name: "Ludovic",
-      status: t("teams:teams.ludovic"),
+      status: teams.teams.ludovic,
       linkedin: "https://www.linkedin.com/in/ludovic-vallee/",
     },
     {
       src: tristan,
       name: "Tristan",
-      status: t("teams:teams.tristan"),
+      status: teams.teams.tristan,
       linkedin: "https://www.linkedin.com/in/tristan-t-19b821155/",
     },
     {
       src: jeanmarc,
       name: "Jean Marc",
-      status: t("teams:teams.jeanmarc"),
+      status: teams.teams.jeanmarc,
       linkedin: "https://www.linkedin.com/in/dr-jean-marc-coursier-b24aa263/",
     },
     {
       src: denis,
       name: "Denis",
-      status: t("teams:teams.denis"),
+      status: teams.teams.denis,
       linkedin: "https://www.linkedin.com/in/denis-gihan-56b514/",
     },
     {
       src: jeanyves,
       name: "Jean Yves",
-      status: t("teams:teams.jeanyves"),
+      status: teams.teams.jeanyves,
       linkedin: "https://www.linkedin.com/in/jeanyvesrobin/",
     },
     // DEVS
     {
       src: eliran,
       name: "Eliran",
-      status: t("teams:teams.eliran"),
+      status: teams.teams.eliran,
       linkedin: "https://www.linkedin.com/in/eliran-elbaz-7294a0105/",
     },
     {
       src: mickael,
       name: "Mickaël",
-      status: t("teams:teams.mickael"),
+      status: teams.teams.mickael,
       linkedin: "https://www.linkedin.com/in/mi91/",
     },
     {
       src: kaiqiang,
       name: "Kaiqiang",
-      status: t("teams:teams.kaiqiang"),
+      status: teams.teams.kaiqiang,
       linkedin: "https://www.linkedin.com/in/kaikrk/",
     },
     {
       src: audrey,
       name: "Audrey",
-      status: t("teams:teams.audrey"),
+      status: teams.teams.audrey,
       linkedin: "https://www.linkedin.com/in/audrey-di-vito-b67301213/",
     },
     // SUPPORT AND MARKETING
     {
       src: apolline,
       name: "Apolline",
-      status: t("teams:teams.apolline"),
+      status: teams.teams.apolline,
       linkedin: "https://www.linkedin.com/in/apolline-chaudré-517b8a171/",
     },
     {
       src: dominique,
       name: "Dominique",
-      status: t("teams:teams.dominique"),
+      status: teams.teams.dominique,
       linkedin: "https://www.linkedin.com/in/dominique-vallee-23082919b/",
     },
     {
       src: kevin,
       name: "Kevin",
-      status: t("teams:teams.kevin"),
+      status: teams.teams.kevin,
       linkedin: "https://www.linkedin.com/in/kevin-mazure-217b93190/",
     },
     // COMMERCIAL
     {
       src: taha,
       name: "Taha",
-      status: t("teams:teams.taha"),
+      status: teams.teams.taha,
       linkedin: "https://www.linkedin.com/in/taha-amsaguine-4354bb152/",
     },
   ];
@@ -127,21 +125,21 @@ const Teams = () => {
   return (
     <div className="teams">
       <Container>
-        <h2 className="teams__title">{t("teams:teams.title")}</h2>
+        <h2 className="teams__title">{teams.teams.title}</h2>
         <div className="teams__grid">
           {teamdocTeams.map((user) => (
             <div key={user.name} className="teams__container">
               <a
                 href={user.linkedin}
                 className="teams__link"
-                title={t("teams:linkTitle", { name: user.name })}
+                title={`${teams.linkTitle} ${user.name}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <div className="teams__imageContainer">
                   <Image
                     src={user.src}
-                    alt={t("teams:alt", { name: user.name })}
+                    alt={`${teams.alt} ${user.name}`}
                     className="teams__avatar"
                     width="250"
                     height="250"
@@ -163,7 +161,7 @@ const Teams = () => {
                 <a
                   href={user.linkedin}
                   className="teams__logo"
-                  title={t("teams:linkTitle", { name: user.name })}
+                  title={`${teams.linkTitle} ${user.name}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

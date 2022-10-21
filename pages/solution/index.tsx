@@ -1,7 +1,8 @@
 // TRANSLATION
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { namespaces } from "../../utils/namespaces";
-import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { namespaces } from "../../utils/namespaces";
+// import { useTranslation } from "next-i18next";
+import { seo } from "../../translations/fr/seo";
 // COMPONENTS
 import BlueCard from "../../components/BlueCard/BlueCard";
 import HeaderSolutions from "../../components/Headers/HeaderSolutions/HeaderSolutions";
@@ -11,14 +12,16 @@ import SEO from "./../../components/SEO/SEO";
 import OthersTools from "../../components/OthersTools/OthersTools";
 
 const Solution = () => {
-  // i18NEXT HOOK
-  const { t } = useTranslation();
+  // // i18NEXT HOOK
+  // const { t } = useTranslation();
 
   return (
     <>
       <SEO
-        title={t("seo:solution.title")}
-        description={t("seo:solution.description")}
+        title={seo.solution.title}
+        description={seo.solution.description}
+        // title={t("seo:solution.title")}
+        // description={t("seo:solution.description")}
         type="website"
       />
       <HeaderSolutions />
@@ -30,16 +33,16 @@ const Solution = () => {
   );
 };
 
-interface Iprops {
-  locale: string;
-}
+// interface Iprops {
+//   locale: string;
+// }
 
-export const getStaticProps = async ({ locale }: Iprops) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, namespaces)),
-    },
-  };
-};
+// export const getStaticProps = async ({ locale }: Iprops) => {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, namespaces)),
+//     },
+//   };
+// };
 
 export default Solution;

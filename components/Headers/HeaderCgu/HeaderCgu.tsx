@@ -1,11 +1,12 @@
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { cgu } from "../../../translations/fr/cgu";
 // COMPONENTS
 import Background from "../../Background/Background";
 
 const HeaderCgu = () => {
   // i18NEXT HOOK
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   return (
     <section className="cgu__header">
       <Background
@@ -13,7 +14,8 @@ const HeaderCgu = () => {
         alt="Image de fond cgu teamdoc"
         className="header__cgu"
       >
-        <h1 className="cgu__title">{t("cgu:header")}</h1>
+        <h1 className="cgu__title">{cgu.header}</h1>
+        {/* <h1 className="cgu__title">{t("cgu:header")}</h1> */}
       </Background>
     </section>
   );

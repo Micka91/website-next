@@ -1,238 +1,235 @@
 // NEXT
 import Link from "next/link";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+import { cgu } from "../../translations/fr/cgu";
 // UTILS
 import { PATHS } from "../../enums/paths";
 
 const CguContent = () => {
-  // i18NEXT HOOK
-  const { t } = useTranslation();
-
   return (
     <section className="cgu">
       <div>
-        <h2>{t("cgu:article1.title")}</h2>
-        <p>{t("cgu:article1.texte1")}</p>
+        <h2>{cgu.article1.title}</h2>
+        <p>{cgu.article1.texte1}</p>
         <p>
-          <strong>{t("cgu:article1.textestrong.texte1")}</strong>
-          {t("cgu:article1.texte2")}
+          <strong>{cgu.article1.textestrong.texte1}</strong>
+          {cgu.article1.texte2}
         </p>
         <p>
-          <strong>{t("cgu:article1.textestrong.texte2")}</strong>
+          <strong>{cgu.article1.textestrong.texte2}</strong>
           <a href="mailto:contact@teamdoc.fr">contact@teamdoc.fr</a>
         </p>
-        <p>{t("cgu:article1.texte3")}</p>
-        <p>{t("cgu:article1.texte4")}</p>
+        <p>{cgu.article1.texte3}</p>
+        <p>{cgu.article1.texte4}</p>
       </div>
       <div>
-        <h2>{t("cgu:article2.title")}</h2>
-        <p>{t("cgu:article2.texte1")}</p>
-        <p>{t("cgu:article2.texte2")}</p>
-        <p>{t("cgu:article2.texte3")}</p>
-        <p>{t("cgu:article2.texte4")}</p>
-        <p>{t("cgu:article2.texte5")}</p>
-        <p>{t("cgu:article2.texte6")}</p>
+        <h2>{cgu.article2.title}</h2>
+        <p>{cgu.article2.texte1}</p>
+        <p>{cgu.article2.texte2}</p>
+        <p>{cgu.article2.texte3}</p>
+        <p>{cgu.article2.texte4}</p>
+        <p>{cgu.article2.texte5}</p>
+        <p>{cgu.article2.texte6}</p>
       </div>
       <div>
-        <h2>{t("cgu:article3.title")}</h2>
-        <p>{t("cgu:article3.texte1")}</p>
-        <p>{t("cgu:article3.texte2")}</p>
-        <p>{t("cgu:article3.texte3")}</p>
+        <h2>{cgu.article3.title}</h2>
+        <p>{cgu.article3.texte1}</p>
+        <p>{cgu.article3.texte2}</p>
+        <p>{cgu.article3.texte3}</p>
       </div>
       <div>
-        <h2>{t("cgu:article4.title")}</h2>
-        <p>{t("cgu:article4.texte1")}</p>
-        <p>{t("cgu:article4.texte2")}</p>
+        <h2>{cgu.article4.title}</h2>
+        <p>{cgu.article4.texte1}</p>
+        <p>{cgu.article4.texte2}</p>
       </div>
       <div>
-        <h2>{t("cgu:article5.title")}</h2>
-        <p>{t("cgu:article5.texte1")}</p>
-        <p>{t("cgu:article5.texte2")}</p>
-        <p>{t("cgu:article5.texte3")}</p>
+        <h2>{cgu.article5.title}</h2>
+        <p>{cgu.article5.texte1}</p>
+        <p>{cgu.article5.texte2}</p>
+        <p>{cgu.article5.texte3}</p>
       </div>
       <div>
-        <h2>{t("cgu:article6.title")}</h2>
-        <p>{t("cgu:article6.texte1")}</p>
-        <p>{t("cgu:article6.texte2")}</p>
-        <p>{t("cgu:article6.texte3")}</p>
+        <h2>{cgu.article6.title}</h2>
+        <p>{cgu.article6.texte1}</p>
+        <p>{cgu.article6.texte2}</p>
+        <p>{cgu.article6.texte3}</p>
         <ul>
           <li>
-            <p>{t("cgu:article6.texteli1")}</p>
+            <p>{cgu.article6.texteli1}</p>
           </li>
           <li>
-            <p>{t("cgu:article6.texteli2")}</p>
+            <p>{cgu.article6.texteli2}</p>
           </li>
           <li>
-            <p>{t("cgu:article6.texteli3")}</p>
+            <p>{cgu.article6.texteli3}</p>
           </li>
         </ul>
         <p>
-          {t("cgu:article6.textestrong.texte1")}
-          {t("cgu:article6.textestrong.texte2")}
+          {cgu.article6.textestrong.texte1}
+          {cgu.article6.textestrong.texte2}
         </p>
-        <p>{t("cgu:article6.textestrong.texte3")}</p>
+        <p>{cgu.article6.textestrong.texte3}</p>
       </div>
       <div>
-        <h2>{t("cgu:article7.title")}</h2>
-        <p>{t("cgu:article7.texte1")}</p>
-        <p>{t("cgu:article7.texte2")}</p>
+        <h2>{cgu.article7.title}</h2>
+        <p>{cgu.article7.texte1}</p>
+        <p>{cgu.article7.texte2}</p>
       </div>
       <div>
-        <h2>{t("cgu:article8.title")}</h2>
-        <p>{t("cgu:article8.texte1")}</p>
+        <h2>{cgu.article8.title}</h2>
+        <p>{cgu.article8.texte1}</p>
       </div>
       <div>
-        <h2>{t("cgu:article9.title")}</h2>
+        <h2>{cgu.article9.title}</h2>
         <p>
-          {t("cgu:article9.textestrong.texte1")}
-          {t("cgu:article9.textestrong.texte2")}
-        </p>
-        <ul>
-          <li>
-            <p>{t("cgu:article9.texteli1")}</p>
-          </li>
-        </ul>
-        <p>
-          {t("cgu:article9.textestrong2.texte1")}
-          {t("cgu:article9.textestrong2.texte2")}
+          {cgu.article9.textestrong.texte1}
+          {cgu.article9.textestrong.texte2}
         </p>
         <ul>
-          <p>{t("cgu:article9.texteli2")}</p>
           <li>
-            <p>{t("cgu:article9.texteli3")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article9.texteli4")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article9.texteli5")}</p>
+            <p>{cgu.article9.texteli1}</p>
           </li>
         </ul>
-        <p>{t("cgu:article9.texteli6")}</p>
-        <p>{t("cgu:article9.texteli7")}</p>
-      </div>
-      <div>
-        <h2>{t("cgu:article10.title")}</h2>
-        <p>{t("cgu:article10.texte1")}</p>
-        <ul>
-          <li>
-            <p>{t("cgu:article10.texteli1")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article10.texteli2")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article10.texteli3")}</p>
-          </li>
-        </ul>
-        <p>{t("cgu:article10.texte2")}</p>
-        <p>{t("cgu:article10.texte3")}</p>
-        <p>{t("cgu:article10.texte4")}</p>
-        <p>{t("cgu:article10.texte5")}</p>
-        <p>{t("cgu:article10.texte6")}</p>
-        <p>{t("cgu:article10.texte7")}</p>
-      </div>
-      <div>
-        <h2>{t("cgu:article11.title")}</h2>
-        <p>{t("cgu:article11.texte1")}</p>
-        <p>{t("cgu:article11.texte2")}</p>
-        <ul>
-          <li>
-            <p>{t("cgu:article11.texteli1")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article11.texteli2")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article11.texteli3")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article11.texteli4")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article11.texteli5")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article11.texteli6")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article11.texteli7")}</p>
-          </li>
-          <li>
-            <p>{t("cgu:article11.texteli8")}</p>
-          </li>
-        </ul>
-        <p>{t("cgu:article11.texte3")}</p>
-        <p>{t("cgu:article11.texte4")}</p>
-        <p>{t("cgu:article11.texte5")}</p>
-      </div>
-      <div>
-        <h2>{t("cgu:article12.title")}</h2>
-        <p>{t("cgu:article12.texte1")}</p>
-        <p>{t("cgu:article12.texte2")}</p>
-        <p>{t("cgu:article12.texte3")}</p>
-        <p>{t("cgu:article12.texte4")}</p>
         <p>
-          {t("cgu:article12.texte5")}
-          <Link href={PATHS.PRIVACY_POLICY}>{t("cgu:article12.privacy")}</Link>
+          {cgu.article9.textestrong2.texte1}
+          {cgu.article9.textestrong2.texte2}
+        </p>
+        <ul>
+          <p>{cgu.article9.texteli2}</p>
+          <li>
+            <p>{cgu.article9.texteli3}</p>
+          </li>
+          <li>
+            <p>{cgu.article9.texteli4}</p>
+          </li>
+          <li>
+            <p>{cgu.article9.texteli5}</p>
+          </li>
+        </ul>
+        <p>{cgu.article9.texteli6}</p>
+        <p>{cgu.article9.texteli7}</p>
+      </div>
+      <div>
+        <h2>{cgu.article10.title}</h2>
+        <p>{cgu.article10.texte1}</p>
+        <ul>
+          <li>
+            <p>{cgu.article10.texteli1}</p>
+          </li>
+          <li>
+            <p>{cgu.article10.texteli2}</p>
+          </li>
+          <li>
+            <p>{cgu.article10.texteli3}</p>
+          </li>
+        </ul>
+        <p>{cgu.article10.texte2}</p>
+        <p>{cgu.article10.texte3}</p>
+        <p>{cgu.article10.texte4}</p>
+        <p>{cgu.article10.texte5}</p>
+        <p>{cgu.article10.texte6}</p>
+        <p>{cgu.article10.texte7}</p>
+      </div>
+      <div>
+        <h2>{cgu.article11.title}</h2>
+        <p>{cgu.article11.texte1}</p>
+        <p>{cgu.article11.texte2}</p>
+        <ul>
+          <li>
+            <p>{cgu.article11.texteli1}</p>
+          </li>
+          <li>
+            <p>{cgu.article11.texteli2}</p>
+          </li>
+          <li>
+            <p>{cgu.article11.texteli3}</p>
+          </li>
+          <li>
+            <p>{cgu.article11.texteli4}</p>
+          </li>
+          <li>
+            <p>{cgu.article11.texteli5}</p>
+          </li>
+          <li>
+            <p>{cgu.article11.texteli6}</p>
+          </li>
+          <li>
+            <p>{cgu.article11.texteli7}</p>
+          </li>
+          <li>
+            <p>{cgu.article11.texteli8}</p>
+          </li>
+        </ul>
+        <p>{cgu.article11.texte3}</p>
+        <p>{cgu.article11.texte4}</p>
+        <p>{cgu.article11.texte5}</p>
+      </div>
+      <div>
+        <h2>{cgu.article12.title}</h2>
+        <p>{cgu.article12.texte1}</p>
+        <p>{cgu.article12.texte2}</p>
+        <p>{cgu.article12.texte3}</p>
+        <p>{cgu.article12.texte4}</p>
+        <p>
+          {cgu.article12.texte5}
+          <Link href={PATHS.PRIVACY_POLICY}>{cgu.article12.privacy}</Link>
         </p>
         <p>
-          {t("cgu:article12.texte6")}
+          {cgu.article12.texte6}
           <a href="mailto:rgpd@teamdoc.fr">rgpd@teamdoc.fr</a>
-          <span>{t("cgu:article12.texte6bis")}</span>
+          <span>{cgu.article12.texte6bis}</span>
         </p>
-        <p>{t("cgu:article12.texte7")}</p>
-        <p>{t("cgu:article12.texte8")}</p>
-        <p>{t("cgu:article12.texte9")}</p>
+        <p>{cgu.article12.texte7}</p>
+        <p>{cgu.article12.texte8}</p>
+        <p>{cgu.article12.texte9}</p>
         <p>
-          {t("cgu:article12.texte10")}
-          <strong>{t("cgu:article12.texte10strong")}</strong>
-          {t("cgu:article12.texte10bis")}
+          {cgu.article12.texte10}
+          <strong>{cgu.article12.texte10strong}</strong>
+          {cgu.article12.texte10bis}
         </p>
-        <p>{t("cgu:article12.texte11")}</p>
+        <p>{cgu.article12.texte11}</p>
       </div>
       <div>
-        <h2>{t("cgu:article13.title")}</h2>
-        <p>{t("cgu:article13.texte1")}</p>
-        <p>{t("cgu:article13.texte2")}</p>
-        <p>{t("cgu:article13.texte3")}</p>
+        <h2>{cgu.article13.title}</h2>
+        <p>{cgu.article13.texte1}</p>
+        <p>{cgu.article13.texte2}</p>
+        <p>{cgu.article13.texte3}</p>
         <ul>
           <li>
-            <p>{t("cgu:article13.texteli1")}</p>
+            <p>{cgu.article13.texteli1}</p>
           </li>
           <li>
-            <p>{t("cgu:article13.texteli2")}</p>
+            <p>{cgu.article13.texteli2}</p>
           </li>
           <li>
-            <p>{t("cgu:article13.texteli3")}</p>
+            <p>{cgu.article13.texteli3}</p>
           </li>
           <li>
-            <p>{t("cgu:article13.texteli4")}</p>
+            <p>{cgu.article13.texteli4}</p>
           </li>
           <li>
-            <p>{t("cgu:article13.texteli5")}</p>
+            <p>{cgu.article13.texteli5}</p>
           </li>
           <li>
-            <p>{t("cgu:article13.texteli6")}</p>
+            <p>{cgu.article13.texteli6}</p>
           </li>
         </ul>
-        <p>{t("cgu:article13.texte4")}</p>
-        <p>{t("cgu:article13.texte5")}</p>
+        <p>{cgu.article13.texte4}</p>
+        <p>{cgu.article13.texte5}</p>
       </div>
       <div>
-        <h2>{t("cgu:article14.title")}</h2>
-        <p>{t("cgu:article14.texte1")}</p>
-        <p>{t("cgu:article14.texte2")}</p>
+        <h2>{cgu.article14.title}</h2>
+        <p>{cgu.article14.texte1}</p>
+        <p>{cgu.article14.texte2}</p>
       </div>
       <div>
-        <h2>{t("cgu:article15.title")}</h2>
-        <p>{t("cgu:article15.texte1")}</p>
-        <p>{t("cgu:article15.texte2")}</p>
+        <h2>{cgu.article15.title}</h2>
+        <p>{cgu.article15.texte1}</p>
+        <p>{cgu.article15.texte2}</p>
       </div>
       <div>
-        <h2>{t("cgu:article16.title")}</h2>
-        <p>{t("cgu:article16.texte1")}</p>
+        <h2>{cgu.article16.title}</h2>
+        <p>{cgu.article16.texte1}</p>
       </div>
     </section>
   );

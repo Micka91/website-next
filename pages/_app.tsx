@@ -10,7 +10,7 @@ import Layout from "./../components/Layout/Layout";
 import DrawerContextProvider from "./../context/DrawerContext";
 import MenuContextProvider from "../context/MenuContext";
 // TRANSLATION
-import { appWithTranslation } from "next-i18next";
+// import { appWithTranslation } from "next-i18next";
 // ANALYTICS
 import { getAnalytics, logEvent } from "firebase/analytics";
 import { app } from "../utils/firebase";
@@ -72,4 +72,5 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
 }
 
-export default appWithTranslation(MyApp);
+export default MyApp;
+// export default appWithTranslation(MyApp);

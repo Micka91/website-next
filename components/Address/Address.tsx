@@ -2,20 +2,20 @@
 // NEXT
 import Image from "next/image";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
-// COMPONENTS
-import SocialMedia from "./../SocialMedia/SocialMedia";
+// import { useTranslation } from "next-i18next";
+import { footer } from "../../translations/fr/footer";
 
 const Address = () => {
-  // I18NEXT HOOKS
-  const { t } = useTranslation();
+  // // I18NEXT HOOKS
+  // const { t } = useTranslation();
 
   return (
     <address>
       <div className="footer__adressContainer">
         <Image
           src="/images/footer/address.png"
-          alt={t("footer:altAddress")}
+          alt={footer.col1.altAddress}
+          // alt={t("footer:altAddress")}
           loading="eager"
           className="footer__image"
           width={18}
@@ -26,7 +26,8 @@ const Address = () => {
       <div className="footer__mailContainer">
         <Image
           src="/images/footer/mail.png"
-          alt={t("footer:altMail")}
+          alt={footer.col1.altMail}
+          // alt={t("footer:altMail")}
           loading="eager"
           className="footer__image"
           width={18}

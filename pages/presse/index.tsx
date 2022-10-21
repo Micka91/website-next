@@ -1,7 +1,8 @@
 // TRANSLATION
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { namespaces } from "./../../utils/namespaces";
-import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { namespaces } from "./../../utils/namespaces";
+// import { useTranslation } from "next-i18next";
+import { seo } from "../../translations/fr/seo";
 // COMPONENTS
 import SEO from "./../../components/SEO/SEO";
 import HeaderPress from "../../components/Headers/HeaderPress/HeaderPress";
@@ -13,14 +14,16 @@ import BlueCard from "./../../components/BlueCard/BlueCard";
 import Partners from "./../../components/Partners/Partners";
 
 const Press = () => {
-  // i18NEXT HOOK
-  const { t } = useTranslation();
+  // // i18NEXT HOOK
+  // const { t } = useTranslation();
 
   return (
     <>
       <SEO
-        title={t("seo:press.title")}
-        description={t("seo:press.description")}
+        title={seo.press.title}
+        description={seo.press.description}
+        // title={t("seo:press.title")}
+        // description={t("seo:press.description")}
         type="article"
       />
       <HeaderPress />
@@ -36,16 +39,16 @@ const Press = () => {
   );
 };
 
-interface Iprops {
-  locale: string;
-}
+// interface Iprops {
+//   locale: string;
+// }
 
-export const getStaticProps = async ({ locale }: Iprops) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, namespaces)),
-    },
-  };
-};
+// export const getStaticProps = async ({ locale }: Iprops) => {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, namespaces)),
+//     },
+//   };
+// };
 
 export default Press;

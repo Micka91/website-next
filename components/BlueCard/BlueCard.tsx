@@ -3,20 +3,22 @@
 import { useState, useEffect, useContext } from "react";
 // NEXT
 import Link from "next/link";
+import Image from "next/image";
+// HOOKS
+import useWindowMatches from "../../hooks/useWindowMatches";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { common } from "../../translations/fr/common";
 // COMPONENTS
 import Container from "../Container/Container";
 import Button from "./../Button/Button";
 // CONTEXT
 import { DrawerContext } from "../../context/DrawerContext";
 import { PATHS } from "../../enums/paths";
-import Image from "next/image";
-import useWindowMatches from "../../hooks/useWindowMatches";
 
 const BlueCard = () => {
   // I18NEXT HOOKS
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   // REACT HOOKS
   const { handleOpen } = useContext(DrawerContext);
   // CUSTOM HOOKS
@@ -37,7 +39,8 @@ const BlueCard = () => {
           {isNotMobile && (
             <Image
               src="/images/logo/teamdoc-logo.svg"
-              alt={t("common:logo")}
+              alt={common.logo}
+              // alt={t("common:logo")}
               width={matches ? "80" : "130"}
               height="130"
               className="blueCard__logo"
@@ -45,16 +48,20 @@ const BlueCard = () => {
             />
           )}
           <div className="blueCard__content">
-            <h2>{t("common:blueCard.h2")}</h2>
-            <p>{t("common:blueCard.p")}</p>
+            <h2>{common.blueCard.h2}</h2>
+            {/* <h2>{t("common:blueCard.h2")}</h2> */}
+            <p>{common.blueCard.p}</p>
+            {/* <p>{t("common:blueCard.p")}</p> */}
           </div>
         </div>
         <div className="blueCard__buttons">
           <Button className="button__white" onClick={handleOpen}>
-            {t("common:download")}
+            {common.download}
+            {/* {t("common:download")} */}
             <Image
               src="/images/icones/arrow.svg"
-              alt={t("common:blueCard.alt")}
+              alt={common.blueCard.alt}
+              // alt={t("common:blueCard.alt")}
               width="20"
               height="20"
               loading="eager"
@@ -62,7 +69,8 @@ const BlueCard = () => {
           </Button>
           <Button className="button__price">
             <Link href={PATHS.OFFERS}>
-              <a>{t("common:seePrice")}</a>
+              <a>{common.seePrice}</a>
+              {/* <a>{t("common:seePrice")}</a> */}
             </Link>
           </Button>
         </div>

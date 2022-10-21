@@ -1,11 +1,12 @@
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { joinUs } from "../../../translations/fr/joinUs";
 // COMPONENTS
 import Background from "../../Background/Background";
 
 const HeaderJoinUS = () => {
   // i18NEXT HOOK
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <section className="joinUs__header">
@@ -14,7 +15,8 @@ const HeaderJoinUS = () => {
         alt="Image de fond cgv teamdoc"
         className="header__joinUs"
       >
-        <h1 className="joinUs__title">{t("joinUs:title")}</h1>
+        <h1 className="joinUs__title">{joinUs.title}</h1>
+        {/* <h1 className="joinUs__title">{t("joinUs:title")}</h1> */}
       </Background>
     </section>
   );

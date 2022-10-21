@@ -1,11 +1,12 @@
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { offers } from "../../../translations/fr/offers";
 // COMPONENTS
 import Background from "../../Background/Background";
 
 const HeaderOffers = () => {
   // i18NEXT HOOK
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <section className="offers__header">
@@ -14,7 +15,8 @@ const HeaderOffers = () => {
         alt="Image de fond cgv teamdoc"
         className="header__offers"
       >
-        <h1 className="offers__title">{t("offers:title")}</h1>
+        <h1 className="offers__title">{offers.title}</h1>
+        {/* <h1 className="offers__title">{t("offers:title")}</h1> */}
       </Background>
     </section>
   );

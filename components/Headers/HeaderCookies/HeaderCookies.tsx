@@ -1,11 +1,12 @@
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { cookies } from "../../../translations/fr/cookies";
 // COMPONENTS
 import Background from "../../Background/Background";
 
 const HeaderCookies = () => {
   // i18NEXT HOOK
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return (
     <section className="cookies__header">
@@ -14,7 +15,8 @@ const HeaderCookies = () => {
         alt="Image de fond cgv teamdoc"
         className="header__cookies"
       >
-        <h1 className="cookies__title">{t("cookies:header")}</h1>
+        <h1 className="cookies__title">{cookies.header}</h1>
+        {/* <h1 className="cookies__title">{t("cookies:header")}</h1> */}
       </Background>
     </section>
   );

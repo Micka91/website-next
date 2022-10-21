@@ -1,7 +1,8 @@
 // TRANSLATION
-import { useTranslation } from "next-i18next";
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { namespaces } from "../../utils/namespaces";
+// import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { namespaces } from "../../utils/namespaces";
+import { seo } from "../../translations/fr/seo";
 // COMPONENTS
 import HeaderCgv from "../../components/Headers/HeaderCgv/HeaderCgv";
 import SEO from "../../components/SEO/SEO";
@@ -10,14 +11,16 @@ import Partners from "../../components/Partners/Partners";
 import CgvContent from "../../components/CgvContent/CgvContent";
 
 const Cgv = () => {
-  // i18NEXT HOOK
-  const { t } = useTranslation();
+  // // i18NEXT HOOK
+  // const { t } = useTranslation();
 
   return (
     <>
       <SEO
-        title={t("seo:cgv.title")}
-        description={t("seo:cgv.description")}
+        title={seo.cgv.title}
+        description={seo.cgv.description}
+        // title={t("seo:cgv.title")}
+        // description={t("seo:cgv.description")}
         type="article"
       />
       <HeaderCgv />
@@ -28,16 +31,16 @@ const Cgv = () => {
   );
 };
 
-interface Iprops {
-  locale: string;
-}
+// interface Iprops {
+//   locale: string;
+// }
 
-export const getStaticProps = async ({ locale }: Iprops) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, namespaces)),
-    },
-  };
-};
+// export const getStaticProps = async ({ locale }: Iprops) => {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, namespaces)),
+//     },
+//   };
+// };
 
 export default Cgv;

@@ -1,427 +1,424 @@
 // NEXT
 import Link from "next/link";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+import { cgv } from "../../translations/fr/cgv";
 // UTILS
 import { PATHS } from "../../enums/paths";
 
 const CgvContent = () => {
-  // i18NEXT HOOK
-  const { t } = useTranslation();
-
   return (
     <section className="cgv">
       {/* Article 1 */}
       <div>
-        <h2>{t("cgv:article1.title")}</h2>
-        <p>{t("cgv:article1.texte1")}</p>
-        <p>{t("cgv:article1.texte2")}</p>
-        <p>{t("cgv:article1.texte3")}</p>
+        <h2>{cgv.article1.title}</h2>
+        <p>{cgv.article1.texte1}</p>
+        <p>{cgv.article1.texte2}</p>
+        <p>{cgv.article1.texte3}</p>
       </div>
       {/* Article 2 */}
       <div>
-        <h2>{t("cgv:article2.title")}</h2>
-        <p>{t("cgv:article2.texte1")}</p>
+        <h2>{cgv.article2.title}</h2>
+        <p>{cgv.article2.texte1}</p>
         <ul>
-          <li>{t("cgv:article2.anomalie")}</li>
-          <li>{t("cgv:article2.client")}</li>
-          <li>{t("cgv:article2.cgv")}</li>
-          <li>{t("cgv:article2.contrat")}</li>
-          <li>{t("cgv:article2.logiciel")}</li>
-          <li>{t("cgv:article2.partie")}</li>
-          <li>{t("cgv:article2.service")}</li>
-          <li>{t("cgv:article2.utilisateur")}</li>
+          <li>{cgv.article2.anomalie}</li>
+          <li>{cgv.article2.client}</li>
+          <li>{cgv.article2.cgv}</li>
+          <li>{cgv.article2.contrat}</li>
+          <li>{cgv.article2.logiciel}</li>
+          <li>{cgv.article2.partie}</li>
+          <li>{cgv.article2.service}</li>
+          <li>{cgv.article2.utilisateur}</li>
         </ul>
       </div>
       {/* Article 3 */}
       <div>
-        <h2>{t("cgv:article3.title")}</h2>
-        <p>{t("cgv:article3.texte1")}</p>
-        <p>{t("cgv:article3.texte2")}</p>
-        <p>{t("cgv:article3.texte3")}</p>
-        <p>{t("cgv:article3.texte4")}</p>
+        <h2>{cgv.article3.title}</h2>
+        <p>{cgv.article3.texte1}</p>
+        <p>{cgv.article3.texte2}</p>
+        <p>{cgv.article3.texte3}</p>
+        <p>{cgv.article3.texte4}</p>
       </div>
       {/* Article 4 */}
       <div>
-        <h2>{t("cgv:article4.title")}</h2>
-        <p>{t("cgv:article4.texte1")}</p>
-        <p>{t("cgv:article4.texte2")}</p>
-        <p>{t("cgv:article4.texte3")}</p>
-        <p>{t("cgv:article4.texte4")}</p>
+        <h2>{cgv.article4.title}</h2>
+        <p>{cgv.article4.texte1}</p>
+        <p>{cgv.article4.texte2}</p>
+        <p>{cgv.article4.texte3}</p>
+        <p>{cgv.article4.texte4}</p>
         <ul>
           <li>
-            <p>{t("cgv:article4.texte4li1")}</p>
+            <p>{cgv.article4.texte4li1}</p>
           </li>
           <li>
-            <p>{t("cgv:article4.texte4li2")}</p>
+            <p>{cgv.article4.texte4li2}</p>
           </li>
         </ul>
-        <p>{t("cgv:article4.texte5")}</p>
+        <p>{cgv.article4.texte5}</p>
       </div>
       {/* Article 5 */}
       <div>
-        <h2>{t("cgv:article5.title")}</h2>
-        <p>{t("cgv:article5.texte1")}</p>
+        <h2>{cgv.article5.title}</h2>
+        <p>{cgv.article5.texte1}</p>
       </div>
       {/* Article 6 */}
       <div>
-        <h2>{t("cgv:article6.title")}</h2>
-        <p>{t("cgv:article6.texte1")}</p>
-        <p>{t("cgv:article6.texte2")}</p>
+        <h2>{cgv.article6.title}</h2>
+        <p>{cgv.article6.texte1}</p>
+        <p>{cgv.article6.texte2}</p>
         <ul>
           <li>
-            <p>{t("cgv:article6.texte2li1")}</p>
+            <p>{cgv.article6.texte2li1}</p>
             <ul>
               <li>
-                <p>{t("cgv:article6.texte2lisub1")}</p>
+                <p>{cgv.article6.texte2lisub1}</p>
               </li>
               <li>
-                <p>{t("cgv:article6.texte2lisub2")}</p>
+                <p>{cgv.article6.texte2lisub2}</p>
               </li>
             </ul>
           </li>
           <li>
-            <p>{t("cgv:article6.texte2li2")}</p>
+            <p>{cgv.article6.texte2li2}</p>
           </li>
           <li>
-            <p>{t("cgv:article6.texte2li3")}</p>
+            <p>{cgv.article6.texte2li3}</p>
           </li>
         </ul>
       </div>
       {/* Article 7 */}
       <div>
-        <h2>{t("cgv:article7.title")}</h2>
-        <p>{t("cgv:article7.texte1")}</p>
+        <h2>{cgv.article7.title}</h2>
+        <p>{cgv.article7.texte1}</p>
         <p>
-          {t("cgv:article7.texte2")}
-          {t("cgv:article7.texte2strong")}
+          {cgv.article7.texte2}
+          {cgv.article7.texte2strong}
         </p>
         <ul>
           <li>
-            <p>{t("cgv:article7.texte2li1")}</p>
+            <p>{cgv.article7.texte2li1}</p>
           </li>
           <li>
             <p>
-              {t("cgv:article7.texte2li2")}
-              <Link href={PATHS.CGU}>{t("cgv:article7.texte2li2-link")}</Link>
-              {t("cgv:article7.texte2li2Bis")}
+              {cgv.article7.texte2li2}
+              <Link href={PATHS.CGU}>{cgv.article7.texte2li2Link}</Link>
+              {cgv.article7.texte2li2Bis}
             </p>
           </li>
         </ul>
         <p>
-          {t("cgv:article7.texte3")}
-          {t("cgv:article7.texte3strong")}
+          {cgv.article7.texte3}
+          {cgv.article7.texte3strong}
         </p>
         <ul>
           <li>
-            <p>{t("cgv:article7.texte3li1")}</p>
+            <p>{cgv.article7.texte3li1}</p>
           </li>
           <li>
-            <p>{t("cgv:article7.texte3li2")}</p>
+            <p>{cgv.article7.texte3li2}</p>
           </li>
           <li>
-            <p>{t("cgv:article7.texte3li3")}</p>
+            <p>{cgv.article7.texte3li3}</p>
           </li>
         </ul>
         <p>
-          {t("cgv:article7.texte4")}
-          {t("cgv:article7.texte4strong")}
+          {cgv.article7.texte4}
+          {cgv.article7.texte4strong}
         </p>
         <ul>
           <li>
-            <p>{t("cgv:article7.texte4li1")}</p>
+            <p>{cgv.article7.texte4li1}</p>
           </li>
           <li>
-            <p>{t("cgv:article7.texte4li2")}</p>
+            <p>{cgv.article7.texte4li2}</p>
           </li>
         </ul>
-        <p>{t("cgv:article7.texte5")}</p>
+        <p>{cgv.article7.texte5}</p>
         <p>
-          {t("cgv:article7.texte6")}
-          {t("cgv:article7.texte6strong")}
+          {cgv.article7.texte6}
+          {cgv.article7.texte6strong}
         </p>
-        <p>{t("cgv:article7.texte6suite")}</p>
+        <p>{cgv.article7.texte6suite}</p>
         <p>
-          {t("cgv:article7.texte7")}
-          {t("cgv:article7.texte7strong")}
+          {cgv.article7.texte7}
+          {cgv.article7.texte7strong}
         </p>
-        <p>{t("cgv:article7.texte7suite")}</p>
+        <p>{cgv.article7.texte7suite}</p>
         <p>
-          {t("cgv:article7.texte8")}
-          {t("cgv:article7.texte8strong")}
+          {cgv.article7.texte8}
+          {cgv.article7.texte8strong}
         </p>
-        <p>{t("cgv:article7.texte8suite")}</p>
+        <p>{cgv.article7.texte8suite}</p>
       </div>
       {/* Article 8 */}
       <div>
-        <h2>{t("cgv:article8.title")}</h2>
-        <p>{t("cgv:article8.texte1")}</p>
-        <p>{t("cgv:article8.texte2")}</p>
-        <p>{t("cgv:article8.texte3")}</p>
+        <h2>{cgv.article8.title}</h2>
+        <p>{cgv.article8.texte1}</p>
+        <p>{cgv.article8.texte2}</p>
+        <p>{cgv.article8.texte3}</p>
         <ul>
           <li>
-            <p>{t("cgv:article8.texte3li1")}</p>
+            <p>{cgv.article8.texte3li1}</p>
           </li>
           <li>
-            <p>{t("cgv:article8.texte3li2")}</p>
+            <p>{cgv.article8.texte3li2}</p>
           </li>
         </ul>
-        <p>{t("cgv:article8.texte4")}</p>
+        <p>{cgv.article8.texte4}</p>
       </div>
       {/* Article 9 */}
       <div>
-        <h2>{t("cgv:article9.title")}</h2>
-        <p>{t("cgv:article9.texte1")}</p>
+        <h2>{cgv.article9.title}</h2>
+        <p>{cgv.article9.texte1}</p>
         <p>
-          {t("cgv:article9.texte2")}
-          {t("cgv:article9.texte2strong")}
+          {cgv.article9.texte2}
+          {cgv.article9.texte2strong}
         </p>
         <ul>
           <li>
-            <p>{t("cgv:article9.texte2li1")}</p>
+            <p>{cgv.article9.texte2li1}</p>
             <ul>
               <li>
-                <p>{t("cgv:article9.texte2li1sub1")}</p>
+                <p>{cgv.article9.texte2li1sub1}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte2li1sub2")}</p>
+                <p>{cgv.article9.texte2li1sub2}</p>
               </li>
             </ul>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li2")}</p>
+            <p>{cgv.article9.texte2li2}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li3")}</p>
+            <p>{cgv.article9.texte2li3}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li4")}</p>
+            <p>{cgv.article9.texte2li4}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li5")}</p>
+            <p>{cgv.article9.texte2li5}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li6")}</p>
+            <p>{cgv.article9.texte2li6}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li7")}</p>
+            <p>{cgv.article9.texte2li7}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li8")}</p>
+            <p>{cgv.article9.texte2li8}</p>
             <ul>
               <li>
-                <p>{t("cgv:article9.texte2li8sub1")}</p>
+                <p>{cgv.article9.texte2li8sub1}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte2li8sub2")}</p>
+                <p>{cgv.article9.texte2li8sub2}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte2li8sub3")}</p>
+                <p>{cgv.article9.texte2li8sub3}</p>
               </li>
             </ul>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li9")}</p>
+            <p>{cgv.article9.texte2li9}</p>
             <ul>
               <li>
                 <p>
-                  {t("cgv:article9.texte2li9sub1")}
-                  <Link href={PATHS.CGU}>{t("cgv:article9.link")}</Link>
+                  {cgv.article9.texte2li9sub1}
+                  <Link href={PATHS.CGU}>{cgv.article9.link}</Link>
                 </p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte2li9sub2")}</p>
+                <p>{cgv.article9.texte2li9sub2}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte2li9sub3")}</p>
+                <p>{cgv.article9.texte2li9sub3}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte2li9sub4")}</p>
+                <p>{cgv.article9.texte2li9sub4}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte2li9sub5")}</p>
+                <p>{cgv.article9.texte2li9sub5}</p>
               </li>
             </ul>
           </li>
           <li>
-            <p>{t("cgv:article9.texte2li10")}</p>
+            <p>{cgv.article9.texte2li10}</p>
           </li>
         </ul>
         <p>
-          {t("cgv:article9.texte3")}
-          {t("cgv:article9.texte3strong")}
+          {cgv.article9.texte3}
+          {cgv.article9.texte3strong}
         </p>
         <ul>
           <li>
-            <p>{t("cgv:article9.texte3li1")}</p>
+            <p>{cgv.article9.texte3li1}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte3li2")}</p>
+            <p>{cgv.article9.texte3li2}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte3li3")}</p>
+            <p>{cgv.article9.texte3li3}</p>
           </li>
         </ul>
         <p>
-          {t("cgv:article9.texte4")}
-          {t("cgv:article9.texte4strong")}
+          {cgv.article9.texte4}
+          {cgv.article9.texte4strong}
         </p>
         <ul>
           <li>
-            <p>{t("cgv:article9.texte4li1")}</p>
+            <p>{cgv.article9.texte4li1}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte4li2")}</p>
+            <p>{cgv.article9.texte4li2}</p>
           </li>
           <li>
-            <p>{t("cgv:article9.texte4li3")}</p>
+            <p>{cgv.article9.texte4li3}</p>
             <ul>
               <li>
-                <p>{t("cgv:article9.texte4li3sub1")}</p>
+                <p>{cgv.article9.texte4li3sub1}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte4li3sub2")}</p>
+                <p>{cgv.article9.texte4li3sub2}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte4li3sub3")}</p>
+                <p>{cgv.article9.texte4li3sub3}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte4li3sub4")}</p>
+                <p>{cgv.article9.texte4li3sub4}</p>
               </li>
               <li>
-                <p>{t("cgv:article9.texte4li3sub5")}</p>
+                <p>{cgv.article9.texte4li3sub5}</p>
               </li>
             </ul>
           </li>
           <li>
-            <p>{t("cgv:article9.texte4li4")}</p>
+            <p>{cgv.article9.texte4li4}</p>
           </li>
         </ul>
       </div>
       {/* Article 10 */}
       <div>
-        <h2>{t("cgv:article10.title")}</h2>
-        <p>{t("cgv:article10.texte1")}</p>
-        <p>{t("cgv:article10.texte2")}</p>
+        <h2>{cgv.article10.title}</h2>
+        <p>{cgv.article10.texte1}</p>
+        <p>{cgv.article10.texte2}</p>
       </div>
       {/* Article 11 */}
       <div>
-        <h2>{t("cgv:article11.title")}</h2>
-        <p>{t("cgv:article11.texte1")}</p>
-        <p>{t("cgv:article11.texte2")}</p>
+        <h2>{cgv.article11.title}</h2>
+        <p>{cgv.article11.texte1}</p>
+        <p>{cgv.article11.texte2}</p>
       </div>
       {/* Article 12 */}
       <div>
-        <h2>{t("cgv:article12.title")}</h2>
-        <p>{t("cgv:article12.texte1")}</p>
-        <p>{t("cgv:article12.texte2")}</p>
-        <p>{t("cgv:article12.texte3")}</p>
+        <h2>{cgv.article12.title}</h2>
+        <p>{cgv.article12.texte1}</p>
+        <p>{cgv.article12.texte2}</p>
+        <p>{cgv.article12.texte3}</p>
         <ul>
           <li>
-            <p>{t("cgv:article12.texte3li1")}</p>
+            <p>{cgv.article12.texte3li1}</p>
           </li>
           <li>
-            <p>{t("cgv:article12.texte3li2")}</p>
+            <p>{cgv.article12.texte3li2}</p>
           </li>
           <li>
-            <p>{t("cgv:article12.texte3li3")}</p>
+            <p>{cgv.article12.texte3li3}</p>
           </li>
           <li>
-            <p>{t("cgv:article12.texte3li4")}</p>
+            <p>{cgv.article12.texte3li4}</p>
           </li>
           <li>
-            <p>{t("cgv:article12.texte3li5")}</p>
+            <p>{cgv.article12.texte3li5}</p>
           </li>
           <li>
-            <p>{t("cgv:article12.texte3li6")}</p>
+            <p>{cgv.article12.texte3li6}</p>
           </li>
           <li>
-            <p>{t("cgv:article12.texte3li7")}</p>
+            <p>{cgv.article12.texte3li7}</p>
           </li>
           <li>
-            <p>{t("cgv:article12.texte3li8")}</p>
+            <p>{cgv.article12.texte3li8}</p>
           </li>
         </ul>
-        <p>{t("cgv:article12.texte4")}</p>
-        <p>{t("cgv:article12.texte5")}</p>
-        <p>{t("cgv:article12.texte6")}</p>
+        <p>{cgv.article12.texte4}</p>
+        <p>{cgv.article12.texte5}</p>
+        <p>{cgv.article12.texte6}</p>
       </div>
       {/* Article 13 */}
       <div>
-        <h2>{t("cgv:article13.title")}</h2>
-        <p>{t("cgv:article13.texte1")}</p>
-        <p>{t("cgv:article13.texte2")}</p>
-        <p>{t("cgv:article13.texte3")}</p>
-        <p>{t("cgv:article13.texte4")}</p>
+        <h2>{cgv.article13.title}</h2>
+        <p>{cgv.article13.texte1}</p>
+        <p>{cgv.article13.texte2}</p>
+        <p>{cgv.article13.texte3}</p>
+        <p>{cgv.article13.texte4}</p>
         <p>
-          {t("cgv:article13.texte5")}
-          <Link href={PATHS.PRIVACY_POLICY}>{t("cgv:article13.link")}</Link>
-          {t("cgv:article13.texte5bis")}
+          {cgv.article13.texte5}
+          <Link href={PATHS.PRIVACY_POLICY}>{cgv.article13.link}</Link>
+          {cgv.article13.texte5bis}
         </p>
         <p>
           {" "}
-          {t("cgv:article13.texte6")}
-          <Link href={PATHS.PRIVACY_POLICY}>{t("cgv:article13.link")}</Link>
-          {t("cgv:article13.texte6link")}
+          {cgv.article13.texte6}
+          <Link href={PATHS.PRIVACY_POLICY}>{cgv.article13.link}</Link>
+          {cgv.article13.texte6link}
           <a href="mailto: rgpd@teamdoc.fr">rgpd@teamdoc.fr</a>
-          {t("cgv:article13.texte6bis")}
+          {cgv.article13.texte6bis}
         </p>
-        <p>{t("cgv:article13.texte7")}</p>
-        <p>{t("cgv:article13.texte8")}</p>
+        <p>{cgv.article13.texte7}</p>
+        <p>{cgv.article13.texte8}</p>
         <ul>
-          <li>{t("cgv:article13.li1")}</li>
-          <li>{t("cgv:article13.li2")}</li>
-          <li>{t("cgv:article13.li3")}</li>
-          <li>{t("cgv:article13.li4")}</li>
-          <li>{t("cgv:article13.li5")}</li>
-          <li>{t("cgv:article13.li6")}</li>
-          <li>{t("cgv:article13.li7")}</li>
-          <li>{t("cgv:article13.li8")}</li>
+          <li>{cgv.article13.li1}</li>
+          <li>{cgv.article13.li2}</li>
+          <li>{cgv.article13.li3}</li>
+          <li>{cgv.article13.li4}</li>
+          <li>{cgv.article13.li5}</li>
+          <li>{cgv.article13.li6}</li>
+          <li>{cgv.article13.li7}</li>
+          <li>{cgv.article13.li8}</li>
         </ul>
-        <p>{t("cgv:article13.texte9")}</p>
-        <p>{t("cgv:article13.texte10")}</p>
-        <p>{t("cgv:article13.texte11")}</p>
-        <p>{t("cgv:article13.texte12")}</p>
-        <p>{t("cgv:article13.texte13")}</p>
+        <p>{cgv.article13.texte9}</p>
+        <p>{cgv.article13.texte10}</p>
+        <p>{cgv.article13.texte11}</p>
+        <p>{cgv.article13.texte12}</p>
+        <p>{cgv.article13.texte13}</p>
         <ul>
-          <li>{t("cgv:article13.li9")}</li>
-          <li>{t("cgv:article13.li10")}</li>
-          <li>{t("cgv:article13.li11")}</li>
+          <li>{cgv.article13.li9}</li>
+          <li>{cgv.article13.li10}</li>
+          <li>{cgv.article13.li11}</li>
         </ul>
-        <p>{t("cgv:article13.texte14")}</p>
-        <p>{t("cgv:article13.texte15")}</p>
-        <p>{t("cgv:article13.texte16")}</p>
+        <p>{cgv.article13.texte14}</p>
+        <p>{cgv.article13.texte15}</p>
+        <p>{cgv.article13.texte16}</p>
       </div>
       {/* Article 14 */}
       <div>
-        <h2>{t("cgv:article14.title")}</h2>
-        <p>{t("cgv:article14.texte1")}</p>
-        <p>{t("cgv:article14.texte2")}</p>
-        <p>{t("cgv:article14.texte3")}</p>
-        <p>{t("cgv:article14.texte4")}</p>
-        <p>{t("cgv:article14.texte5")}</p>
+        <h2>{cgv.article14.title}</h2>
+        <p>{cgv.article14.texte1}</p>
+        <p>{cgv.article14.texte2}</p>
+        <p>{cgv.article14.texte3}</p>
+        <p>{cgv.article14.texte4}</p>
+        <p>{cgv.article14.texte5}</p>
       </div>
       {/* Article 15 */}
       <div>
-        <h2>{t("cgv:article15.title")}</h2>
-        <p>{t("cgv:article15.texte1")}</p>
+        <h2>{cgv.article15.title}</h2>
+        <p>{cgv.article15.texte1}</p>
       </div>
       {/* Article 16 */}
       <div>
-        <h2>{t("cgv:article16.title")}</h2>
-        <p>{t("cgv:article16.texte1")}</p>
-        <p>{t("cgv:article16.texte2")}</p>
+        <h2>{cgv.article16.title}</h2>
+        <p>{cgv.article16.texte1}</p>
+        <p>{cgv.article16.texte2}</p>
       </div>
       {/* Article 17 */}
       <div>
-        <h2>{t("cgv:article17.title")}</h2>
-        <p>{t("cgv:article17.texte1")}</p>
-        <p>{t("cgv:article17.texte2")}</p>
+        <h2>{cgv.article17.title}</h2>
+        <p>{cgv.article17.texte1}</p>
+        <p>{cgv.article17.texte2}</p>
       </div>
       {/* Article 18 */}
       <div>
-        <h2>{t("cgv:article18.title")}</h2>
-        <p>{t("cgv:article18.texte1")}</p>
+        <h2>{cgv.article18.title}</h2>
+        <p>{cgv.article18.texte1}</p>
       </div>
     </section>
   );

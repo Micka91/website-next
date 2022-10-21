@@ -3,11 +3,12 @@ import { useState, useEffect } from "react";
 // NEXT
 import Image from "next/image";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { footer } from "../../translations/fr/footer";
 
 const GooglePlay = () => {
   // I18NEXT HOOKS
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   // REACT STATE
   const [matches, setMatches] = useState(true);
 
@@ -22,11 +23,13 @@ const GooglePlay = () => {
       href="https://apple.co/35jrBTM"
       target="_blank"
       rel="noopener noreferrer"
-      title={t("footer:col4.titleGooglePlay")}
+      title={footer.col4.titleGooglePlay}
+      // title={t("footer:col4.titleGooglePlay")}
     >
       <Image
         src="/images/logo/googlePlay.png"
-        alt={t("footer:col4.altGooglePlay")}
+        alt={footer.col4.altGooglePlay}
+        // alt={t("footer:col4.altGooglePlay")}
         width={matches ? 140 : 240}
         height={matches ? 44 : 75}
         loading="eager"

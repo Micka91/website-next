@@ -1,7 +1,16 @@
 // REACT
 import { useState, useContext } from "react";
+// NEXT
+import Link from "next/link";
+import { useRouter } from "next/router";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { common } from "../../translations/fr/common";
+import { navigation } from "../../translations/fr/navigation";
+// ENUMS
+import { PATHS } from "../../enums/paths";
+// UTILS
+import { ROUTES } from "../../utils/routes";
 // CONTEXT
 import { MenuContext } from "../../context/MenuContext";
 // COMPONENTS
@@ -9,9 +18,6 @@ import DownloadApp from "./../DownloadApp/DownloadApp";
 import Address from "./../Address/Address";
 import SocialMedia from "./../SocialMedia/SocialMedia";
 import Button from "./../Button/Button";
-import { PATHS } from "../../enums/paths";
-import Link from "next/link";
-import { useRouter } from "next/router";
 
 const DrawerNavigation = () => {
   // NEXT HOOK
@@ -19,7 +25,7 @@ const DrawerNavigation = () => {
   // REACT HOOKS
   const { menuOpen, handleOpenMenu } = useContext(MenuContext);
   // I18NEXT HOOKS
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   // STATE
   const [currentLocale, setCurrentLocale] = useState(router.locale);
 
@@ -31,14 +37,14 @@ const DrawerNavigation = () => {
     ? ["drawer__container", "drawer__drawerOpen"]
     : ["drawer__container", "drawer__drawerClose"];
 
-  const ROUTES = [
-    { path: t("navigation:solution"), key: PATHS.SOLUTION },
-    { path: t("navigation:team"), key: PATHS.TEAM },
-    { path: t("navigation:offers"), key: PATHS.OFFERS },
-    { path: t("navigation:press"), key: PATHS.PRESS },
-    { path: t("navigation:contact"), key: PATHS.CONTACT },
-    { path: t("navigation:joinUs"), key: PATHS.JOIN_US },
-  ];
+  // const ROUTES = [
+  //   { path: t("navigation:solution"), key: PATHS.SOLUTION },
+  //   { path: t("navigation:team"), key: PATHS.TEAM },
+  //   { path: t("navigation:offers"), key: PATHS.OFFERS },
+  //   { path: t("navigation:press"), key: PATHS.PRESS },
+  //   { path: t("navigation:contact"), key: PATHS.CONTACT },
+  //   { path: t("navigation:joinUs"), key: PATHS.JOIN_US },
+  // ];
 
   const handleOpenBook = () => {
     window.open("https://calendly.com/tamsaguine/teamdoc");
@@ -99,7 +105,8 @@ const DrawerNavigation = () => {
           {/* Buttons */}
           <div className="navigationresponsiv__buttons">
             <Button className="button__demo" onClick={handleOpenBook}>
-              {t("navigation:book")}
+              {navigation.book}
+              {/* {t("navigation:book")} */}
             </Button>
           </div>
           <DownloadApp />
@@ -108,7 +115,8 @@ const DrawerNavigation = () => {
             <Address />
           </div>
           <div>
-            <h4 className="footer__title">{t("common:follow")}</h4>
+            <h4 className="footer__title">{common.follow}</h4>
+            {/* <h4 className="footer__title">{t("common:follow")}</h4> */}
             <SocialMedia />
           </div>
         </div>

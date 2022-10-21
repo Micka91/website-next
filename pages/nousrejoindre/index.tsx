@@ -1,7 +1,8 @@
 // TRANSLATION
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { namespaces } from "../../utils/namespaces";
-import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// import { namespaces } from "../../utils/namespaces";
+// import { useTranslation } from "next-i18next";
+import { seo } from "../../translations/fr/seo";
 // COMPONENTS
 import SEO from "./../../components/SEO/SEO";
 import HeaderJoinUS from "../../components/Headers/HeaderJoinUS/HeaderJoinUS";
@@ -10,14 +11,16 @@ import BlueCard from "./../../components/BlueCard/BlueCard";
 import Partners from "./../../components/Partners/Partners";
 
 const JoinUs = () => {
-  // i18NEXT HOOK
-  const { t } = useTranslation();
+  // // i18NEXT HOOK
+  // const { t } = useTranslation();
 
   return (
     <>
       <SEO
-        title={t("seo:joinUs.title")}
-        description={t("seo:joinUs.description")}
+        title={seo.joinUs.title}
+        description={seo.joinUs.description}
+        // title={t("seo:joinUs.title")}
+        // description={t("seo:joinUs.description")}
         type="website"
       />
       <HeaderJoinUS />
@@ -28,16 +31,16 @@ const JoinUs = () => {
   );
 };
 
-interface Iprops {
-  locale: string;
-}
+// interface Iprops {
+//   locale: string;
+// }
 
-export const getStaticProps = async ({ locale }: Iprops) => {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, namespaces)),
-    },
-  };
-};
+// export const getStaticProps = async ({ locale }: Iprops) => {
+//   return {
+//     props: {
+//       ...(await serverSideTranslations(locale, namespaces)),
+//     },
+//   };
+// };
 
 export default JoinUs;

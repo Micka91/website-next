@@ -1,7 +1,9 @@
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { offers } from "../../translations/fr/offers";
 // UTILS
 import { wkType } from "./../OffersCards/OffersCards";
+// COMPONENTS
 import Container from "./../Container/Container";
 
 interface IProps {
@@ -11,7 +13,7 @@ interface IProps {
 
 const OffersHeader = ({ type, setType }: IProps) => {
   // i18NEXT HOOK
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const B2BButtonClasses =
     type === wkType.B2B
@@ -32,7 +34,8 @@ const OffersHeader = ({ type, setType }: IProps) => {
               onClick={() => setType(wkType.PRO)}
               className={B2CButtonClasses.join(" ")}
             >
-              {t("offers:buttonOne")}
+              {offers.buttonOne}
+              {/* {t("offers:buttonOne")} */}
             </button>
           </div>
           <div>
@@ -40,24 +43,30 @@ const OffersHeader = ({ type, setType }: IProps) => {
               onClick={() => setType(wkType.B2B)}
               className={B2BButtonClasses.join(" ")}
             >
-              {t("offers:buttonTwo")}
+              {offers.buttonTwo}
+              {/* {t("offers:buttonTwo")} */}
             </button>
           </div>
         </header>
         {type === wkType.B2B ? (
           <>
             <p className="offersHeader__text">
-              {t("offers:headerB2B")}
-              <strong>{t("offers:headerB2B1")}</strong>
-              {t("offers:headerB2B2")}
+              {offers.headerB2B}
+              {/* {t("offers:headerB2B")} */}
+              <strong>{offers.headerB2B1}</strong>
+              {/* <strong>{t("offers:headerB2B1")}</strong> */}
+              {offers.headerB2B2}
+              {/* {t("offers:headerB2B2")} */}
               <a href="mailto:commercial@teamdoc.fr">
-                {t("offers:headerCourriel")}.
+                {offers.headerCourriel}.{/* {t("offers:headerCourriel")}. */}
               </a>
             </p>
-            <p className="offersHeader__text">{t("offers:headerB2B3")}</p>
+            <p className="offersHeader__text">{offers.headerB2B3}</p>
+            {/* <p className="offersHeader__text">{t("offers:headerB2B3")}</p> */}
           </>
         ) : (
-          <p className="offersHeader__text">{t("offers:headerB2C")}</p>
+          <p className="offersHeader__text">{offers.headerB2C}</p>
+          // <p className="offersHeader__text">{t("offers:headerB2C")}</p>
         )}
       </div>
     </Container>

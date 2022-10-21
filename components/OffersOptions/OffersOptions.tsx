@@ -1,5 +1,6 @@
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { offers } from "../../translations/fr/offers";
 // UTILS
 import { wkType } from "./../OffersCards/OffersCards";
 // COMPONENTS
@@ -25,80 +26,146 @@ const teams = "/images/offers/teams.png";
 
 const OffersOptions = ({ type }: IProps) => {
   // i18NEXT HOOK
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
-  const offers = [
+  const offersCards = [
     {
       id: "access 1",
-      titleCard: t("offers:cards.title"),
-      offers: t("offers:cards._free"),
+      titleCard: offers.cards.title,
+      offers: offers.cards._free,
       image: doctor,
       pricePerMonth: 0,
       unity: "€",
-      perMonth: t("offers:cards.perMonth"),
+      perMonth: offers.cards.perMonth,
       options: [
-        t("offers:cards.options.optionsOne"),
-        t("offers:cards.options.optionsTwo"),
-        t("offers:cards.options.optionsFreeOne"),
-        t("offers:cards.options.optionsFreeTwo"),
-        t("offers:cards._storage.100MO"),
+        offers.cards.options.optionsOne,
+        offers.cards.options.optionsTwo,
+        offers.cards.options.optionsFreeOne,
+        offers.cards.options.optionsFreeTwo,
+        offers.cards._storage["100MO"],
       ],
-      downloadNow: t("offers:cards.downloadNow"),
+      downloadNow: offers.cards.downloadNow,
     },
     {
       id: "access 2",
-      titleCard: t("offers:cards.title"),
-      offers: t("offers:cards.standard"),
+      titleCard: offers.cards.title,
+      offers: offers.cards.standard,
       image: teams,
       image2: files,
       pricePerMonth: 11,
       unity: "€",
       cents: 99,
-      perMonth: t("offers:cards.perMonth"),
-      or: t("offers:cards.or"),
+      perMonth: offers.cards.perMonth,
+      or: offers.cards.or,
       pricePerYear: "119€99",
-      perYear: t("offers:cards.perYear"),
+      perYear: offers.cards.perYear,
       options: [
-        t("offers:cards.options.optionsOne"),
-        t("offers:cards.options.optionsTwo"),
-        t("offers:cards.options.optionsThree"),
-        t("offers:cards.options.optionsFour"),
-        t("offers:cards.options.optionsFive"),
-        t("offers:cards._storage.5GO"),
+        offers.cards.options.optionsOne,
+        offers.cards.options.optionsTwo,
+        offers.cards.options.optionsThree,
+        offers.cards.options.optionsFour,
+        offers.cards.options.optionsFive,
+        offers.cards._storage["5GO"],
       ],
-      downloadNow: t("offers:cards.downloadNow"),
+      downloadNow: offers.cards.downloadNow,
     },
     {
       id: "access 3",
-      titleCard: t("offers:cards.title"),
-      offers: t("offers:cards.advantage"),
+      titleCard: offers.cards.title,
+      offers: offers.cards.advantage,
       image: teams,
       image2: multiFiles,
       pricePerMonth: 16,
       unity: "€",
       cents: 99,
-      perMonth: t("offers:cards.perMonth"),
-      or: t("offers:cards.or"),
+      perMonth: offers.cards.perMonth,
+      or: offers.cards.or,
       pricePerYear: "169€99",
-      perYear: t("offers:cards.perYear"),
+      perYear: offers.cards.perYear,
       options: [
-        t("offers:cards.options.optionsOne"),
-        t("offers:cards.options.optionsTwo"),
-        t("offers:cards.options.optionsThree"),
-        t("offers:cards.options.optionsFour"),
-        t("offers:cards.options.optionsFive"),
-        t("offers:cards._storage.50GO"),
+        offers.cards.options.optionsOne,
+        offers.cards.options.optionsTwo,
+        offers.cards.options.optionsThree,
+        offers.cards.options.optionsFour,
+        offers.cards.options.optionsFive,
+        offers.cards._storage["50GO"],
       ],
-      downloadNow: t("offers:cards.downloadNow"),
+      downloadNow: offers.cards.downloadNow,
     },
   ];
+
+  // const offers = [
+  //   {
+  //     id: "access 1",
+  //     titleCard: t("offers:cards.title"),
+  //     offers: t("offers:cards._free"),
+  //     image: doctor,
+  //     pricePerMonth: 0,
+  //     unity: "€",
+  //     perMonth: t("offers:cards.perMonth"),
+  //     options: [
+  //       t("offers:cards.options.optionsOne"),
+  //       t("offers:cards.options.optionsTwo"),
+  //       t("offers:cards.options.optionsFreeOne"),
+  //       t("offers:cards.options.optionsFreeTwo"),
+  //       t("offers:cards._storage.100MO"),
+  //     ],
+  //     downloadNow: t("offers:cards.downloadNow"),
+  //   },
+  //   {
+  //     id: "access 2",
+  //     titleCard: t("offers:cards.title"),
+  //     offers: t("offers:cards.standard"),
+  //     image: teams,
+  //     image2: files,
+  //     pricePerMonth: 11,
+  //     unity: "€",
+  //     cents: 99,
+  //     perMonth: t("offers:cards.perMonth"),
+  //     or: t("offers:cards.or"),
+  //     pricePerYear: "119€99",
+  //     perYear: t("offers:cards.perYear"),
+  //     options: [
+  //       t("offers:cards.options.optionsOne"),
+  //       t("offers:cards.options.optionsTwo"),
+  //       t("offers:cards.options.optionsThree"),
+  //       t("offers:cards.options.optionsFour"),
+  //       t("offers:cards.options.optionsFive"),
+  //       t("offers:cards._storage.5GO"),
+  //     ],
+  //     downloadNow: t("offers:cards.downloadNow"),
+  //   },
+  //   {
+  //     id: "access 3",
+  //     titleCard: t("offers:cards.title"),
+  //     offers: t("offers:cards.advantage"),
+  //     image: teams,
+  //     image2: multiFiles,
+  //     pricePerMonth: 16,
+  //     unity: "€",
+  //     cents: 99,
+  //     perMonth: t("offers:cards.perMonth"),
+  //     or: t("offers:cards.or"),
+  //     pricePerYear: "169€99",
+  //     perYear: t("offers:cards.perYear"),
+  //     options: [
+  //       t("offers:cards.options.optionsOne"),
+  //       t("offers:cards.options.optionsTwo"),
+  //       t("offers:cards.options.optionsThree"),
+  //       t("offers:cards.options.optionsFour"),
+  //       t("offers:cards.options.optionsFive"),
+  //       t("offers:cards._storage.50GO"),
+  //     ],
+  //     downloadNow: t("offers:cards.downloadNow"),
+  //   },
+  // ];
 
   return (
     <Container>
       {type === wkType.PRO ? (
         <section>
           <div className="offersOptions__cards">
-            {offers.map((offer, index) => (
+            {offersCards.map((offer, index) => (
               <OfferCard key={offer.id} offer={offer} row={index} />
             ))}
           </div>

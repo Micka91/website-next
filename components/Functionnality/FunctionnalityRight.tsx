@@ -2,7 +2,7 @@
 // INTERFACE
 import { IAnimation } from "./Functionnality";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+import { home } from "../../translations/fr/home";
 
 interface IProps {
   animationRight: IAnimation;
@@ -10,8 +10,6 @@ interface IProps {
 }
 
 const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
-  // I18NEXT HOOKS
-  const { t } = useTranslation();
   // STYLE FOR ANIMATION
   const firstAnim = {
     transition: animationRight.transition,
@@ -37,15 +35,15 @@ const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
       <div style={firstAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
           <h3 className="functionnalityRight__title">
-            {t("home:functionnalityRight.h3_1")}
+            {home.functionnalityRight.h3_1}
           </h3>
           <p className="functionnalityRight__paragraph">
-            {t("home:functionnalityRight.p1")}
+            {home.functionnalityRight.p1}
           </p>
         </div>
         <img
           src="/images/icones/network.png"
-          alt={t("home:functionnalityRight.alt1")}
+          alt={home.functionnalityRight.alt1}
           className="functionnalityRight__icones"
         />
       </div>
@@ -53,15 +51,15 @@ const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
       <div style={secondAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
           <h3 className="functionnalityRight__title">
-            {t("home:functionnalityRight.h3_2")}
+            {home.functionnalityRight.h3_2}
           </h3>
           <p className="functionnalityRight__paragraph">
-            {t("home:functionnalityRight.p2")}
+            {home.functionnalityRight.p2}
           </p>
         </div>
         <img
           src="/images/icones/deconnexion.png"
-          alt={t("home:functionnalityRight.alt2")}
+          alt={home.functionnalityRight.alt2}
           className="functionnalityRight__icones"
         />
       </div>
@@ -69,15 +67,15 @@ const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
       <div style={thirdAnim} className="functionnalityRight__container">
         <div className="functionnalityRight__content">
           <h3 className="functionnalityRight__title">
-            {t("home:functionnalityRight.h3_3")}
+            {home.functionnalityRight.h3_3}
           </h3>
           <p className="functionnalityRight__paragraph">
-            {t("home:functionnalityRight.p3")}
+            {home.functionnalityRight.p3}
           </p>
         </div>
         <img
           src="/images/icones/tasks.png"
-          alt={t("home:functionnalityRight.alt3")}
+          alt={home.functionnalityRight.alt3}
           className="functionnalityRight__icones"
         />
       </div>

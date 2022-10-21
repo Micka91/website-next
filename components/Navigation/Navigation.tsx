@@ -7,12 +7,14 @@ import { MenuContext } from "./../../context/MenuContext";
 // NEXT
 import { useRouter } from "next/router";
 import Link from "next/link";
-// UTILS
+// ENUMS
 import { PATHS } from "../../enums/paths";
+// UTILS
+import { ROUTES } from "../../utils/routes";
 // COMPONENTS
 import Button from "./../Button/Button";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
 
 const Navigation = () => {
   // NEXT HOOK
@@ -21,7 +23,7 @@ const Navigation = () => {
   const { handleOpen } = useContext(DrawerContext);
   const { handleOpenMenu } = useContext(MenuContext);
   // i18NEXT HOOK
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   // STATE
   const [visible, setVisible] = useState<boolean>(false);
   const [currentLocale, setCurrentLocale] = useState(router.locale);
@@ -59,14 +61,14 @@ const Navigation = () => {
     };
   }, []);
 
-  const ROUTES = [
-    { path: t("navigation:solution"), key: PATHS.SOLUTION },
-    { path: t("navigation:team"), key: PATHS.TEAM },
-    { path: t("navigation:offers"), key: PATHS.OFFERS },
-    { path: t("navigation:press"), key: PATHS.PRESS },
-    { path: t("navigation:contact"), key: PATHS.CONTACT },
-    { path: t("navigation:joinUs"), key: PATHS.JOIN_US },
-  ];
+  // const ROUTES = [
+  //   { path: t("navigation:solution"), key: PATHS.SOLUTION },
+  //   { path: t("navigation:team"), key: PATHS.TEAM },
+  //   { path: t("navigation:offers"), key: PATHS.OFFERS },
+  //   { path: t("navigation:press"), key: PATHS.PRESS },
+  //   { path: t("navigation:contact"), key: PATHS.CONTACT },
+  //   { path: t("navigation:joinUs"), key: PATHS.JOIN_US },
+  // ];
 
   return (
     <header className={navstyle}>

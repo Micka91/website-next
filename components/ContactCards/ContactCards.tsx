@@ -1,5 +1,6 @@
 // TRANSLATION
 import { useTranslation } from "next-i18next";
+import { contact } from "../../translations/fr/contact";
 
 const ContactCards = () => {
   // i18NEXT HOOK
@@ -7,17 +8,20 @@ const ContactCards = () => {
 
   const cards = [
     {
-      title: t("contact:card1.title"),
+      title: contact.card1.title,
+      // title: t("contact:card1.title"),
       src: "/images/contact/press.png",
       mail: "apolline@teamdoc.fr",
     },
     {
-      title: t("contact:card2.title"),
+      title: contact.card2.title,
+      // title: t("contact:card2.title"),
       src: "/images/contact/commercial.png",
       mail: "commercial@teamdoc.fr",
     },
     {
-      title: t("contact:card3.title"),
+      title: contact.card3.title,
+      // title: t("contact:card3.title"),
       src: "/images/contact/technical.png",
       mail: "support@teamdoc.fr",
     },

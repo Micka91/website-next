@@ -1,7 +1,8 @@
 // REACT
 import { useContext } from "react";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { common } from "../../translations/fr/common";
 // CONTEXT
 import { DrawerContext } from "./../../context/DrawerContext";
 // COMPONENTS
@@ -13,7 +14,7 @@ const Drawer = () => {
   // REACT HOOKS
   const { open, handleOpen } = useContext(DrawerContext);
   // I18NEXT HOOKS
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   const drawerBackdropClasses = open
     ? ["drawer__backdrop", "drawer__backdropOpen"]
@@ -40,7 +41,8 @@ const Drawer = () => {
             <Address />
           </div>
           <div>
-            <h4 className="footer__title">{t("common:follow")}</h4>
+            <h4 className="footer__title">{common.follow}</h4>
+            {/* <h4 className="footer__title">{t("common:follow")}</h4> */}
             <SocialMedia />
           </div>
         </div>

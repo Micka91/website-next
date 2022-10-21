@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 // NEXT
 import Image from "next/image";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
 
 interface IProps {
   href: string;
@@ -13,8 +13,8 @@ interface IProps {
 }
 
 const AppButton = ({ href, title, src, alt }: IProps) => {
-  // I18NEXT HOOKS
-  const { t } = useTranslation();
+  // // I18NEXT HOOKS
+  // const { t } = useTranslation();
   // REACT STATE
   const [matches, setMatches] = useState(true);
 

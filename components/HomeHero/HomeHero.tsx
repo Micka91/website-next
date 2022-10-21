@@ -2,21 +2,24 @@
 // REACT
 import { useContext } from "react";
 // NEXT
+import Image from "next/image";
 import Link from "next/link";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
+// import { useTranslation } from "next-i18next";
+import { home } from "../../translations/fr/home";
+import { navigation } from "../../translations/fr/navigation";
 // COMPONENTS
 import Background from "./../Background/Background";
 import Hero from "./../Hero/Hero";
 import Button from "./../Button/Button";
 // CONTEXT
 import { DrawerContext } from "./../../context/DrawerContext";
+// ENUMS
 import { PATHS } from "../../enums/paths";
-import Image from "next/image";
 
 const HomeHero = () => {
   // I18NEXT HOOKS
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   // REACT HOOKS
   const { handleOpen } = useContext(DrawerContext);
 
@@ -28,14 +31,17 @@ const HomeHero = () => {
     <section className="home__hero">
       <Background
         src="/images/headers/header-home.png"
-        alt={t("home:hero.alt1")}
+        alt={home.hero.alt1}
+        // alt={t("home:hero.alt1")}
         className="header__home"
       >
         <Hero>
           <div className="home__banner">
             <div className="home__container">
-              <h1 className="home__title">{t("home:hero.h1")}</h1>
-              <p className="home__paragraph">{t("home:hero.p")}</p>
+              <h1 className="home__title">{home.hero.h1}</h1>
+              <p className="home__paragraph">{home.hero.p}</p>
+              {/* <h1 className="home__title">{t("home:hero.h1")}</h1>
+              <p className="home__paragraph">{t("home:hero.p")}</p> */}
               {/* <div className="home__buttons">
                 <Button className="button__gradient" onClick={handleOpen}>
                   {t("common:download")}
@@ -49,7 +55,8 @@ const HomeHero = () => {
                 </Link>
               </div> */}
               <Button className="button__demo" onClick={handleOpenBook}>
-                {t("navigation:book")}
+                {navigation.book}
+                {/* {t("navigation:book")} */}
               </Button>
             </div>
 
@@ -60,7 +67,8 @@ const HomeHero = () => {
             /> */}
             <Image
               src="/images/hero/hero-home.png"
-              alt={t("home:hero.alt3")}
+              alt={home.hero.alt3}
+              // alt={t("home:hero.alt3")}
               priority={true}
               width="600"
               height="800"

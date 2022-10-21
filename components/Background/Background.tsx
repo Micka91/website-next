@@ -17,8 +17,8 @@ const Background = ({ src, alt, className, children }: IProps) => {
         alt={alt}
         className={className}
         layout="fill"
-        width="100vw"
-        height="100vh"
+        // width="100vw"
+        // height="100vh"
         objectFit="cover"
         priority={true}
       />
