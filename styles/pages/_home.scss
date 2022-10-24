@@ -8,6 +8,16 @@
     @include mediaQueryHeader;
   }
 
+  &__heroContainer {
+    width: 140rem;
+    margin: 0 auto;
+
+    // MEDIA QUERY
+    @include media(desktop-s) {
+      width: $full;
+    }
+  }
+
   &__banner {
     @include flexCenterBetween;
 
@@ -36,10 +46,15 @@
   }
 
   &__paragraph {
-    margin: 1.5rem 0;
+    &:first-of-type {
+      margin-top: 1.5rem;
+    }
+    &:last-of-type {
+      margin-bottom: 1.5rem;
+    }
     font-size: $typo-m;
     color: $grey-dark-85;
-
+    // line-height: 1;
     // MEDIA QUERY
     @include mediaQueryHeaderParagraph;
   }

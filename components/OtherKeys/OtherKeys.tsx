@@ -1,3 +1,5 @@
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { solution } from "../../translations/fr/solution";
@@ -43,7 +45,12 @@ const OtherKeys = () => {
         <div className="otherTools__otherKeysCardContainer">
           {datas.map((data) => (
             <div key={data.title}>
-              <img src="/images/icones/checkWithSquare.svg" alt="" />
+              <Image
+                src="/images/icones/checkWithSquare.svg"
+                alt=""
+                width="36"
+                height="36"
+              />
               <div className="otherTools__otherKeysCard">
                 <h3>{data.title}</h3>
                 <p>{data.text}</p>

@@ -1,6 +1,15 @@
 .joinUsCard {
-  background-image: url("/images/background/pattern.svg");
   padding: 8rem 0;
+  position: relative;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 
   &__container {
     background-color: $white-std;

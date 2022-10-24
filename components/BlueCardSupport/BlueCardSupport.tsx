@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { support } from "../../translations/fr/support";
@@ -13,7 +14,12 @@ const BlueCardSupport = () => {
     <Container>
       <div className="blueCardSupport">
         <div className="blueCardSupport__image">
-          <img src="/images/support/support.png" alt="" />
+          <Image
+            src="/images/support/support.png"
+            alt="fond bleu"
+            height="244"
+            width="244"
+          />
         </div>
         <div className="blueCardSupport__text">
           <h3>{support.blueCard.title}</h3>

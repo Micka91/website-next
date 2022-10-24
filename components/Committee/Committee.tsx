@@ -3,10 +3,20 @@ import { teams } from "../../translations/fr/teams";
 // COMPONENTS
 import CommittyContainer from "./CommittyContainer/CommittyContainer";
 import CommittyCard from "./CommittyCard/CommittyCard";
+import Image from "next/image";
 
 const Committee = () => {
   return (
     <div className="commitee">
+      <div className="commitee__background">
+        <Image
+          src="/images/solutions/bluewave.png"
+          alt="fond bleu"
+          layout="fill"
+          objectFit="cover"
+          quality={100}
+        />
+      </div>
       <div className="commitee__title">
         <h2>{teams.comity.title}</h2>
       </div>

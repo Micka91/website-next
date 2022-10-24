@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // INTERFACE
 import { IAnimation } from "./Functionnality";
 // TRANSLATION
@@ -41,11 +42,14 @@ const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
             {home.functionnalityRight.p1}
           </p>
         </div>
-        <img
-          src="/images/icones/network.png"
-          alt={home.functionnalityRight.alt1}
-          className="functionnalityRight__icones"
-        />
+        <div className="functionnalityRight__icones">
+          <Image
+            src="/images/icones/network.png"
+            alt={home.functionnalityRight.alt1}
+            width="44"
+            height="44"
+          />
+        </div>
       </div>
 
       <div style={secondAnim} className="functionnalityRight__container">
@@ -57,11 +61,14 @@ const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
             {home.functionnalityRight.p2}
           </p>
         </div>
-        <img
-          src="/images/icones/deconnexion.png"
-          alt={home.functionnalityRight.alt2}
-          className="functionnalityRight__icones"
-        />
+        <div className="functionnalityRight__icones">
+          <Image
+            src="/images/icones/deconnexion.png"
+            alt={home.functionnalityRight.alt2}
+            width="44"
+            height="44"
+          />
+        </div>
       </div>
 
       <div style={thirdAnim} className="functionnalityRight__container">
@@ -73,11 +80,14 @@ const FunctionnalityRight = ({ animationRight, innerWidth }: IProps) => {
             {home.functionnalityRight.p3}
           </p>
         </div>
-        <img
-          src="/images/icones/tasks.png"
-          alt={home.functionnalityRight.alt3}
-          className="functionnalityRight__icones"
-        />
+        <div className="functionnalityRight__icones">
+          <Image
+            src="/images/icones/tasks.png"
+            alt={home.functionnalityRight.alt3}
+            width="44"
+            height="44"
+          />
+        </div>
       </div>
     </div>
   );

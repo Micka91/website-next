@@ -1,11 +1,9 @@
+// NEXT
+import Image from "next/image";
 // TRANSLATION
-import { useTranslation } from "next-i18next";
 import { contact } from "../../translations/fr/contact";
 
 const ContactCards = () => {
-  // i18NEXT HOOK
-  const { t } = useTranslation();
-
   const cards = [
     {
       title: contact.card1.title,
@@ -32,12 +30,20 @@ const ContactCards = () => {
       {cards.map((card) => (
         <div key={card.title} className="contactCards__card">
           <h2 className="contactCards__title">{card.title}</h2>
-          <img src={card.src} alt="" className="contactCards__image" />
+          <Image
+            src={card.src}
+            alt=""
+            className="contactCards__image"
+            width="270"
+            height="270"
+          />
           <div className="contactCards__linkContainer">
-            <img
+            <Image
               src="/images/contact/mail.svg"
               alt=""
               className="contactCards__image"
+              width="20"
+              height="20"
             />
             <a href={`mailto:${card.mail}`} className="contactCards__link">
               {card.mail}

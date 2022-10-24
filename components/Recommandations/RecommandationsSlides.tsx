@@ -1,42 +1,24 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { home } from "../../translations/fr/home";
 
-interface IProps {
-  currentReco: number;
+interface IReco {
+  citation: string;
+  name: string;
+  status: string;
+  img: string;
 }
 
-const RecommandationsSlides = ({ currentReco }: IProps) => {
+interface IProps {
+  currentReco: number;
+  recommandations: IReco[];
+}
+
+const RecommandationsSlides = ({ currentReco, recommandations }: IProps) => {
   // I18NEXT HOOKS
   // const { t } = useTranslation();
-
-  const recommandations = [
-    {
-      citation: home.recommandations.citation1,
-      // citation: t("home:recommandations.citation1"),
-      name: "Dr. Igor Jurcisin",
-      status: home.recommandations.status1,
-      // status: t("home:recommandations.status1"),
-      img: "/images/recommandations/igor.jpg",
-    },
-    {
-      citation: home.recommandations.citation2,
-      // citation: t("home:recommandations.citation2"),
-      name: "Dr. Mathilde Holleville",
-      status: home.recommandations.status2,
-      // status: t("home:recommandations.status2"),
-      img: "/images/recommandations/mathilde.jpg",
-    },
-    {
-      citation: home.recommandations.citation3,
-      // citation: t("home:recommandations.citation3"),
-      name: "Dr. Paer-Selim Abback",
-      status: home.recommandations.status3,
-      // status: t("home:recommandations.status3"),
-      img: "/images/recommandations/paer-salim.jpg",
-    },
-  ];
 
   return (
     <div className="recommandationsSlides">
@@ -50,10 +32,11 @@ const RecommandationsSlides = ({ currentReco }: IProps) => {
           <cite className="recommandationsSlides__cite">{reco.citation}</cite>
           <div className="recommandationsSlides__container">
             <div className="recommandationsSlides__picture">
-              <img
+              <Image
                 src={reco.img}
                 alt={`${home.recommandations.alt}, ${reco.name}`}
-                // alt={t("home:recommandations.alt", { name: reco.name })}
+                width="80"
+                height="80"
               />
             </div>
             <div className="recommandationsSlides__content">

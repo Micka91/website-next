@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { press } from "../../translations/fr/press";
@@ -24,7 +25,7 @@ const PressCards = () => {
             {/* {t("press:pressCards.title")} */}
           </h2>
           <div className="pressCards__folder">
-            <img src={contacts} alt="" />
+            <Image src={contacts} alt="" width="130" height="130" />
             <div>
               <p>
                 {press.pressCards.p1} <br />
@@ -45,7 +46,12 @@ const PressCards = () => {
           >
             {common.download}
             {/* {t("common:download")} */}
-            <img src="/images/icones/whiteArrow.svg" alt="" />
+            <Image
+              src="/images/icones/whiteArrow.svg"
+              alt=""
+              width="24"
+              height="24"
+            />
           </a>
         </div>
         <div className="pressCards__card">
@@ -55,7 +61,7 @@ const PressCards = () => {
           </h2>
           <div className="pressCards__downloadContainer">
             <div className="pressCards__download">
-              <img src={logo} alt="" />
+              <Image src={logo} alt="" width="208" height="100" />
               <p>{press.pressCards.logotype}</p>
               {/* <p>{t("press:pressCards.logotype")}</p> */}
               <a href={logo} download className="pressCards__link">
@@ -64,7 +70,7 @@ const PressCards = () => {
               </a>
             </div>
             <div className="pressCards__download">
-              <img src={visuelApp} alt="" />
+              <Image src={visuelApp} alt="" width="208" height="100" />
               <p>{press.pressCards.visuels}</p>
               {/* <p>{t("press:pressCards.visuels")}</p> */}
               <a href={visuelZip} download className="pressCards__link">

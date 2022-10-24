@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { press } from "../../translations/fr/press";
@@ -16,7 +17,7 @@ const PressRelease = () => {
 
       <div className="pressRealease__card">
         <div className="pressRealease__logo">
-          <img src="/images/press/APHP.png" alt="" />
+          <Image src="/images/press/APHP.png" alt="" width="305" height="70" />
         </div>
         <div className="pressRealease__container">
           <p className="pressRealease__date">{press.pressRelease.date}</p>

@@ -10,6 +10,18 @@ const JoinUsCard = () => {
 
   return (
     <div className="joinUsCard">
+      <div
+        className="joinUsCard__background"
+        style={{ backgroundImage: "url(/images/background/pattern.svg)" }}
+      >
+        {/* <Image
+          src="/images/background/pattern.svg"
+          alt="patern géométrique"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        /> */}
+      </div>
       <Container>
         <div className="joinUsCard__container">
           <p>

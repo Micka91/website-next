@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { solution } from "../../../translations/fr/solution";
@@ -26,10 +27,13 @@ const HeaderSolutions = () => {
               <p className="solutions__paragraph">{t("solution:text")}</p> */}
             </div>
             <div>
-              <img
+              <Image
                 src="/images/solutions/soignants.png"
                 alt=""
                 className="solutions__image"
+                width="800"
+                height="800"
+                objectFit="contain"
               />
             </div>
           </div>

@@ -1,5 +1,7 @@
 // REACT
 import { useContext } from "react";
+// NEXT
+import Image from "next/image";
 //CONTEXT
 import { DrawerContext } from "./../../context/DrawerContext";
 
@@ -51,15 +53,17 @@ const OfferCard = ({ offer, row }: IProps) => {
         <p className="offerCard__title--offers">{offers}</p>
       </div>
       <div className="offerCard__image">
-        <img
-          src={image}
-          alt=""
+        <div
           className={`offerCard__image--one ${
             image2 ? `offerCard__image--one__double` : ""
           }`}
-        />
+        >
+          <Image src={image} alt="" width="200" height="200" />
+        </div>
         {image2 && (
-          <img src={image2} alt="" className="offerCard__image--two" />
+          <div className="offerCard__image--two">
+            <Image src={image2} alt="" width="160" height="150" />
+          </div>
         )}
       </div>
       <div className="offerCard__price">

@@ -1,5 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
+// REACT
 import React from "react";
+// NEXT
+import Image from "next/image";
 
 interface IData {
   title: string;
@@ -30,7 +32,7 @@ const ExplanationCard = ({ explanation }: IProps) => {
     <div className="explanation__card">
       <div className={classes}>
         <div className="explanation__imageContainer">
-          <img src={src} alt="" />
+          <Image src={src} alt="" width="425" height="380" />
         </div>
         <div className="explanation__container">
           <h2 className="explanation__title">{title}</h2>
@@ -39,7 +41,12 @@ const ExplanationCard = ({ explanation }: IProps) => {
             {subDatas.map((datas) => (
               <React.Fragment key={datas.title}>
                 <div className="explanation__subTitleContainer">
-                  <img src="/images/icones/check.svg" alt="" />
+                  <Image
+                    src="/images/icones/check.svg"
+                    alt=""
+                    width="28"
+                    height="28"
+                  />
                   <h3 className="explanation__subTitle">{datas.title}</h3>
                 </div>
                 <p className="explanation__subParagraph">{datas.paragraph}</p>

@@ -126,7 +126,6 @@
 
     &:hover {
       .support__pdfLogo {
-        background-image: url("/images/icones/download-blue.svg");
         width: 2rem;
         height: 2rem;
         object-fit: contain;
@@ -135,7 +134,6 @@
   }
 
   &__pdfLogo {
-    background-image: url("/images/icones/download.svg");
     width: 2rem;
     height: 2rem;
     object-fit: contain;

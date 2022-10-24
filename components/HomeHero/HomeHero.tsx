@@ -16,6 +16,8 @@ import Button from "./../Button/Button";
 import { DrawerContext } from "./../../context/DrawerContext";
 // ENUMS
 import { PATHS } from "../../enums/paths";
+import Container from "../Container/Container";
+import HomeReferences from "../HomeReferences/HomeReferences";
 
 const HomeHero = () => {
   // I18NEXT HOOKS
@@ -35,47 +37,33 @@ const HomeHero = () => {
         // alt={t("home:hero.alt1")}
         className="header__home"
       >
-        <Hero>
-          <div className="home__banner">
-            <div className="home__container">
-              <h1 className="home__title">{home.hero.h1}</h1>
-              <p className="home__paragraph">{home.hero.p}</p>
-              {/* <h1 className="home__title">{t("home:hero.h1")}</h1>
+        <div className="home__heroContainer">
+          <Hero>
+            <div className="home__banner">
+              <div className="home__container">
+                <h1 className="home__title">{home.hero.h1}</h1>
+                <p className="home__paragraph">{home.hero.p1}</p>
+                <p className="home__paragraph">{home.hero.p2}</p>
+                {/* <h1 className="home__title">{t("home:hero.h1")}</h1>
               <p className="home__paragraph">{t("home:hero.p")}</p> */}
-              {/* <div className="home__buttons">
-                <Button className="button__gradient" onClick={handleOpen}>
-                  {t("common:download")}
-                  <img
-                    src="/images/icones/whiteArrow.svg"
-                    alt={t("home:hero.alt2")}
-                  />
+                <Button className="button__demo" onClick={handleOpenBook}>
+                  {navigation.book}
+                  {/* {t("navigation:book")} */}
                 </Button>
-                <Link href={PATHS.OFFERS}>
-                  <a className="home__link">{t("home:hero.button")}</a>
-                </Link>
-              </div> */}
-              <Button className="button__demo" onClick={handleOpenBook}>
-                {navigation.book}
-                {/* {t("navigation:book")} */}
-              </Button>
+              </div>
+              <Image
+                src="/images/hero/hero-home.png"
+                alt={home.hero.alt3}
+                // alt={t("home:hero.alt3")}
+                priority={true}
+                width="800"
+                height="1000"
+                className="home__image"
+              />
             </div>
-
-            {/* <img
-              src="/images/hero/hero-home.png"
-              alt={t("home:hero.alt3")}
-              className="home__image"
-            /> */}
-            <Image
-              src="/images/hero/hero-home.png"
-              alt={home.hero.alt3}
-              // alt={t("home:hero.alt3")}
-              priority={true}
-              width="600"
-              height="800"
-              className="home__image"
-            />
-          </div>
-        </Hero>
+          </Hero>
+        </div>
+        <HomeReferences />
       </Background>
     </section>
   );

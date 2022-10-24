@@ -1,3 +1,5 @@
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { offers } from "../../translations/fr/offers";
@@ -179,14 +181,54 @@ const OffersOptions = ({ type }: IProps) => {
       ) : (
         <>
           <div className="offersOptions__roadmap">
-            <img src={ROADMAP} alt="" />
+            <Image src={ROADMAP} alt="" width="1200" height="600" />
           </div>
           <div className="offersOptions__roadmapMobile">
-            <img src={r1} alt="" />
-            <img src={r2} alt="" />
-            <img src={r3} alt="" />
-            <img src={r4} alt="" />
-            <img src={r5} alt="" />
+            <div>
+              <Image
+                src={r1}
+                alt=""
+                width="550"
+                height="550"
+                objectFit="contain"
+              />
+            </div>
+            <div style={{ padding: 30 }}>
+              <Image
+                src={r2}
+                alt=""
+                width="550"
+                height="550"
+                objectFit="contain"
+              />
+            </div>
+            <div>
+              <Image
+                src={r3}
+                alt=""
+                width="550"
+                height="550"
+                objectFit="contain"
+              />
+            </div>
+            <div style={{ padding: 30 }}>
+              <Image
+                src={r4}
+                alt=""
+                width="550"
+                height="550"
+                objectFit="contain"
+              />
+            </div>
+            <div>
+              <Image
+                src={r5}
+                alt=""
+                width="550"
+                height="550"
+                objectFit="contain"
+              />
+            </div>
           </div>
         </>
       )}

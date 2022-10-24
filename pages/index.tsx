@@ -11,6 +11,7 @@ import Recommandations from "./../components/Recommandations/Recommandations";
 import BlueCard from "./../components/BlueCard/BlueCard";
 import HomeHero from "./../components/HomeHero/HomeHero";
 import SEO from "../components/SEO/SEO";
+import HomeReferences from "../components/HomeReferences/HomeReferences";
 
 const Home = () => {
   // // i18NEXT HOOK
@@ -26,6 +27,7 @@ const Home = () => {
         type="website"
       />
       <HomeHero />
+      {/* <HomeReferences /> */}
       <Simplification />
       <Functionnality />
       <Recommandations />

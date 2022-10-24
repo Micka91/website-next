@@ -1,7 +1,8 @@
 export const home = {
   hero: {
     h1: "La messagerie instantanée sécurisée de santé",
-    p: "Créée par des soignants, Team'Doc facilite le travail en équipe pour tous les professionnels de santé, à l'hôpital, en clinique ou en cabinet.",
+    p1: "Créée par des soignants, Team'Doc facilite le travail en équipe pour ",
+    p2: "tous les professionnels de santé, à l'hôpital, en clinique ou en cabinet.",
     button: "En savoir plus",
     alt1: "Image de fond accueil de teamdoc",
     alt2: "Fleche blanche",
@@ -43,17 +44,28 @@ export const home = {
   },
   recommandations: {
     citation1:
-      "Les fiches patients permettent d’avoir toutes les informations sur les patients en direct, le suivi, les diagnostics à faire, le résultat des examens… Ça améliore énormément la fluidité des transmissions médicales de nos patients en Anesthésie-Réanimation.",
-    status1:
-      "Médecin au sein du département d’Anesthésie-Réanimation de l’hôpital Beaujon",
+      "L'utilisation de Team’Doc dans un service d’accueil des urgences ouvre des perspectives de nette amélioration de la collaboration au sein de l’équipe et de l’hôpital. Le déploiement prévu des fiches de transmissions personnalisées pour notre service nous permettra d’optimiser notre organisation et nous fera gagner du temps. Les actualités (cyberattaques, pannes informatiques…) nous prouvent qu’il faut changer nos habitudes et nous tourner vers des outils sécurisés. Team’doc répond à l'ensemble de ces besoins.",
+    status1: "Urgentiste, AP-HP",
     citation2:
-      "Les bips que nous utilisons sont clairement source d'un ralentissement de la communication. Team'Doc permet de créer plus de liens entre les séniors et les internes, et inter-spécialités.",
+      "Team’doc améliore le quotidien de nos équipes de multiples points : la communication est facilitée et nous permet de gagner un temps précieux. Pourquoi avoir choisi Team Doc au lieu des autres applications de messageries non sécurisées ? Tout d’abord, Team Doc permet de sécuriser les échanges relatifs aux sociétés que nous accompagnons et de permettre la confidentialité des données que ce soit celles de la société en elle-même que celles liées aux études cliniques. Mais Team’doc permet aussi de réduire les interruptions de tâches grâce à l’affichage de la disponibilité et garantit la qualité de vie au travail en autorisant la déconnexion des personnels en dehors de leur temps de travail. Disposer d’un affichage mixte application/web permet également un confort d’utilisation non négligeable.",
     status2:
-      "Médecin au sein du département d’Anesthésie-Réanimation de l’hôpital Beaujon",
-    citation3:
-      "Aujourd'hui, chacun fait comme il veut pour les transmissions médicales, certains notent tout sur une feuille de papier, d'autres relèvent uniquement les tâches à effectuer. Le résultat c'est qu'on passe beaucoup de temps à répéter les informations et certaines sont parfois oubliées.",
-    status3:
-      "Médecin au sein du département d’Anesthésie-Réanimation de l’hôpital Beaujon",
+      "Médecin urgentiste, Hôpital Saint-Joseph & Directeur médical Digital Medical Hub",
+
+    // citation1:
+    //   "Les fiches patients permettent d’avoir toutes les informations sur les patients en direct, le suivi, les diagnostics à faire, le résultat des examens… Ça améliore énormément la fluidité des transmissions médicales de nos patients en Anesthésie-Réanimation.",
+    // status1:
+    //   "Médecin au sein du département d’Anesthésie-Réanimation de l’hôpital Beaujon",
+    // citation2:
+    //   "Les bips que nous utilisons sont clairement source d'un ralentissement de la communication. Team'Doc permet de créer plus de liens entre les séniors et les internes, et inter-spécialités.",
+    // status2:
+    //   "Médecin au sein du département d’Anesthésie-Réanimation de l’hôpital Beaujon",
+    // citation3:
+    //   "Aujourd'hui, chacun fait comme il veut pour les transmissions médicales, certains notent tout sur une feuille de papier, d'autres relèvent uniquement les tâches à effectuer. Le résultat c'est qu'on passe beaucoup de temps à répéter les informations et certaines sont parfois oubliées.",
+    // status3:
+    //"Médecin au sein du département d’Anesthésie-Réanimation de l’hôpital Beaujon",
     alt: "Photo de ",
+  },
+  references: {
+    title: "Ils nous font confiance",
   },
 };

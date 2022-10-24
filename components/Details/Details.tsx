@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { common } from "../../translations/fr/common";
@@ -11,11 +12,12 @@ const Details = () => {
   // const { t } = useTranslation();
   return (
     <div className="footer__container">
-      <img
+      <Image
         src="/images/footer/teamdoc.png"
         alt={common.logo}
-        // alt={t("common:logo")}
         className="footer__logo"
+        width="102"
+        height="30"
       />
       <Address />
       <SocialMedia />

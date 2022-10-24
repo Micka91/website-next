@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 
 interface IProps {
   data: {
@@ -17,7 +18,7 @@ const SecurityCard = ({ data }: IProps) => {
     data;
   return (
     <div className="security__card">
-      <img src={image} alt={alt} />
+      <Image src={image} alt={alt} width="300" height="185" />
       <h2 className="security__cardTitle">{title}</h2>
       <p className="security__strongText">
         <strong>{strongText}</strong>

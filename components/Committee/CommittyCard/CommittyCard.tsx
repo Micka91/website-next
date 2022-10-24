@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 
 interface IProps {
   title?: string;
@@ -14,7 +15,7 @@ const CommittyCard = ({ title, name, places }: IProps) => {
       {title && <h3 className="commitee__cardTitle">{title}</h3>}
       <div className="commitee__card">
         <div>
-          <img src={avatar} alt="" />
+          <Image src={avatar} alt="Avatar gris" width="40" height="40" />
         </div>
         <div>
           <h4 className="commitee__name">{name}</h4>

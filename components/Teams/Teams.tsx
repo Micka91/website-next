@@ -149,11 +149,6 @@ const Teams = () => {
                     style={{ backgroundImage: `url(${pentagone})` }}
                     className="teams__pentagone"
                   />
-                  {/* <img
-                    src={pentagone}
-                    alt="Image décorative en forme de pentagone"
-                    className="teams__pentagone"
-                  /> */}
                 </div>
               </a>
               <div className="teams__nameContainer">

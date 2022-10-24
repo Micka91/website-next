@@ -1,6 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
 // REACT
 import { useState, useEffect, useContext } from "react";
+// NEXT
+import Image from "next/image";
 // CONTEXT
 import { DrawerContext } from "./../../context/DrawerContext";
 import { MenuContext } from "./../../context/MenuContext";
@@ -14,6 +15,7 @@ import { ROUTES } from "../../utils/routes";
 // COMPONENTS
 import Button from "./../Button/Button";
 // TRANSLATION
+import { navigation } from "../../translations/fr/navigation";
 // import { useTranslation } from "next-i18next";
 
 const Navigation = () => {
@@ -46,9 +48,9 @@ const Navigation = () => {
     setCurrentLocale(lang);
   };
 
-  // const handleOpenBook = () => {
-  //   window.open("https://calendly.com/tamsaguine/teamdoc");
-  // };
+  const handleOpenBook = () => {
+    window.open("https://calendly.com/tamsaguine/teamdoc");
+  };
 
   const handleOpenWebapp = () => {
     window.open("https://webapp.teamdoc.fr/");
@@ -74,12 +76,12 @@ const Navigation = () => {
     <header className={navstyle}>
       <Link href={PATHS.INDEX}>
         <a className="navigation__link">
-          <img
+          <Image
             src="/images/logo/teamdoc.png"
             alt="Logo de teamdoc"
+            className="navigation__logo"
             width={170}
             height={70}
-            className="navigation__logo"
           />
         </a>
       </Link>
@@ -105,32 +107,35 @@ const Navigation = () => {
             </a>
           </li>
           {/* SWITCHLANG */}
-          <li
+          {/* <li
             className="navigation__item navigation__item--lang"
             onClick={handleLocaleChange}
           >
             {currentLocale === "fr" ? "en" : "fr"}
-          </li>
+          </li> */}
           {/* DRAWER */}
-          <li className="navigation__drawer" onClick={handleOpen}>
-            <img
+          {/* <li className="navigation__drawer" onClick={handleOpen}>
+            <Image
               src="/images/icones/drawer.svg"
               alt=""
               width={24}
               height={24}
             />
-          </li>
+          </li> */}
         </ul>
       </nav>
       {/* BURGER */}
       <div className="navigation__burger" onClick={handleOpenMenu}>
-        <img src="/images/icones/burger.svg" alt="" />
+        <Image src="/images/icones/burger.svg" alt="" width={36} height={36} />
       </div>
       {/* Buttons */}
       <div className="navigation__buttons">
-        {/* <Button className="button__demo" onClick={handleOpenBook}>
-          {t("navigation:book")}
-        </Button> */}
+        <Button
+          className="button__demo button__demo--navigation"
+          onClick={handleOpenBook}
+        >
+          {navigation.book}
+        </Button>
         <Button
           className="button__gradient"
           onClick={handleOpenWebapp}

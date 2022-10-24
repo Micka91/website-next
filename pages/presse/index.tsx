@@ -30,6 +30,10 @@ const Press = () => {
       <PressCards />
       <PressRelease />
       <div className="press__background">
+        <div
+          className="press__pattern"
+          style={{ backgroundImage: "url(/images/background/pattern.svg)" }}
+        ></div>
         <PressArticles />
         <PressVideos />
       </div>

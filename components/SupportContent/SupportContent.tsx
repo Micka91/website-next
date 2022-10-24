@@ -143,9 +143,6 @@ const SupportContent = () => {
               onChange={handleChange}
               className="support__input"
             />
-            <span className="support__content">
-              {/* <img src={iddle} alt="" /> */}
-            </span>
           </div>
         </div>
       </section>

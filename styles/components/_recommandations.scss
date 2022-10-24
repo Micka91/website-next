@@ -2,13 +2,13 @@
   padding: 5rem 2rem;
 
   @include media(tablet-l) {
-    padding: 0rem 2rem;
+    padding: 5rem 2rem 0 2rem;
   }
 
   &__arrows {
     @include flexJustifyBetween;
     width: $full;
-    margin-top: -10rem;
+    // margin-top: -10rem;
 
     @include media(phone-l) {
       margin-top: 0rem;
@@ -28,26 +28,13 @@
     background-size: cover;
     transition: background-image 300ms ease;
   }
-
-  &__arrowLeft {
-    background-image: url("/images/icones/arrowLeft.svg");
-    &:hover {
-      background-image: url("/images/icones/arrowLeftHover.svg");
-    }
-  }
-
-  &__arrowRight {
-    background-image: url("/images/icones/arrowRight.svg");
-    &:hover {
-      background-image: url("/images/icones/arrowRightHover.svg");
-    }
-  }
 }
 
 .recommandationsSlides {
-  @include flexCenter;
+  @include flexEnd;
+  // @include flexCenter;
   width: 80%;
-  height: 40vh;
+  // height: 40vh;
   margin: 0 auto;
   position: relative;
 
@@ -57,17 +44,19 @@
 
   &__slide {
     @include flexColumnCenter;
-    position: absolute;
-    visibility: collapse;
+    // position: absolute;
+    // visibility: collapse;
+    display: none;
   }
 
   &__active {
-    visibility: visible;
+    // visibility: visible;
+    display: block;
   }
 
   &__cite {
     width: 65rem;
-    height: 12rem;
+    // height: 12rem;
     font-size: $typo-l;
     font-weight: $f5;
     font-stretch: normal;
@@ -89,6 +78,7 @@
   }
 
   &__picture {
+    @include flexCenter; // remove this if don't use NEXT/IMAGE
     width: 10rem;
     aspect-ratio: 1;
 
@@ -103,7 +93,8 @@
 
   &__content {
     width: 35rem;
-    margin-left: 2.5rem;
+    margin-left: 1.5rem; // remove this if don't use NEXT/IMAGE
+    // margin-left: 2.5rem;
     font-weight: $f3;
     font-style: normal;
     line-height: 1.29;

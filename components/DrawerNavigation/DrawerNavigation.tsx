@@ -1,6 +1,7 @@
 // REACT
 import { useState, useContext } from "react";
 // NEXT
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 // TRANSLATION
@@ -67,7 +68,7 @@ const DrawerNavigation = () => {
       <div className={drawerBackdropClasses.join(" ")}></div>
       <div className={drawerContainerClasses.join(" ")}>
         <div className="drawer__close" onClick={handleOpenMenu}>
-          <img src="/images/icones/close.svg" alt="" />
+          <Image src="/images/icones/close.svg" alt="" width="36" height="36" />
         </div>
         <div className="drawer__content">
           <nav className="navigationresponsiv__navbar">
@@ -94,17 +95,20 @@ const DrawerNavigation = () => {
                 </a>
               </li>
               {/* SWITCHLANG */}
-              <li
+              {/* <li
                 className="navigationresponsiv__item navigationresponsiv__item--lang"
                 onClick={handleLocaleChange}
               >
                 {currentLocale === "fr" ? "en" : "fr"}
-              </li>
+              </li> */}
             </ul>
           </nav>
           {/* Buttons */}
           <div className="navigationresponsiv__buttons">
-            <Button className="button__demo" onClick={handleOpenBook}>
+            <Button
+              className="button__demo button__demo--navigation"
+              onClick={handleOpenBook}
+            >
               {navigation.book}
               {/* {t("navigation:book")} */}
             </Button>

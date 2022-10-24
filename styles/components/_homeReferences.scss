@@ -1,0 +1,33 @@
+.homeReferences {
+  padding: 50px 0;
+  text-align: center;
+
+  &__title {
+    color: $grey-dark-std;
+    font-size: $typo-xxl;
+    font-weight: $f5;
+    margin-bottom: 40px;
+  }
+
+  &__references {
+    padding: 50px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    @include media(tablet-l) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__reference {
+    filter: saturate(0);
+  }
+
+  &__download {
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+  }
+}

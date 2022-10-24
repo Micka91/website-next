@@ -1,11 +1,10 @@
-/* eslint-disable @next/next/no-img-element */
 // REACT
 import { useState } from "react";
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { teams } from "../../translations/fr/teams";
-// NEXT
-import Image from "next/image";
 // COMPONENTS
 import Container from "./../Container/Container";
 
@@ -68,10 +67,12 @@ const Founder = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <Image
                   src={linkedin}
                   alt="logo linkedin"
                   className="founder__linkedinImage"
+                  width="28"
+                  height="28"
                 />
               </a>
             </div>

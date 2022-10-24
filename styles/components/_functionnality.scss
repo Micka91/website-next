@@ -1,6 +1,15 @@
 .functionnality {
-  background-image: url("/images/background/pattern.svg");
   padding: 5rem 0;
+  position: relative;
+
+  &__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
 
   @include media(desktop-s) {
     padding-left: 1.5rem;

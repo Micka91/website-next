@@ -1,3 +1,5 @@
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { solution } from "../../translations/fr/solution";
@@ -14,7 +16,13 @@ const SecureTool = () => {
       </h2>
       <div className="otherTools__secureToolContainer">
         <div className="otherTools__secureToolImage">
-          <img src="/images/solutions/pin.png" alt="visuel_écran" />
+          <Image
+            src="/images/solutions/pin.png"
+            alt="visuel_écran"
+            width="480"
+            height="280"
+            objectFit="contain"
+          />
         </div>
         <div className="otherTools__secureToolContent">
           <h3>{solution.secureTool.title1}</h3>

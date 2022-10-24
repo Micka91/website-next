@@ -1,10 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
-
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { home } from "../../translations/fr/home";
-// NEXT
-import Image from "next/image";
 // COMPONENTS
 import Container from "../Container/Container";
 
@@ -27,13 +25,14 @@ const Simplification = () => {
         </div>
         <div className="simplification__cardContainer">
           <div className="simplification__card">
-            <img
-              src="/images/home/caregivers.png"
-              alt={home.simplification.alt}
-              // alt={t("home:simplification.alt")}
-              width="300"
-              height="300"
-            />
+            <div>
+              <Image
+                src="/images/home/caregivers.png"
+                alt={home.simplification.alt}
+                width="800"
+                height="800"
+              />
+            </div>
             <div className="simplification__container">
               <h3>{home.simplification.h3}</h3>
               {/* <h3>{t("home:simplification.h3")}</h3> */}

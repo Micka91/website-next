@@ -35,6 +35,10 @@
     width: 30rem;
     background-color: transparent;
 
+    & span {
+      width: 100% !important;
+    }
+
     // MEDIA QUERY
     @include media(tablet-l) {
       width: 100%;

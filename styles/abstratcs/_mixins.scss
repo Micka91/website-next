@@ -101,6 +101,12 @@
   justify-content: center;
 }
 
+@mixin flexEnd {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
 @mixin flexAlignBaseline {
   display: flex;
   justify-content: center;

@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+// NEXT
+import Image from "next/image";
 // INTERFACE
 import { IAnimation } from "./Functionnality";
 // TRANSLATION
@@ -31,11 +32,14 @@ const FunctionnalityLeft = ({ animationLeft }: IProps) => {
   return (
     <div className="functionnalityLeft">
       <div style={firstAnimLeft} className="functionnalityLeft__container">
-        <img
-          className="functionnalityLeft__icones"
-          src="/images/icones/team.svg"
-          alt={home.functionnalityLeft.alt1}
-        />
+        <div className="functionnalityLeft__icones">
+          <Image
+            src="/images/icones/team.svg"
+            alt={home.functionnalityLeft.alt1}
+            width="44"
+            height="44"
+          />
+        </div>
         <div className="functionnalityLeft__content">
           <h3 className="functionnalityLeft__title">
             {home.functionnalityLeft.h3_1}
@@ -47,11 +51,14 @@ const FunctionnalityLeft = ({ animationLeft }: IProps) => {
       </div>
 
       <div style={secondAnimLeft} className="functionnalityLeft__container">
-        <img
-          className="functionnalityLeft__icones"
-          src="/images/icones/cloud.svg"
-          alt={home.functionnalityLeft.alt2}
-        />
+        <div className="functionnalityLeft__icones">
+          <Image
+            src="/images/icones/cloud.svg"
+            alt={home.functionnalityLeft.alt2}
+            width="44"
+            height="44"
+          />
+        </div>
         <div className="functionnalityLeft__content">
           <h3 className="functionnalityLeft__title">
             {" "}
@@ -64,11 +71,14 @@ const FunctionnalityLeft = ({ animationLeft }: IProps) => {
       </div>
 
       <div style={thirdAnimLeft} className="functionnalityLeft__container">
-        <img
-          className="functionnalityLeft__icones"
-          src="/images/icones/form.png"
-          alt={home.functionnalityLeft.alt3}
-        />
+        <div className="functionnalityLeft__icones">
+          <Image
+            src="/images/icones/form.png"
+            alt={home.functionnalityLeft.alt3}
+            width="44"
+            height="44"
+          />
+        </div>
         <div className="functionnalityLeft__content">
           <h3 className="functionnalityLeft__title">
             {home.functionnalityLeft.h3_3}

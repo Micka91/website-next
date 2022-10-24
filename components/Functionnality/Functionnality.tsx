@@ -1,7 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
-
 // REACT
 import { useState, useEffect, useRef, useCallback } from "react";
+// NEXT
+import Image from "next/image";
 // COMPONENTS
 import FunctionnalityLeft from "./FunctionnalityLeft";
 import FunctionnalityRight from "./FunctionnalityRight";
@@ -74,6 +74,18 @@ const Functionnality = () => {
 
   return (
     <section className="functionnality" ref={containerRef}>
+      <div
+        className="functionnality__background"
+        style={{ backgroundImage: "url(/images/background/pattern.svg)" }}
+      >
+        {/* <Image
+          src="/images/background/pattern.svg"
+          alt="patern géométrique"
+          layout="fill"
+          objectFit="contain"
+          quality={100}
+        /> */}
+      </div>
       <Container>
         <div className="functionnality__titleContainer">
           <h2 className="functionnality__title">
@@ -88,10 +100,11 @@ const Functionnality = () => {
         <div className="functionnality__container">
           <FunctionnalityLeft animationLeft={animationLeft} />
           <div className="functionnality__images">
-            <img
+            <Image
               src="/images/home/phone.png"
               alt={home.functionnalities.alt}
-              // alt={t("home:functionnalities.alt")}
+              width="220"
+              height="430"
             />
           </div>
           <FunctionnalityRight

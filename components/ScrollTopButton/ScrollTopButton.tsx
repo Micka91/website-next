@@ -1,3 +1,6 @@
+// NEXT
+import Image from "next/image";
+
 interface IProps {
   showBtn?: boolean;
 }
@@ -18,7 +21,12 @@ const ScrollTopButton = ({ showBtn }: IProps) => {
   return (
     <section className={containerClasse.join(" ")}>
       <div className={buttonClasse.join(" ")} onClick={triggerScrollTop}>
-        <img src="/images/icones/arrowTop.svg" alt="arrow" />
+        <Image
+          src="/images/icones/arrowTop.svg"
+          alt="arrow"
+          width="30"
+          height="30"
+        />
       </div>
     </section>
   );

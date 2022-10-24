@@ -1,5 +1,7 @@
 // REACT
 import { useContext } from "react";
+// NEXT
+import Image from "next/image";
 // TRANSLATION
 // import { useTranslation } from "next-i18next";
 import { common } from "../../translations/fr/common";
@@ -32,7 +34,7 @@ const Drawer = () => {
       ></div>
       <div className={drawerContainerClasses.join(" ")}>
         <div className="drawer__close" onClick={handleOpen}>
-          <img src="/images/icones/close.svg" alt="" />
+          <Image src="/images/icones/close.svg" alt="" width="36" height="36" />
         </div>
         <div className="drawer__content">
           <DownloadApp />
