@@ -29,46 +29,33 @@ const SEO = ({ title, description, type }: IProps) => {
       <meta property="og:type" content={type} />
       <meta
         property="og:image"
-        content="https://mickaelchristine.fr/images/logo/teamdoc.png"
+        content="https://teamdoc.fr/images/logo/teamdoc.png"
       />
-      <meta property="og:url" content="https://mickaelchristine.fr" />
+      <meta property="og:url" content="https://teamdoc.fr" />
       <meta property="og:locale" content={router.locale} />
       <meta property="og:site_name" content="Team'doc" />
       <meta property="og:description" content={description} />
       {/* SOCIAL MEDIA */}
       <meta name="twitter:site" content="@team__doc" />
       <meta name="twitter:card" content="summary_large_image" />
-      {router.locale === "en" ? (
-        <>
-          <link
-            rel="canonical"
-            href={`https://mickaelchristine.fr${router.pathname}/${router.locale}`}
-          />
-          <link
-            rel="alternate"
-            href={`https://mickaelchristine.fr${router.pathname}`}
-            hrefLang="fr"
-          />
-        </>
-      ) : (
-        <>
-          <link
-            rel="canonical"
-            href={`https://mickaelchristine.fr${router.pathname}`}
-          />
-          <link
-            rel="alternate"
-            href={`https://mickaelchristine.fr/en${router.pathname}`}
-            hrefLang="en"
-          />
-        </>
-      )}
+
+      <link rel="canonical" href={`https://teamdoc.fr${router.pathname}`} />
+      <link
+        rel="alternate"
+        href={`https://teamdoc.eu${router.pathname}`}
+        hrefLang="en"
+      />
       <link rel="icon" href="/favicon.ico" />
 
       <script
         id="cookiesecureJs"
         src="https://cdn.cookie-secure.com/js?k=d1e4b8f0b9ab8fee167ba71f0ef25e9b"
         type="text/javascript"
+        async
+      ></script>
+      <script
+        type="text/javascript"
+        src="https://brain.plezi.co/api/v1/analytics?tenant=492e6f40-06bb-49a5-98ef-87b2a1ac4ba4&tw=502bf6b8-34d7-403b-a863-41b688a8fabc"
         async
       ></script>
     </Head>

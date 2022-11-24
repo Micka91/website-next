@@ -1,0 +1,27 @@
+export const security = {
+  title: "SECURITY",
+  texte1: "Safety is our priority",
+  texte2: "We make every effort to ensure that your data is protected.",
+  card1: {
+    title: "Servers",
+    strongText:
+      "Health data is stored and managed on servers hosted by an HDS-certified provider (CEGEDIM)",
+    text: "CEGEDIM is specialized in the management of digital flows in the healthcare ecosystem.",
+  },
+  card2: {
+    title: "Communication",
+    strongText:
+      "Exchanges are transmitted via a secure protocol by encryption (additional layer of security).",
+    text: "Team'Doc uses end-to-end encryption as a communication system. No one has access to the keys needed to decrypt the conversation.",
+  },
+  card3: {
+    title: "Device",
+    strongText:
+      "Team'Doc uses a strong authentication method: systematic enrolment of devices (no local storage).",
+    text: "Each user's profile also receives a unique identification (profile validation).",
+    validationType: {
+      valid1: "Identification via the official SDHP repository",
+      valid2: "E-HPC Application",
+    },
+  },
+};

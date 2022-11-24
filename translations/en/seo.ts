@@ -1,0 +1,68 @@
+export const seo = {
+  home: {
+    title:
+      "Communication and organisation between carers in a secure application: Team'Doc",
+    description:
+      "Team'Doc is a secure application that facilitates communication and organization between caregivers. Discover the tool here and download it for free.",
+  },
+  support: {
+    title: "Technical support : Team'Doc",
+    description:
+      "You have a specific problem with the application? Consult our guide or contact us at the following address support@teamdoc.fr.",
+  },
+  solution: {
+    title: "The solutions : Team’Doc",
+    description:
+      "To meet the concrete needs of caregivers, Team'Doc includes in its application an instant messenger and a secure storage space.",
+  },
+  security: {
+    title: "Security : Team'Doc",
+    description:
+      "Security is our priority. Data are stored on HDS servers. Exchanges are made via a secure protocol by encryption. Team'Doc makes every effort to ensure that your data is protected.",
+  },
+  press: {
+    title: "Press : Team'Doc",
+    description:
+      "If you need more information on the Team'Doc application or for any information or interview request, please contact us at the following address apolline@teamdoc.fr.",
+  },
+  cookies: {
+    title: "Cookie Policy : Team'Doc",
+    description: "Our policy on the use of cookies at Team'Doc.",
+  },
+  privacy: {
+    title: "Privacy Policy : Team'Doc",
+    description: "Our privacy policy at Team'Doc.",
+  },
+  joinUs: {
+    title: "Join Team'Doc",
+    description:
+      "Team'Doc being in perpetual evolution do not hesitate to send us your applications.",
+  },
+  teams: {
+    title: "Our team : Team'Doc",
+    description:
+      "Team'Doc is made up of a human-sized team. A marketing and sales team, a technical team and a technical support available from Monday to Friday from 9am to 8pm.",
+  },
+  offers: {
+    title: "Team'Doc offers",
+    description:
+      "Two types of offers are available from Team'Doc. If you are a health institution or other contact us for a personalized offer. If you are a private individual, an Access offer in free and paid version (per month or per year) is available.",
+  },
+  legalsmentions: {
+    title: "Legal information : Team'Doc",
+    description: "Our legal notices at Team'Doc.",
+  },
+  contact: {
+    title: "Contact Team'Doc",
+    description:
+      "If you need a particular information, a technical question or if you want to propose a press article, do not hesitate to contact us, communication is a priority at Team'Doc.",
+  },
+  cgv: {
+    title: "General terms and conditions of sale : Team'Doc",
+    description: "Our general conditions of sale at Team'Doc.",
+  },
+  cgu: {
+    title: "Terms and conditions of use : Team'Doc",
+    description: "Our general conditions of use at Team'Doc.",
+  },
+};

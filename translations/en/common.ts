@@ -1,0 +1,11 @@
+export const common = {
+  download: "download",
+  seePrice: "view prices",
+  logo: "Team'doc logo",
+  follow: "Follow us!",
+  blueCard: {
+    h2: "Download the application for free !",
+    p: "The application is available on the Android and iOS stores.",
+    alt: "White arrow",
+  },
+};

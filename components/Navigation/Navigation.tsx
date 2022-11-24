@@ -99,7 +99,7 @@ const Navigation = () => {
           ))}
           <li className="navigation__item">
             <a
-              href="https://blog.teamdoc.fr/blog/"
+              href="https://teamdoc.fr/blog/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -107,6 +107,15 @@ const Navigation = () => {
             </a>
           </li>
           {/* SWITCHLANG */}
+          <li className="navigation__item">
+            <a
+              href="https://teamdoc.eu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              EN
+            </a>
+          </li>
           {/* <li
             className="navigation__item navigation__item--lang"
             onClick={handleLocaleChange}
@@ -137,7 +146,7 @@ const Navigation = () => {
           {navigation.book}
         </Button>
         <Button
-          className="button__gradient"
+          className="button__webapp"
           onClick={handleOpenWebapp}
         >{`TEAM'DOC WEB`}</Button>
       </div>
