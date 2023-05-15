@@ -1,6 +1,6 @@
 export const press = {
   title: "Presse",
-  text: "N’hésitez pas à nous contacter si vous avez besoin de renseignements complémentaires sur Team’Doc. Pour toute demande d’information ou d’interview, contactez Apolline Chaudré, responsable marketing et presse : ",
+  text: "N’hésitez pas à nous contacter si vous avez besoin de renseignements complémentaires sur Team’Doc. Pour toute demande d’information ou d’interview, contactez le service presse, responsable marketing et presse : ",
   pressCards: {
     title: "Dossier de presse",
     p1: "Qui sommes-nous ?",

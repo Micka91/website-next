@@ -12,10 +12,7 @@
     @include flexCenterBetween;
 
     // MEDIA QUERY
-    @include media(phone-l) {
-      gap: 4rem;
-      flex-direction: column;
-    }
+    @include mediaQueryHeaderBanner;
   }
 
   &__container {

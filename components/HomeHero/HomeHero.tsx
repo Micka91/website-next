@@ -52,7 +52,7 @@ const HomeHero = () => {
                 </Button>
               </div>
               <Image
-                src="/images/hero/hero-home.png"
+                src="/images/hero/hero-home-CP.png"
                 alt={home.hero.alt3}
                 // alt={t("home:hero.alt3")}
                 priority={true}

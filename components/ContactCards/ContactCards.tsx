@@ -9,7 +9,7 @@ const ContactCards = () => {
       title: contact.card1.title,
       // title: t("contact:card1.title"),
       src: "/images/contact/press.png",
-      mail: "apolline@teamdoc.fr",
+      mail: "presse@teamdoc.fr",
     },
     {
       title: contact.card2.title,

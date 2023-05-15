@@ -1,5 +1,9 @@
 // NEXT
 import Image from "next/image";
+// COMPONENTS
+import Button from "./../Button/Button";
+// TRANSLATION
+import { navigation } from "../../translations/fr/navigation";
 
 interface IProps {
   showBtn?: boolean;
@@ -18,8 +22,18 @@ const ScrollTopButton = ({ showBtn }: IProps) => {
     window.scrollTo(window.scrollY, 0);
   };
 
+  const handleOpenBook = () => {
+    window.open("https://calendly.com/tamsaguine/teamdoc");
+  };
+
   return (
     <section className={containerClasse.join(" ")}>
+      <Button
+        className="button__demo button__demo--navigation"
+        onClick={handleOpenBook}
+      >
+        {navigation.book}
+      </Button>
       <div className={buttonClasse.join(" ")} onClick={triggerScrollTop}>
         <Image
           src="/images/icones/arrowTop.svg"

@@ -1,7 +1,13 @@
+// REACT
+import { useEffect } from "react";
+// NEXT
+import { useRouter } from "next/router";
 // TRANSLATION
 // import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 // import { useTranslation } from "next-i18next";
 // import { namespaces } from "../utils/namespaces";
+// ENUMS
+import { PATHS } from "../enums/paths";
 import { seo } from "../translations/fr/seo";
 // COMPONENTS
 import Partners from "../components/Partners/Partners";
@@ -16,6 +22,15 @@ import HomeReferences from "../components/HomeReferences/HomeReferences";
 const Home = () => {
   // // i18NEXT HOOK
   // const { t } = useTranslation();
+  // NEXT HOOKS
+  const routers = useRouter();
+
+  useEffect(() => {
+    if (routers.asPath !== PATHS.INDEX) {
+      routers.push(routers.asPath);
+      console.log("ROUTER", routers.asPath);
+    }
+  }, [routers]);
 
   return (
     <>

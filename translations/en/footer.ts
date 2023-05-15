@@ -14,6 +14,8 @@ export const footer = {
   },
   col4: {
     title: "Downloads",
+    subTitle:
+      'Teamdoc.fr : the reference medical instant messaging app. <br />Application and software for chat / "whatsapp" for medical professionals and health care professionals (doctors and caregivers): patient management, medical transmission tools, secure messaging',
     p: "Team'Doc application is available for free, on the stores!",
     titleAppStore: "Teamdoc download link on the App Store",
     altAppStore: "Download logo on the App Store",

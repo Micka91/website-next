@@ -1,6 +1,7 @@
 export const home = {
   hero: {
-    h1: "La messagerie instantanée sécurisée de santé",
+    h1: "L’application de messagerie instantanée sécurisée de santé",
+    // h1: "La messagerie instantanée sécurisée de santé",
     p1: "Créée par des soignants, Team'Doc facilite le travail en équipe pour ",
     p2: "tous les professionnels de santé, à l'hôpital, en clinique ou en cabinet.",
     button: "En savoir plus",

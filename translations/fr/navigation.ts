@@ -1,6 +1,7 @@
 import { PATHS } from "../../enums/paths";
 
 export const navigation = {
+  pca: "Pca",
   solution: "Solution",
   team: "Notre équipe",
   offers: "Offres",

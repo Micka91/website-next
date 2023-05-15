@@ -6,6 +6,7 @@ import Image from "next/image";
 import Container from "./../Container/Container";
 // TEAM PICTURES
 const apolline = "/images/teams/Apolline.jpg";
+const capucine = "/images/teams/Capucine.jpg";
 const dominique = "/images/teams/Dominique.jpg";
 const eliran = "/images/teams/Eliran.jpg";
 const yvan = "/images/teams/Ivan.jpg";
@@ -51,12 +52,12 @@ const Teams = () => {
       status: teams.teams.tristan,
       linkedin: "https://www.linkedin.com/in/tristan-t-19b821155/",
     },
-    {
-      src: jeanmarc,
-      name: "Jean Marc",
-      status: teams.teams.jeanmarc,
-      linkedin: "https://www.linkedin.com/in/dr-jean-marc-coursier-b24aa263/",
-    },
+    // {
+    //   src: jeanmarc,
+    //   name: "Jean Marc",
+    //   status: teams.teams.jeanmarc,
+    //   linkedin: "https://www.linkedin.com/in/dr-jean-marc-coursier-b24aa263/",
+    // },
     {
       src: denis,
       name: "Denis",
@@ -70,24 +71,24 @@ const Teams = () => {
       linkedin: "https://www.linkedin.com/in/jeanyvesrobin/",
     },
     // DEVS
-    {
-      src: eliran,
-      name: "Eliran",
-      status: teams.teams.eliran,
-      linkedin: "https://www.linkedin.com/in/eliran-elbaz-7294a0105/",
-    },
+    // {
+    //   src: eliran,
+    //   name: "Eliran",
+    //   status: teams.teams.eliran,
+    //   linkedin: "https://www.linkedin.com/in/eliran-elbaz-7294a0105/",
+    // },
     {
       src: mickael,
       name: "Mickaël",
       status: teams.teams.mickael,
       linkedin: "https://www.linkedin.com/in/mi91/",
     },
-    {
-      src: kaiqiang,
-      name: "Kaiqiang",
-      status: teams.teams.kaiqiang,
-      linkedin: "https://www.linkedin.com/in/kaikrk/",
-    },
+    // {
+    //   src: kaiqiang,
+    //   name: "Kaiqiang",
+    //   status: teams.teams.kaiqiang,
+    //   linkedin: "https://www.linkedin.com/in/kaikrk/",
+    // },
     {
       src: audrey,
       name: "Audrey",
@@ -96,17 +97,23 @@ const Teams = () => {
     },
     // SUPPORT AND MARKETING
     {
-      src: apolline,
-      name: "Apolline",
+      src: capucine,
+      name: "Capucine",
       status: teams.teams.apolline,
-      linkedin: "https://www.linkedin.com/in/apolline-chaudré-517b8a171/",
+      linkedin: "https://www.linkedin.com/in/capucine-m-7052a1245/",
     },
-    {
-      src: dominique,
-      name: "Dominique",
-      status: teams.teams.dominique,
-      linkedin: "https://www.linkedin.com/in/dominique-vallee-23082919b/",
-    },
+    // {
+    //   src: apolline,
+    //   name: "Apolline",
+    //   status: teams.teams.apolline,
+    //   linkedin: "https://www.linkedin.com/in/apolline-chaudré-517b8a171/",
+    // },
+    // {
+    //   src: dominique,
+    //   name: "Dominique",
+    //   status: teams.teams.dominique,
+    //   linkedin: "https://www.linkedin.com/in/dominique-vallee-23082919b/",
+    // },
     {
       src: kevin,
       name: "Kevin",
@@ -139,7 +146,7 @@ const Teams = () => {
                 <div className="teams__imageContainer">
                   <Image
                     src={user.src}
-                    alt={`${teams.alt} ${user.name}`}
+                    alt={`${teams.alt}${user.name}`}
                     className="teams__avatar"
                     width="250"
                     height="250"

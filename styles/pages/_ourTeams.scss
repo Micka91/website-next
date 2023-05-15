@@ -25,6 +25,7 @@
     // MEDIA QUERY
     @include media(tablet-l) {
       font-size: $typo-xl;
+      margin-top: 7rem;
     }
   }
 

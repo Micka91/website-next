@@ -1,6 +1,6 @@
 export const press = {
   title: "Press",
-  text: "Do not hesitate to contact us if you need more information about Team'Doc. For any request for information or interview, please contact Apolline Chaudré, marketing and press manager:",
+  text: "Do not hesitate to contact us if you need more information about Team'Doc. For any request for information or interview, please contact press department, marketing and press manager:",
   pressCards: {
     title: "Press kit",
     p1: "Who are we?",

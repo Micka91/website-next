@@ -48,10 +48,6 @@ const Navigation = () => {
     setCurrentLocale(lang);
   };
 
-  const handleOpenBook = () => {
-    window.open("https://calendly.com/tamsaguine/teamdoc");
-  };
-
   const handleOpenWebapp = () => {
     window.open("https://webapp.teamdoc.fr/");
   };
@@ -89,12 +85,38 @@ const Navigation = () => {
       <nav className="navigation__navbar">
         <ul className="navigation__items">
           {ROUTES.map((route) => (
-            <li className="navigation__item" key={route.key}>
+            <li
+              className={`${
+                route.key === PATHS.SOLUTION
+                  ? "navigation__solution"
+                  : "navigation__item"
+              }`}
+              key={route.key}
+            >
+              {/* {route.key === PATHS.SOLUTION ? (
+                <div className="navigation__dropdown">
+                  <p>{route.path}</p>
+                  <div className="navigation__dropdown--content">
+                    {route.childrens?.map((children) => (
+                      <Link href={children.key} key={children.key}>
+                        <a
+                          className={`navigation__item navigation__subitem ${
+                            router.asPath === children.key ? "active" : ""
+                          }`}
+                        >
+                          {children.path}
+                        </a>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : ( */}
               <Link href={route.key}>
                 <a className={router.asPath === route.key ? "active" : ""}>
                   {route.path}
                 </a>
               </Link>
+              {/* )} */}
             </li>
           ))}
           <li className="navigation__item">
@@ -139,12 +161,6 @@ const Navigation = () => {
       </div>
       {/* Buttons */}
       <div className="navigation__buttons">
-        <Button
-          className="button__demo button__demo--navigation"
-          onClick={handleOpenBook}
-        >
-          {navigation.book}
-        </Button>
         <Button
           className="button__webapp"
           onClick={handleOpenWebapp}

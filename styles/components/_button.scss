@@ -48,6 +48,13 @@
 
     &--navigation {
       font-size: $typo-s;
+      position: fixed;
+      bottom: 3.3rem;
+      right: 80px;
+    }
+
+    @include media(phone-l) {
+      position: inherit;
     }
   }
 

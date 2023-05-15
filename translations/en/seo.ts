@@ -1,7 +1,8 @@
 export const seo = {
   home: {
-    title:
-      "Communication and organisation between carers in a secure application: Team'Doc",
+    title: "Instant and secure medical messaging for caregivers",
+    // title:
+    //   "Team'Doc is a secure application that facilitates communication and organisation between carers in a secure application: Team'Doc",
     description:
       "Team'Doc is a secure application that facilitates communication and organization between caregivers. Discover the tool here and download it for free.",
   },
@@ -23,7 +24,7 @@ export const seo = {
   press: {
     title: "Press : Team'Doc",
     description:
-      "If you need more information on the Team'Doc application or for any information or interview request, please contact us at the following address apolline@teamdoc.fr.",
+      "If you need more information on the Team'Doc application or for any information or interview request, please contact us at the following address presse@teamdoc.fr.",
   },
   cookies: {
     title: "Cookie Policy : Team'Doc",
@@ -64,5 +65,11 @@ export const seo = {
   cgu: {
     title: "Terms and conditions of use : Team'Doc",
     description: "Our general conditions of use at Team'Doc.",
+  },
+  pca: {
+    title:
+      "Your Business Continuity Plan (BCP) in the event of a disaster or cyber attack",
+    description:
+      "Teamdoc is the Business Continuity Planning (BCP) solution that helps you deal with disasters and cyber attacks safely. Maintain service continuity in a crisis and communicate securely between professionals with Team Doc. Learn more about our BCP solution for hospitals and maintain care even during an IT crisis.",
   },
 };

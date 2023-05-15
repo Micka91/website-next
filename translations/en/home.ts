@@ -1,6 +1,7 @@
 export const home = {
   hero: {
-    h1: "Healthcare Secure Instant Messaging",
+    h1: "The secure instant messaging application for healthcare",
+    // h1: "Healthcare Secure Instant Messaging",
     p: "Created by healthcare professionals, Team'Doc makes teamwork easier for all healthcare professionals, in hospitals, clinics and offices.",
     button: "Read more",
     alt1: "Background image teamdoc home",

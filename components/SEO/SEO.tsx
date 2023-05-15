@@ -58,6 +58,11 @@ const SEO = ({ title, description, type }: IProps) => {
         src="https://brain.plezi.co/api/v1/analytics?tenant=492e6f40-06bb-49a5-98ef-87b2a1ac4ba4&tw=502bf6b8-34d7-403b-a863-41b688a8fabc"
         async
       ></script>
+      <script
+        type="text/javascript"
+        src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
+        async
+      ></script>
     </Head>
   );
 };

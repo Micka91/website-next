@@ -1,5 +1,6 @@
 // NEXT
 import Link from "next/link";
+import Image from "next/image";
 // TRANSLATION
 import { legalsmentions } from "../../translations/fr/legalsmentions";
 // ENUMS
@@ -43,6 +44,18 @@ const LegalsMentionsContent = () => {
           {legalsmentions.prestataire.texte1suite}
         </p>
         <h3>{legalsmentions.prestataire.hebergement}</h3>
+        <a
+          href="https://cegedim.cloud/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/images/logo/cegedimCLoud.svg"
+            alt=""
+            width="150"
+            height="65"
+          />
+        </a>
         <p>CEGEDIM</p>
         <p>
           {`137 Rue d'Aguesseau, 92100 Boulogne-Billancourt`}

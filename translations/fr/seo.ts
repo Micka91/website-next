@@ -1,9 +1,10 @@
 export const seo = {
   home: {
-    title:
-      "La communication et l’organisation entre soignants dans une application sécurisée : Team’Doc",
+    title: "Messagerie médicale instantanée et sécurisée pour soignants",
+    // title:
+    //   "Team'Doc la messagerie instantanée sécurisée de santé qui facilite la communication et l’organisation entre soignants dans une application sécurisée : Team’Doc",
     description:
-      "Team'Doc est une application sécurisée qui facilite la communication et l'organisation entre soignants. Découvrez l’outil ici et téléchargez-le gratuitement.",
+      "Team'Doc la messagerie instantanée sécurisée de santé qui facilite la communication et l'organisation entre soignants. Découvrez l’outil ici et téléchargez-le gratuitement.",
   },
   support: {
     title: "Support Technique : Team'Doc",
@@ -13,7 +14,7 @@ export const seo = {
   solution: {
     title: "Les solutions : Team’Doc",
     description:
-      "Pour répondre aux besoins concrets des soignants, Team’Doc regroupe dans son application une messagerie instantanée et un espace de stockage sécurisé.",
+      "Pour répondre aux besoins concrets des soignants, Team’Doc regroupe dans son application une messagerie instantanée sécurisée et un espace de stockage sécurisé.",
   },
   security: {
     title: "Sécurité : Team'Doc",
@@ -23,7 +24,7 @@ export const seo = {
   press: {
     title: "Presse : Team'Doc",
     description:
-      "Si vous avez besoin de renseignements complémentaires sur l'application Team’Doc ou pour toute demande d’information ou d’interview contactez-nous à l'adresse suivante apolline@teamdoc.fr.",
+      "Si vous avez besoin de renseignements complémentaires sur l'application Team’Doc ou pour toute demande d’information ou d’interview contactez-nous à l'adresse suivante presse@teamdoc.fr.",
   },
   cookies: {
     title: "Politique de cookies : Team'Doc",
@@ -64,5 +65,11 @@ export const seo = {
   cgu: {
     title: "Conditions générales d'utilisation : Team’Doc",
     description: "Nos conditions générales d'utilisation chez Team'Doc.",
+  },
+  pca: {
+    title:
+      "Votre Plan de Continuité d'Activité (PCA) en cas de sinistre ou de cyberattaque",
+    description:
+      "Teamdoc est la solution de Plan de Continuité d'Activité (PCA) qui vous aide à faire face aux sinistres et aux cyberattaques en toute sécurité. Maintenez la continuité des services en cas de crise et communiquez de manière sécurisée entre les professionnels grâce à Team Doc. Découvrez notre solution de PCA pour les hôpitaux et maintenez les soins même en cas de crise informatique.",
   },
 };

@@ -12,6 +12,7 @@ const DownloadApp = () => {
     <div className="footer__container">
       <h4 className="footer__title">{footer.col4.title}</h4>
       {/* <h4 className="footer__title">{footer.col4.title}</h4> */}
+      {/* <p className="footer__paragraph">{footer.col4.subTitle}</p> */}
       <p className="footer__paragraph">{footer.col4.p}</p>
       {/* <p className="footer__paragraph">{footer.col4.p}</p> */}
       <div className="footer__buttons">

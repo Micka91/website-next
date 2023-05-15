@@ -1,0 +1,38 @@
+.pca {
+  &__header {
+    position: relative;
+    min-height: 100vh;
+    @include flexAlignCenter;
+
+    // MEDIA QUERY
+    @include mediaQueryHeader;
+  }
+
+  &__banner {
+    @include flexCenterBetween;
+
+    // MEDIA QUERY
+    @include mediaQueryHeaderBanner;
+  }
+
+  &__container {
+    // MEDIA QUERY
+    @include mediaQueryHeaderContainer;
+  }
+
+  &__title {
+    font-size: $typo-hero;
+
+    // MEDIA QUERY
+    @include mediaQueryHeaderTitle;
+  }
+
+  &__paragraph {
+    margin: 1.5rem 0;
+    font-size: $typo-m;
+    color: $grey-dark-85;
+
+    // MEDIA QUERY
+    @include mediaQueryHeaderParagraph;
+  }
+}

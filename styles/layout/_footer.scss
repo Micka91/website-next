@@ -85,6 +85,26 @@
     font-size: 1.2rem;
   }
 
+  &__newsletter {
+    display: flex;
+    min-height: 350px;
+
+    @include media(desktop-s) {
+      padding: 0 $pad-tab;
+    }
+
+    @include media(phone-l) {
+      min-height: 400px;
+      padding: 0;
+    }
+  }
+
+  &__iframe {
+    height: auto;
+    margin-left: auto;
+    max-width: 665px;
+  }
+
   // MEDIA QUERY
   @include media(desktop-s) {
     padding: 0 $pad-tab;

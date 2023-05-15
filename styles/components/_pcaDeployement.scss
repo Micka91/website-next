@@ -1,0 +1,75 @@
+.pcaDeployement {
+  padding: 2rem 0 10rem 0;
+
+  &__title {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
+    font-size: $typo-xxl;
+    font-weight: $f4;
+  }
+
+  &__container {
+    display: flex;
+    // gap: 3rem;
+    // margin: 7rem 0;
+    border-radius: 0.7rem;
+  }
+
+  &__cards {
+    background: $gradient-down;
+    color: $white-std;
+    padding: 2rem;
+  }
+
+  &__card {
+    padding: 2rem;
+  }
+
+  &__cardTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__listItem {
+    margin-left: 2rem;
+  }
+
+  &__item {
+  }
+
+  &__priceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 2rem;
+  }
+
+  &__priceTitle {
+    text-align: center;
+    font-size: $typo-hero;
+    margin-bottom: 1.5rem;
+    text-shadow: $secondary-std 1px 2px 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__pricePerMonth {
+    font-size: $typo-l;
+  }
+
+  &__priceContent {
+    text-align: center;
+  }
+
+  &__priceMention {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.1rem;
+    font-style: italic;
+  }
+}

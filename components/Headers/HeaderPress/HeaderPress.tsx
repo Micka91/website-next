@@ -19,7 +19,7 @@ const HeaderPress = () => {
         {/* <h1 className="press__title">{t("press:title")}</h1> */}
         <p className="press__paragraph">
           {press.text} {/* {t("press:text")}{" "} */}
-          <a href="mailto:apolline@teamdoc.fr">apolline@teamdoc.fr</a>
+          <a href="mailto:presse@teamdoc.fr">presse@teamdoc.fr</a>
         </p>
       </Background>
     </section>

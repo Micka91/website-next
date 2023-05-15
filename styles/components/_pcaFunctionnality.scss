@@ -1,0 +1,64 @@
+$radius: 0.7rem;
+$border: 1px solid $secondary-std;
+$gapAndBorderWidth: 2rem;
+
+.pcaFunctionnality {
+  background: $grey-light-std;
+  padding: 1.5rem 0;
+
+  &__menu {
+    display: flex;
+    justify-content: center;
+    // padding: 1.5rem 0 0 1.5rem;
+    gap: $gapAndBorderWidth;
+    z-index: 2;
+
+    & > button {
+      background: none;
+      outline: none;
+      border: none;
+      cursor: pointer;
+      font-size: 2.5rem;
+      padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+      border-top-left-radius: $radius;
+      border-top-right-radius: $radius;
+      transition: color 300ms ease-in-out;
+      position: relative;
+
+      &:hover {
+        color: $secondary-std;
+      }
+    }
+
+    & button.active {
+      // color: $secondary-std;
+      border-top: $border;
+      border-left: $border;
+      border-right: $border;
+      border-bottom: 1px solid $white-std;
+      position: relative;
+
+      background: $secondary-std;
+      color: $white-std;
+    }
+  }
+
+  &__content {
+    border: $border;
+    padding: 3rem 0;
+    z-index: 0;
+    margin-top: -2px;
+    box-sizing: border-box;
+    border-radius: $radius;
+
+    overflow: hidden;
+    transition: height 0.3s ease;
+
+    background: $secondary-std;
+    color: $white-std;
+  }
+
+  &__content.show {
+    height: auto;
+  }
+}
