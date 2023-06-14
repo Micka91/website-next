@@ -7,6 +7,7 @@ export const partners = {
     col5: "Centrale d'achat :",
   },
   jei: "Logo jeune entreprise innovante",
+  dopamine: "Logo Dopamine",
   medicen: "Logo Medicen",
   adrenaline: "Logo Adrenaline",
   bpi: "Logo Bpi france",

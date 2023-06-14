@@ -63,6 +63,11 @@ const SEO = ({ title, description, type }: IProps) => {
         src="https://app.mailjet.com/statics/js/iframeResizer.min.js"
         async
       ></script>
+      <script
+        type="text/javascript"
+        src="https://app.mailjet.com/pas-nc-embedded-v1.js"
+        async
+      ></script>
     </Head>
   );
 };

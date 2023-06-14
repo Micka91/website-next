@@ -28,7 +28,6 @@ const Home = () => {
   useEffect(() => {
     if (routers.asPath !== PATHS.INDEX) {
       routers.push(routers.asPath);
-      console.log("ROUTER", routers.asPath);
     }
   }, [routers]);
 

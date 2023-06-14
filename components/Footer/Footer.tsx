@@ -13,6 +13,8 @@ import { footer } from "../../translations/fr/footer";
 const Footer = () => {
   const [matches, setMatches] = useState(true);
 
+  console.log("MATCHES", matches);
+
   useEffect(() => {
     window
       .matchMedia("(min-width: 768px)")
@@ -34,7 +36,7 @@ const Footer = () => {
         </div>
 
         <div className="footer__newsletter">
-          <iframe
+          {/* <iframe
             className="footer__iframe"
             frameBorder="0"
             scrolling="no"
@@ -44,7 +46,19 @@ const Footer = () => {
             src="https://app.mailjet.com/widget/iframe/56BJ/P1r"
             width="100%"
             height={matches ? 350 : 450}
-          ></iframe>
+          ></iframe> */}
+
+          <iframe
+            data-w-type="embedded"
+            src="https://xt0ps.mjt.lu/wgt/xt0ps/6qy/form?c=f1c979b0"
+            // width="600"
+            style={{
+              width: matches ? 370 : "100%",
+              height: "auto",
+              border: "none",
+              marginLeft: "auto",
+            }}
+          />
         </div>
       </Container>
       <Copyright />

@@ -19,6 +19,12 @@ import { PATHS } from "../../enums/paths";
 import Container from "../Container/Container";
 import HomeReferences from "../HomeReferences/HomeReferences";
 
+import {
+  useTranslation,
+  useLanguageQuery,
+  LanguageSwitcher,
+} from "next-export-i18n";
+
 const HomeHero = () => {
   // I18NEXT HOOKS
   // const { t } = useTranslation();
@@ -28,6 +34,9 @@ const HomeHero = () => {
   const handleOpenBook = () => {
     window.open("https://calendly.com/tamsaguine/teamdoc");
   };
+
+  const { t } = useTranslation();
+  const [query] = useLanguageQuery();
 
   return (
     <section className="home__hero">

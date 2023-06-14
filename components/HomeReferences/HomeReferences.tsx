@@ -16,6 +16,7 @@ const datas = {
     { src: "/images/partners/dmh.png", alt: partners.dmh },
     { src: "/images/partners/biolabs.webp", alt: partners.biolabs },
     { src: "/images/partners/echofirst.png", alt: partners.echofirst },
+    { src: "/images/partners/DOPAMINE.png", alt: partners.dopamine },
   ],
 };
 
