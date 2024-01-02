@@ -15,7 +15,7 @@ const socialsMedias = [
   {
     img: "/images/social/linkedin.svg",
     alt: "Logo linkedin",
-    href: "https://www.linkedin.com/company/11110664/admin/",
+    href: "https://www.linkedin.com/company/teamdoc/",
   },
 ];
 

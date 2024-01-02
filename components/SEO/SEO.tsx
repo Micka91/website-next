@@ -68,6 +68,11 @@ const SEO = ({ title, description, type }: IProps) => {
         src="https://app.mailjet.com/pas-nc-embedded-v1.js"
         async
       ></script>
+      <script
+        async
+        src="https://tag.clearbitscripts.com/v1/pk_e221f9a9f853028aa9b6f3229d8cc8e5/tags.js"
+        referrerPolicy="strict-origin-when-cross-origin"
+      ></script>
     </Head>
   );
 };
